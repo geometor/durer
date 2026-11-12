@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 840 560" role="img">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --grid-stroke: #94a3b8;
+    --aux-stroke: #64748b;
+    --durer-stroke: #b45309;
+    --durer-fill: #f59e0b;
+    --euclid-stroke: #0369a1;
+    --euclid-fill: #0ea5e9;
+    --accent-stroke: #0f766e;
+    --accent-fill: #14b8a6;
+    --violet-stroke: #7c3aed;
+    --crimson-stroke: #be123c;
+    font-family: "Inter", "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --grid-stroke: #64748b;
+      --aux-stroke: #94a3b8;
+      --durer-stroke: #fbbf24;
+      --durer-fill: #fbbf24;
+      --euclid-stroke: #38bdf8;
+      --euclid-fill: #38bdf8;
+      --accent-stroke: #2dd4bf;
+      --accent-fill: #2dd4bf;
+      --violet-stroke: #c084fc;
+      --crimson-stroke: #fb7185;
+    }
+  }
+  [data-theme="dark"] .euclid-graphic {
+    --svg-bg: #141417;
+    --ink: #f4f4f5;
+    --label-halo: rgba(20, 20, 23, 0.92);
+    --grid-stroke: #64748b;
+    --aux-stroke: #94a3b8;
+    --durer-stroke: #fbbf24;
+    --durer-fill: #fbbf24;
+    --euclid-stroke: #38bdf8;
+    --euclid-fill: #38bdf8;
+    --accent-stroke: #2dd4bf;
+    --accent-fill: #2dd4bf;
+    --violet-stroke: #c084fc;
+    --crimson-stroke: #fb7185;
+  }
+  .euclid-graphic .canvas-bg { fill: #fafaf9; fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--aux-stroke); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.72; }
+  .euclid-graphic .geom-circle.primary-circle { stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.bowl-circle { stroke: var(--durer-stroke); stroke-width: 2.35; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.serif-circle { stroke: var(--violet-stroke); stroke-width: 1.55; stroke-dasharray: 4 2.5; opacity: 0.85; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--grid-stroke); stroke-width: 1.25; stroke-dasharray: 4 3; opacity: 0.65; }
+  .euclid-graphic .geom-line.ray-line { stroke: var(--durer-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; opacity: 0.82; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--ink); stroke-width: 1.9; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.fold-seam { stroke: var(--euclid-stroke); stroke-width: 1.85; stroke-dasharray: 6 3.5; }
+  .euclid-graphic .geom-segment.cut-seam { stroke: var(--ink); stroke-width: 2.15; }
+  .euclid-graphic .geom-segment.spiral-seg { stroke: var(--durer-stroke); stroke-width: 2.55; }
+  .euclid-graphic .geom-segment.sector-seg { stroke: var(--grid-stroke); stroke-width: 1.05; stroke-dasharray: 3 3; opacity: 0.58; }
+  .euclid-graphic .geom-segment.accent-seg { stroke: var(--accent-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-segment.projector-seg { stroke: var(--grid-stroke); stroke-width: 1.1; stroke-dasharray: 3 3; opacity: 0.7; }
+  .euclid-graphic .geom-polygon { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.durer-poly { fill: var(--durer-fill); fill-opacity: 0.11; stroke: var(--durer-stroke); stroke-width: 2.4; }
+  .euclid-graphic .geom-polygon.euclid-poly { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.2; stroke-dasharray: 7 3.5; }
+  .euclid-graphic .geom-polygon.frame-poly { fill: none; stroke: var(--grid-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; }
+  .euclid-graphic .geom-polygon.glyph-poly { fill: var(--durer-fill); fill-opacity: 0.16; stroke: var(--durer-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-polygon.counter-poly { fill: var(--svg-bg); fill-opacity: 0.92; stroke: var(--euclid-stroke); stroke-width: 1.85; }
+  .euclid-graphic .geom-polygon.net-3gon { fill: var(--euclid-fill); fill-opacity: 0.11; stroke: none; }
+  .euclid-graphic .geom-polygon.net-4gon { fill: var(--durer-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-polygon.net-5gon { fill: var(--accent-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-point { fill: var(--ink); stroke: var(--svg-bg); stroke-width: 1.4; }
+  .euclid-graphic .geom-point.durer-pt { fill: var(--durer-stroke); }
+  .euclid-graphic .geom-point.euclid-pt { fill: var(--euclid-stroke); }
+  .euclid-graphic .geom-point.accent-pt { fill: var(--crimson-stroke); }
+  .euclid-graphic .euclid-label {
+    fill: var(--ink);
+    font-size: 13px;
+    font-weight: 650;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .euclid-sub { font-size: 9.6px; font-weight: 650; }
+  .euclid-graphic .caption-note {
+    fill: var(--aux-stroke);
+    font-size: 12px;
+    font-weight: 550;
+  }
+  </style>
+  <rect class="canvas-bg" x="0" y="0" width="840" height="560" rx="8"/>
+  <g class="layer-polygons">
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V0 V1 V2 V3 V4 &gt;" points="260.97,258.89 332.81,258.89 355.02,190.56 296.89,148.33 238.77,190.56"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V1 V0 V5 V6 V7 &gt;" points="332.81,258.89 260.97,258.89 238.77,327.21 296.89,369.44 355.02,327.21"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V2 V1 V8 V9 V10 &gt;" points="355.02,190.56 332.81,258.89 390.94,301.11 449.06,258.89 426.86,190.56"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V3 V2 V11 V12 V13 &gt;" points="296.89,148.33 355.02,190.56 413.14,148.33 390.94,80 319.09,80"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V4 V3 V14 V15 V16 &gt;" points="238.77,190.56 296.89,148.33 274.69,80 202.85,80 180.65,148.33"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V0 V4 V17 V18 V19 &gt;" points="260.97,258.89 238.77,190.56 166.92,190.56 144.72,258.89 202.85,301.11"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V9 V8 V20 V21 V22 &gt;" points="449.06,258.89 390.94,301.11 413.14,369.44 484.98,369.44 507.19,301.11"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V22 V21 V23 V24 V25 &gt;" points="507.19,301.11 484.98,369.44 543.11,411.67 601.23,369.44 579.03,301.11"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V23 V21 V26 V27 V28 &gt;" points="543.11,411.67 484.98,369.44 426.86,411.67 449.06,480 520.91,480"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V24 V23 V29 V30 V31 &gt;" points="601.23,369.44 543.11,411.67 565.31,480 637.15,480 659.35,411.67"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V25 V24 V32 V33 V34 &gt;" points="579.03,301.11 601.23,369.44 673.08,369.44 695.28,301.11 637.15,258.89"/>
+    <polygon class="geom-polygon net-5gon" data-ref="&lt; V22 V25 V35 V36 V37 &gt;" points="507.19,301.11 579.03,301.11 601.23,232.79 543.11,190.56 484.98,232.79"/>
+  </g>
+  <g class="layer-circles">
+  </g>
+  <g class="layer-segments">
+    <path class="geom-segment fold-seam" data-ref="/ V0 V1 /" d="M 260.97 258.89 L 296.89 258.89 L 332.81 258.89"/>
+    <path class="geom-segment fold-seam" data-ref="/ V1 V2 /" d="M 332.81 258.89 L 343.92 224.72 L 355.02 190.56"/>
+    <path class="geom-segment fold-seam" data-ref="/ V2 V3 /" d="M 355.02 190.56 L 325.95 169.44 L 296.89 148.33"/>
+    <path class="geom-segment fold-seam" data-ref="/ V3 V4 /" d="M 296.89 148.33 L 267.83 169.44 L 238.77 190.56"/>
+    <path class="geom-segment fold-seam" data-ref="/ V4 V0 /" d="M 238.77 190.56 L 249.87 224.72 L 260.97 258.89"/>
+    <path class="geom-segment fold-seam" data-ref="/ V8 V9 /" d="M 390.94 301.11 L 420 280 L 449.06 258.89"/>
+    <path class="geom-segment fold-seam" data-ref="/ V21 V22 /" d="M 484.98 369.44 L 496.08 335.28 L 507.19 301.11"/>
+    <path class="geom-segment fold-seam" data-ref="/ V21 V23 /" d="M 484.98 369.44 L 514.05 390.56 L 543.11 411.67"/>
+    <path class="geom-segment fold-seam" data-ref="/ V23 V24 /" d="M 543.11 411.67 L 572.17 390.56 L 601.23 369.44"/>
+    <path class="geom-segment fold-seam" data-ref="/ V24 V25 /" d="M 601.23 369.44 L 590.13 335.28 L 579.03 301.11"/>
+    <path class="geom-segment fold-seam" data-ref="/ V25 V22 /" d="M 579.03 301.11 L 543.11 301.11 L 507.19 301.11"/>
+    <path class="geom-segment cut-seam" data-ref="/ V0 V5 /" d="M 260.97 258.89 L 249.87 293.05 L 238.77 327.21"/>
+    <path class="geom-segment cut-seam" data-ref="/ V5 V6 /" d="M 238.77 327.21 L 267.83 348.33 L 296.89 369.44"/>
+    <path class="geom-segment cut-seam" data-ref="/ V6 V7 /" d="M 296.89 369.44 L 325.95 348.33 L 355.02 327.21"/>
+    <path class="geom-segment cut-seam" data-ref="/ V7 V1 /" d="M 355.02 327.21 L 343.92 293.05 L 332.81 258.89"/>
+    <path class="geom-segment cut-seam" data-ref="/ V1 V8 /" d="M 332.81 258.89 L 361.88 280 L 390.94 301.11"/>
+    <path class="geom-segment cut-seam" data-ref="/ V9 V10 /" d="M 449.06 258.89 L 437.96 224.72 L 426.86 190.56"/>
+    <path class="geom-segment cut-seam" data-ref="/ V10 V2 /" d="M 426.86 190.56 L 390.94 190.56 L 355.02 190.56"/>
+    <path class="geom-segment cut-seam" data-ref="/ V2 V11 /" d="M 355.02 190.56 L 384.08 169.44 L 413.14 148.33"/>
+    <path class="geom-segment cut-seam" data-ref="/ V11 V12 /" d="M 413.14 148.33 L 402.04 114.16 L 390.94 80"/>
+    <path class="geom-segment cut-seam" data-ref="/ V12 V13 /" d="M 390.94 80 L 355.02 80 L 319.09 80"/>
+    <path class="geom-segment cut-seam" data-ref="/ V13 V3 /" d="M 319.09 80 L 307.99 114.16 L 296.89 148.33"/>
+    <path class="geom-segment cut-seam" data-ref="/ V3 V14 /" d="M 296.89 148.33 L 285.79 114.16 L 274.69 80"/>
+    <path class="geom-segment cut-seam" data-ref="/ V14 V15 /" d="M 274.69 80 L 238.77 80 L 202.85 80"/>
+    <path class="geom-segment cut-seam" data-ref="/ V15 V16 /" d="M 202.85 80 L 191.75 114.16 L 180.65 148.33"/>
+    <path class="geom-segment cut-seam" data-ref="/ V16 V4 /" d="M 180.65 148.33 L 209.71 169.44 L 238.77 190.56"/>
+    <path class="geom-segment cut-seam" data-ref="/ V4 V17 /" d="M 238.77 190.56 L 202.85 190.56 L 166.92 190.56"/>
+    <path class="geom-segment cut-seam" data-ref="/ V17 V18 /" d="M 166.92 190.56 L 155.82 224.72 L 144.72 258.89"/>
+    <path class="geom-segment cut-seam" data-ref="/ V18 V19 /" d="M 144.72 258.89 L 173.79 280 L 202.85 301.11"/>
+    <path class="geom-segment cut-seam" data-ref="/ V19 V0 /" d="M 202.85 301.11 L 231.91 280 L 260.97 258.89"/>
+    <path class="geom-segment cut-seam" data-ref="/ V8 V20 /" d="M 390.94 301.11 L 402.04 335.28 L 413.14 369.44"/>
+    <path class="geom-segment cut-seam" data-ref="/ V20 V21 /" d="M 413.14 369.44 L 449.06 369.44 L 484.98 369.44"/>
+    <path class="geom-segment cut-seam" data-ref="/ V22 V9 /" d="M 507.19 301.11 L 478.12 280 L 449.06 258.89"/>
+    <path class="geom-segment cut-seam" data-ref="/ V21 V26 /" d="M 484.98 369.44 L 455.92 390.56 L 426.86 411.67"/>
+    <path class="geom-segment cut-seam" data-ref="/ V26 V27 /" d="M 426.86 411.67 L 437.96 445.84 L 449.06 480"/>
+    <path class="geom-segment cut-seam" data-ref="/ V27 V28 /" d="M 449.06 480 L 484.98 480 L 520.91 480"/>
+    <path class="geom-segment cut-seam" data-ref="/ V28 V23 /" d="M 520.91 480 L 532.01 445.84 L 543.11 411.67"/>
+    <path class="geom-segment cut-seam" data-ref="/ V23 V29 /" d="M 543.11 411.67 L 554.21 445.84 L 565.31 480"/>
+    <path class="geom-segment cut-seam" data-ref="/ V29 V30 /" d="M 565.31 480 L 601.23 480 L 637.15 480"/>
+    <path class="geom-segment cut-seam" data-ref="/ V30 V31 /" d="M 637.15 480 L 648.25 445.84 L 659.35 411.67"/>
+    <path class="geom-segment cut-seam" data-ref="/ V31 V24 /" d="M 659.35 411.67 L 630.29 390.56 L 601.23 369.44"/>
+    <path class="geom-segment cut-seam" data-ref="/ V24 V32 /" d="M 601.23 369.44 L 637.15 369.44 L 673.08 369.44"/>
+    <path class="geom-segment cut-seam" data-ref="/ V32 V33 /" d="M 673.08 369.44 L 684.18 335.28 L 695.28 301.11"/>
+    <path class="geom-segment cut-seam" data-ref="/ V33 V34 /" d="M 695.28 301.11 L 666.21 280 L 637.15 258.89"/>
+    <path class="geom-segment cut-seam" data-ref="/ V34 V25 /" d="M 637.15 258.89 L 608.09 280 L 579.03 301.11"/>
+    <path class="geom-segment cut-seam" data-ref="/ V25 V35 /" d="M 579.03 301.11 L 590.13 266.95 L 601.23 232.79"/>
+    <path class="geom-segment cut-seam" data-ref="/ V35 V36 /" d="M 601.23 232.79 L 572.17 211.67 L 543.11 190.56"/>
+    <path class="geom-segment cut-seam" data-ref="/ V36 V37 /" d="M 543.11 190.56 L 514.05 211.67 L 484.98 232.79"/>
+    <path class="geom-segment cut-seam" data-ref="/ V37 V22 /" d="M 484.98 232.79 L 496.08 266.95 L 507.19 301.11"/>
+  </g>
+  <g class="layer-points">
+    <circle class="geom-point" data-ref="V0" data-aliases="V0,V0" data-latex-x="0" data-latex-y="0" cx="260.97" cy="258.89" r="2.4"><title>V0: (0, 0)</title></circle>
+    <circle class="geom-point" data-ref="V1" data-aliases="V1,V1" data-latex-x="1" data-latex-y="0" cx="332.81" cy="258.89" r="2.4"><title>V1: (1, 0)</title></circle>
+    <circle class="geom-point" data-ref="V2" data-aliases="V2,V2" data-latex-x="\frac{\sqrt{5}}{4} + \frac{3}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="355.02" cy="190.56" r="2.4"><title>V2: (\frac{\sqrt{5}}{4} + \frac{3}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V3" data-aliases="V3,V3" data-latex-x="\frac{1}{2}" data-latex-y="\frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} + \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8}" cx="296.89" cy="148.33" r="2.4"><title>V3: (\frac{1}{2}, \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} + \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V4" data-aliases="V4,V4" data-latex-x="\frac{1}{4} - \frac{\sqrt{5}}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="238.77" cy="190.56" r="2.4"><title>V4: (\frac{1}{4} - \frac{\sqrt{5}}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V5" data-aliases="V5,V5" data-latex-x="\frac{1}{4} - \frac{\sqrt{5}}{4}" data-latex-y="- \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8}" cx="238.77" cy="327.21" r="2.4"><title>V5: (\frac{1}{4} - \frac{\sqrt{5}}{4}, - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V6" data-aliases="V6,V6" data-latex-x="\frac{1}{2}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="296.89" cy="369.44" r="2.4"><title>V6: (\frac{1}{2}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V7" data-aliases="V7,V7" data-latex-x="\frac{\sqrt{5}}{4} + \frac{3}{4}" data-latex-y="- \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8}" cx="355.02" cy="327.21" r="2.4"><title>V7: (\frac{\sqrt{5}}{4} + \frac{3}{4}, - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V8" data-aliases="V8,V8" data-latex-x="\frac{\sqrt{5}}{4} + \frac{5}{4}" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4}" cx="390.94" cy="301.11" r="2.4"><title>V8: (\frac{\sqrt{5}}{4} + \frac{5}{4}, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V9" data-aliases="V9,V9" data-latex-x="\frac{\sqrt{5}}{2} + \frac{3}{2}" data-latex-y="0" cx="449.06" cy="258.89" r="2.4"><title>V9: (\frac{\sqrt{5}}{2} + \frac{3}{2}, 0)</title></circle>
+    <circle class="geom-point" data-ref="V10" data-aliases="V10,V10" data-latex-x="\frac{\sqrt{5}}{4} + \frac{7}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="426.86" cy="190.56" r="2.4"><title>V10: (\frac{\sqrt{5}}{4} + \frac{7}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V11" data-aliases="V11,V11" data-latex-x="1 + \frac{\sqrt{5}}{2}" data-latex-y="\frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} + \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8}" cx="413.14" cy="148.33" r="2.4"><title>V11: (1 + \frac{\sqrt{5}}{2}, \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} + \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V12" data-aliases="V12,V12" data-latex-x="\frac{\sqrt{5}}{4} + \frac{5}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="390.94" cy="80" r="2.4"><title>V12: (\frac{\sqrt{5}}{4} + \frac{5}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V13" data-aliases="V13,V13" data-latex-x="\frac{1}{4} + \frac{\sqrt{5}}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="319.09" cy="80" r="2.4"><title>V13: (\frac{1}{4} + \frac{\sqrt{5}}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V14" data-aliases="V14,V14" data-latex-x="\frac{3}{4} - \frac{\sqrt{5}}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="274.69" cy="80" r="2.4"><title>V14: (\frac{3}{4} - \frac{\sqrt{5}}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V15" data-aliases="V15,V15" data-latex-x="- \frac{\sqrt{5}}{4} - \frac{1}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="202.85" cy="80" r="2.4"><title>V15: (- \frac{\sqrt{5}}{4} - \frac{1}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{2} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V16" data-aliases="V16,V16" data-latex-x="- \frac{\sqrt{5}}{2}" data-latex-y="\frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} + \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8}" cx="180.65" cy="148.33" r="2.4"><title>V16: (- \frac{\sqrt{5}}{2}, \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8} + \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V17" data-aliases="V17,V17" data-latex-x="- \frac{3}{4} - \frac{\sqrt{5}}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="166.92" cy="190.56" r="2.4"><title>V17: (- \frac{3}{4} - \frac{\sqrt{5}}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V18" data-aliases="V18,V18" data-latex-x="- \frac{\sqrt{5}}{2} - \frac{1}{2}" data-latex-y="0" cx="144.72" cy="258.89" r="2.4"><title>V18: (- \frac{\sqrt{5}}{2} - \frac{1}{2}, 0)</title></circle>
+    <circle class="geom-point" data-ref="V19" data-aliases="V19,V19" data-latex-x="- \frac{\sqrt{5}}{4} - \frac{1}{4}" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4}" cx="202.85" cy="301.11" r="2.4"><title>V19: (- \frac{\sqrt{5}}{4} - \frac{1}{4}, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V20" data-aliases="V20,V20" data-latex-x="1 + \frac{\sqrt{5}}{2}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="413.14" cy="369.44" r="2.4"><title>V20: (1 + \frac{\sqrt{5}}{2}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V21" data-aliases="V21,V21" data-latex-x="\frac{\sqrt{5}}{2} + 2" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="484.98" cy="369.44" r="2.4"><title>V21: (\frac{\sqrt{5}}{2} + 2, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V22" data-aliases="V22,V22" data-latex-x="\frac{3 \sqrt{5}}{4} + \frac{7}{4}" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4}" cx="507.19" cy="301.11" r="2.4"><title>V22: (\frac{3 \sqrt{5}}{4} + \frac{7}{4}, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V23" data-aliases="V23,V23" data-latex-x="\frac{3 \sqrt{5}}{4} + \frac{9}{4}" data-latex-y="- \frac{5 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="543.11" cy="411.67" r="2.4"><title>V23: (\frac{3 \sqrt{5}}{4} + \frac{9}{4}, - \frac{5 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V24" data-aliases="V24,V24" data-latex-x="\sqrt{5} + \frac{5}{2}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="601.23" cy="369.44" r="2.4"><title>V24: (\sqrt{5} + \frac{5}{2}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V25" data-aliases="V25,V25" data-latex-x="\frac{3 \sqrt{5}}{4} + \frac{11}{4}" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4}" cx="579.03" cy="301.11" r="2.4"><title>V25: (\frac{3 \sqrt{5}}{4} + \frac{11}{4}, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V26" data-aliases="V26,V26" data-latex-x="\frac{\sqrt{5}}{4} + \frac{7}{4}" data-latex-y="- \frac{5 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="426.86" cy="411.67" r="2.4"><title>V26: (\frac{\sqrt{5}}{4} + \frac{7}{4}, - \frac{5 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V27" data-aliases="V27,V27" data-latex-x="\frac{\sqrt{5}}{2} + \frac{3}{2}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="449.06" cy="480" r="2.4"><title>V27: (\frac{\sqrt{5}}{2} + \frac{3}{2}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V28" data-aliases="V28,V28" data-latex-x="\frac{\sqrt{5}}{2} + \frac{5}{2}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="520.91" cy="480" r="2.4"><title>V28: (\frac{\sqrt{5}}{2} + \frac{5}{2}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V29" data-aliases="V29,V29" data-latex-x="2 + \sqrt{5}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="565.31" cy="480" r="2.4"><title>V29: (2 + \sqrt{5}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V30" data-aliases="V30,V30" data-latex-x="\sqrt{5} + 3" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4}" cx="637.15" cy="480" r="2.4"><title>V30: (\sqrt{5} + 3, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{4} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V31" data-aliases="V31,V31" data-latex-x="\frac{11}{4} + \frac{5 \sqrt{5}}{4}" data-latex-y="- \frac{5 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="659.35" cy="411.67" r="2.4"><title>V31: (\frac{11}{4} + \frac{5 \sqrt{5}}{4}, - \frac{5 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V32" data-aliases="V32,V32" data-latex-x="\sqrt{5} + \frac{7}{2}" data-latex-y="- \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="673.08" cy="369.44" r="2.4"><title>V32: (\sqrt{5} + \frac{7}{2}, - \frac{3 \sqrt{2} \sqrt{5 - \sqrt{5}}}{8} - \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V33" data-aliases="V33,V33" data-latex-x="\frac{5 \sqrt{5}}{4} + \frac{13}{4}" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4}" cx="695.28" cy="301.11" r="2.4"><title>V33: (\frac{5 \sqrt{5}}{4} + \frac{13}{4}, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{4})</title></circle>
+    <circle class="geom-point" data-ref="V34" data-aliases="V34,V34" data-latex-x="\sqrt{5} + 3" data-latex-y="0" cx="637.15" cy="258.89" r="2.4"><title>V34: (\sqrt{5} + 3, 0)</title></circle>
+    <circle class="geom-point" data-ref="V35" data-aliases="V35,V35" data-latex-x="\sqrt{5} + \frac{5}{2}" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="601.23" cy="232.79" r="2.4"><title>V35: (\sqrt{5} + \frac{5}{2}, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V36" data-aliases="V36,V36" data-latex-x="\frac{3 \sqrt{5}}{4} + \frac{9}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="543.11" cy="190.56" r="2.4"><title>V36: (\frac{3 \sqrt{5}}{4} + \frac{9}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point" data-ref="V37" data-aliases="V37,V37" data-latex-x="\frac{\sqrt{5}}{2} + 2" data-latex-y="- \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="484.98" cy="232.79" r="2.4"><title>V37: (\frac{\sqrt{5}}{2} + 2, - \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+  </g>
+  <g class="layer-labels">
+    <text class="caption-note" x="462.13" y="442.09" text-anchor="middle">Book IV, Fig. 33 — Regular Dodecahedron Net (Two 6-Pentagon Rosettes over Q(phi))</text>
+  </g>
+</svg>

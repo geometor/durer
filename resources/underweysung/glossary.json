@@ -1,0 +1,140 @@
+{
+  "abstelen": {
+    "headword": "Abstelen (Transfer by Orthogonal Projection)",
+    "language": "Early New High German (1525)",
+    "translation": "Literally 'to steal off' coordinates from elevation to ground plan",
+    "definition": "Dürer's vivid workshop verb in Books I, III, and IV for transferring heights, widths, and foreshortened intervals from an elevation (aufgezogner Grund) into a ground plan (nidergedruckter Grund) or picture plane via perpendicular projectors."
+  },
+  "aufgezogner-grund": {
+    "headword": "Aufgezogner Grund (Elevation / Aufriss)",
+    "language": "Early New High German / Camerarius 1532: orthographia",
+    "translation": "Upright vertical projection",
+    "definition": "The vertical elevation view paired directly above or beside the horizontal ground plan (nidergedruckter Grund) in Dürer's two-view descriptive geometry (Books I, III, IV)."
+  },
+  "augpunct": {
+    "headword": "Aug / Gesichtspunct (Eye Point & Principal Vanishing Point)",
+    "language": "Early New High German / Camerarius 1532: oculus",
+    "translation": "Station point of the eye and its orthogonal foot on the picture plane",
+    "definition": "In Book IV (pp. 173–181), Dürer distinguishes the 3D position of the beholder's eye (das Aug) from the orthogonal foot of the eye on the picture plane (der nah und hoch punct des gesichts), toward which lines perpendicular to the glass frame converge."
+  },
+  "ausschweiffung": {
+    "headword": "Ausschweiffung (Circular Serif Fillet)",
+    "language": "Early New High German (Book III)",
+    "translation": "Curved serif bracket or terminal flare",
+    "definition": "The circular compass arc (such as radius 1/7 of the square side on the outer feet of Roman A, or radius equal to the stroke width on upright stems) tangent to both the letter stem and the framing square edge."
+  },
+  "barlini": {
+    "headword": "Barlini / Parrlini (Parallel Line)",
+    "language": "Early New High German / Camerarius 1532: linea parallela",
+    "translation": "Equidistant parallel lines",
+    "definition": "Dürer's vernacular coinage in Book I (Fig. 2) for parallel lines (gerad oder krum Barlinien) that run forever at constant perpendicular separation without meeting."
+  },
+  "brennspiegellini": {
+    "headword": "Brennspiegellini / Brennlini (Parabola)",
+    "language": "Early New High German / Camerarius 1532: parabola",
+    "translation": "Burning-mirror line (conic parabola)",
+    "definition": "Dürer's functional German name in Book I (Figs. 35–36, pp. 036–038) for Apollonius's parabola, obtained by slicing a right circular cone parallel to an opposite generator and applied immediately to construct a paraboloidal burning mirror reflecting parallel solar rays to its focus."
+  },
+  "corpora-regularia": {
+    "headword": "Corpora regularia (Regular & Semi-Regular Polyhedra)",
+    "language": "Latin / Early New High German: Gantze Corpora",
+    "translation": "Solid bodies bounded by congruent regular polygons",
+    "definition": "Treated in Book IV (Figs. 29–43): the five Platonic solids whose faces, edges, and solid angles are all equal, followed by seven Archimedean semi-regular solids combining two or three regular polygon species with transitive vertices."
+  },
+  "demonstrative": {
+    "headword": "Demonstrative vs. Mechanice",
+    "language": "Renaissance Latin / Early New High German (Book II)",
+    "translation": "Exact deductive proof vs. practical workshop approximation",
+    "definition": "Dürer's rigorous epistemological distinction throughout Book II (pp. 058–061): constructions proved exactly from Euclidean principles (such as the Q(phi) pentagon in Fig. 15) are labeled 'demonstrative', whereas rapid craftsman approximations (such as the 7-, 11-, and 13-gons) are explicitly flagged 'mechanice und nit demonstrative'."
+  },
+  "durchsichtige-abschneydung": {
+    "headword": "Durchsichtige Abschneydung (Planar Intersection of the Visual Pyramid)",
+    "language": "Early New High German / Alberti: intersegazione",
+    "translation": "Transparent planar section (picture plane)",
+    "definition": "Dürer's definition of perspective (Perspectiva = Durchsehung) in Book IV (pp. 173–181): a transparent glass plane slicing the bundle of rectilinear visual rays (Streimlinien) radiating from the eye to every vertex of the 3D object."
+  },
+  "eierlini": {
+    "headword": "Eierlini (Elipsis / Egg-Line)",
+    "language": "Early New High German / Camerarius 1532: ellipsis",
+    "translation": "Egg-line (Dürer's vernacular coinage for the conic ellipse)",
+    "definition": "Dürer's German coinage in Book I (Fig. 34, pp. 034–036) for Apollonius's ellipsis ('ein gebrechliche lini'). Although Dürer's own 12-station descriptive-geometry transfer rule w_k = sqrt(r_k^2 - x_k^2) produces a strictly bilaterally symmetric ellipse (w_{12-k} = w_k), foreshortening near the narrower upper cone led his woodcut curve to taper slightly like a hen's egg."
+  },
+  "fierung": {
+    "headword": "Rechte Fierung & Ort-Fierung (Square & Tilted Diamond Module)",
+    "language": "Early New High German (Books II & III)",
+    "translation": "Right-angled square and 45°-rotated corner-square",
+    "definition": "In Book III typography, Roman Antiqua capitals are inscribed in a 10x10 (or 9x9) rechte Fierung, whereas Gothic Textura minuscules stack three unit rechte Fierungen capped by 45°-tilted Ort-Fierungen."
+  },
+  "fischblosen": {
+    "headword": "Fischblosen (Vesica Piscis)",
+    "language": "Early New High German (Book II, Fig. 18)",
+    "translation": "Fish-bladder lens formed by two intersecting congruent circles",
+    "definition": "Traditional stonemasons' Gothic term preserved by Dürer in Book II (p. 060) for the symmetric circular lens formed by two equal-aperture arcs, three of which are arranged radially to construct the workshop nonagon (9-gon)."
+  },
+  "gabellini": {
+    "headword": "Gabellini (Hiperbole / Fork-Line)",
+    "language": "Early New High German / Camerarius 1532: hyperbola",
+    "translation": "Fork-line or pitchfork-curve (conic hyperbola)",
+    "definition": "Dürer's German term in Book I (Fig. 37, pp. 038–039) for Apollonius's hyperbola, constructed by slicing the right circular cone parallel to its vertical axis and transferring chord widths from the circular ground plan."
+  },
+  "muschellini": {
+    "headword": "Muschellini (Conchoid of Nicomedes)",
+    "language": "Early New High German / Camerarius 1532: linea conchois",
+    "translation": "Mussel-shell line",
+    "definition": "Constructed both pointwise (16 rays) and via a slotted mechanical trammel in Book I (Figs. 31–33, pp. 031–033), with polar equation r = b + a sec(theta) relative to pole d and directrix ab."
+  },
+  "nidergedruckter-grund": {
+    "headword": "Nidergedruckter Grund (Ground Plan / Grundriss)",
+    "language": "Early New High German / Camerarius 1532: ichnographia",
+    "translation": "Pressed-down horizontal ground plan",
+    "definition": "The horizontal top-down projection coupled by vertical projectors to the upright elevation (aufgezogner Grund) in Dürer's descriptive geometry across Books I, III, and IV."
+  },
+  "ortstrich": {
+    "headword": "Ortstrich / Diameter (Diagonal or Oblique Mitre Line)",
+    "language": "Early New High German",
+    "translation": "Corner-to-corner diagonal or 45° nib-angle cut",
+    "definition": "Used in Book II for the square's diagonal (divided into 10 parts for circle quadrature) and throughout Book III for both the 45° diagonal cb governing shifted-compass bowls (O, Q, C, D) and the 45° mitre cuts of Gothic Textura."
+  },
+  "punct": {
+    "headword": "Punct (Point)",
+    "language": "Early New High German / Euclid I, Def. 1: semeion / punctum",
+    "translation": "Indivisible geometric position without magnitude",
+    "definition": "Defined at the opening of Book I (p. 007): 'Ein Punct ist ein solich ding / das kein grössen leng / breyten oder dicken hat / und ist doch aller leiplichen ding anfang und end'—distinguishing the intelligible mathematical point from the visible ink dot made by pen or compass needle."
+  },
+  "richtscheyt": {
+    "headword": "Richtscheyt (Straightedge)",
+    "language": "Early New High German / Latin: regula",
+    "translation": "Ruler or straightedge",
+    "definition": "Paired with the compass (Zirckel) in the title of Underweysung der Messung as the two foundational Euclidean instruments, supplemented in Books I and IV by hinged carpenter's squares (Winckelmeß) and slotted mechanical linkages."
+  },
+  "schlangenlini": {
+    "headword": "Schlangenlini (Serpentine S-Curve)",
+    "language": "Early New High German / Camerarius 1532: linea serpentina",
+    "translation": "Inflected serpentine curve",
+    "definition": "Introduced at the start of Book I (Fig. 1, p. 007) alongside the straight line and circle as a third elementary graphic stroke—oscillating doubly without closing—and applied in Book III to trim the apex overhang of Roman capital A."
+  },
+  "schneckenlini": {
+    "headword": "Schneckenlini (Planar Spiral / Ionic Volute)",
+    "language": "Early New High German / Camerarius 1532: cochlis / linea spiralis",
+    "translation": "Snail-shell spiral",
+    "definition": "Constructed in Book I (Figs. 7–11, 17–24) both as the uniform Archimedean spiral r = a*theta via 12 angular sectors and equal radial divisions, and as projectively accelerating spirals for bishop's crosiers and Vitruvian Ionic column volutes."
+  },
+  "schrauffenlini": {
+    "headword": "Schrauffenlini (Cylindrical & Conical Helix)",
+    "language": "Early New High German / Camerarius 1532: helix",
+    "translation": "Screw-thread spatial helix",
+    "definition": "Constructed via coupled plan and elevation projections in Book I (Figs. 12–15, pp. 014–017) for spiral staircases (Schneckenstiegen) and twisted architectural columns."
+  },
+  "winckelmess": {
+    "headword": "Winckelmeß (Carpenter's Square & Plato's Mean-Proportional Frame)",
+    "language": "Early New High German / Latin: norma",
+    "translation": "Right-angle square",
+    "definition": "Used both for testing perpendicularity and, with a sliding crossbar in Book IV (Fig. 50, p. 162), to realize Plato's mechanical construction of two mean proportionals c, d between g and e (g : c = c : d = d : e) to double the cube."
+  },
+  "zirckel": {
+    "headword": "Zirckel & Unverruckter Zirckel (Compass & Fixed-Aperture 'Rusty' Compass)",
+    "language": "Early New High German / Latin: circinus",
+    "translation": "Divider compass; 'unmoved' single-aperture compass",
+    "definition": "Dürer distinguishes general variable-radius compass steps from constructions 'mit unverrucktem Zirckel' (with unchanged compass opening, Book II Fig. 16), anticipating the Renaissance rusty-compass discoveries of Ferrari, Tartaglia, and Cardano."
+  }
+}

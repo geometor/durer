@@ -1,0 +1,122 @@
+{
+  "durer:1525": {
+    "author": "Albrecht Dürer",
+    "work": "Underweysung der Messung, mit dem Zirckel un[d] Richtscheyt, in Linien Ebnen unnd gantzen Corporen",
+    "locus": "Nürnberg: [Hieronymus Andreae], 1525 (SLUB Dresden PPN 27778509X)"
+  },
+  "durer:1528": {
+    "author": "Albrecht Dürer",
+    "work": "Hierinn sind begriffen vier Bücher von menschlicher Proportion",
+    "locus": "Nürnberg: Hieronymus Formschneider, 1528"
+  },
+  "durer:1532:camerarius": {
+    "author": "Albrecht Dürer (trans. Joachim Camerarius)",
+    "work": "Alberti Dureri Clarissimi Pictoris et Geometrae Institutionum Geometricarum Libri Quatuor",
+    "locus": "Paris: Christian Wechel, 1532"
+  },
+  "durer:1538": {
+    "author": "Albrecht Dürer",
+    "work": "Underweysung der Messung, mit dem Zirckel und Richtscheyt, in Linien Ebnen unnd gantzen Corporen (2nd enlarged posthumous ed.)",
+    "locus": "Nürnberg: Hieronymus Formschneider, 1538"
+  },
+  "abulwafa:craftsmen": {
+    "author": "Abū al-Wafāʾ al-Būzjānī",
+    "work": "Kitāb fīmā yaḥtāju ilayhi al-ṣāniʿ min aʿmāl al-handasa (On Those Parts of Geometry Needed by Craftsmen)",
+    "locus": "Baghdad, c. 990 AD"
+  },
+  "alberti:1435": {
+    "author": "Leon Battista Alberti",
+    "work": "De pictura / Della pittura",
+    "locus": "Florence, 1435–1436"
+  },
+  "apollonius:conics": {
+    "author": "Apollonius of Perga",
+    "work": "Conics (Konika, Books I–VIII)",
+    "locus": "Alexandria / Pergamon, c. 200 BC"
+  },
+  "archimedes:spirals": {
+    "author": "Archimedes of Syracuse",
+    "work": "On Spirals (Peri helikon) & Measurement of a Circle (Kyklou metresis)",
+    "locus": "Syracuse, c. 225 BC"
+  },
+  "euclid:elements": {
+    "author": "Euclid of Alexandria (Latin trans. Bartolomeo Zamberti 1505; English ed. T. L. Heath 1908)",
+    "work": "Elements (Stoicheia, Books I–XIII)",
+    "locus": "Venice: Joannes Tacuinus, 1505 / Cambridge University Press, 1908"
+  },
+  "gauss:1801": {
+    "author": "Carl Friedrich Gauss",
+    "work": "Disquisitiones Arithmeticae, Section VII (De aequationibus circuli sectiones definientibus)",
+    "locus": "Leipzig: Gerhard Fleischer, 1801"
+  },
+  "kepler:1604": {
+    "author": "Johannes Kepler",
+    "work": "Ad Vitellionem Paralipomena, Quibus Astronomiae Pars Optica Traditur, Cap. IV (De Coni sectionibus)",
+    "locus": "Frankfurt: Claudius Marnius, 1604"
+  },
+  "kepler:1619": {
+    "author": "Johannes Kepler",
+    "work": "Harmonices Mundi Libri V, Liber II (De Congruentia Figurarum Harmonicarum)",
+    "locus": "Linz: Johann Planck, 1619"
+  },
+  "klein:1895": {
+    "author": "Felix Klein",
+    "work": "Vorträge über ausgewählte Fragen der Elementargeometrie (Famous Problems of Elementary Geometry)",
+    "locus": "Leipzig: B. G. Teubner, 1895"
+  },
+  "lemoine:1902": {
+    "author": "Émile Lemoine",
+    "work": "Géométrographie ou Art des constructions géométriques",
+    "locus": "Paris: C. Naud (Scientia), 1902"
+  },
+  "monge:1799": {
+    "author": "Gaspard Monge",
+    "work": "Géométrie descriptive",
+    "locus": "Paris: Baudouin, An VII (1799)"
+  },
+  "pacioli:1509": {
+    "author": "Luca Pacioli (illus. Leonardo da Vinci)",
+    "work": "Divina Proportione: Opera a tutti gl'ingegni perspicaci e curiosi necessaria",
+    "locus": "Venice: Paganino de' Paganini, 1509"
+  },
+  "pappus:synagoge": {
+    "author": "Pappus of Alexandria",
+    "work": "Mathematical Collection (Synagoge, Books III, V & VII)",
+    "locus": "Alexandria, c. 340 AD"
+  },
+  "panofsky:1943": {
+    "author": "Erwin Panofsky",
+    "work": "The Life and Art of Albrecht Dürer",
+    "locus": "Princeton University Press, 1943 (4th ed. 1955)"
+  },
+  "plato:timaeus": {
+    "author": "Plato",
+    "work": "Timaeus (53c–56c)",
+    "locus": "Athens, c. 360 BC"
+  },
+  "roritzer:1487": {
+    "author": "Matthäus Roriczer",
+    "work": "Geometria Deutsch",
+    "locus": "Regensburg, c. 1487"
+  },
+  "staigmuller:1891": {
+    "author": "Hermann Staigmüller",
+    "work": "Dürer als Mathematiker",
+    "locus": "Programm des Königlichen Realgymnasiums in Stuttgart, 1891, pp. 1–59"
+  },
+  "thompson:1942": {
+    "author": "D'Arcy Wentworth Thompson",
+    "work": "On Growth and Form (2nd rev. ed., Ch. XVII: On the Theory of Transformations)",
+    "locus": "Cambridge University Press, 1942"
+  },
+  "vitruvius:architectura": {
+    "author": "Marcus Vitruvius Pollio",
+    "work": "De Architectura Libri Decem (Books III, IX & X)",
+    "locus": "Rome, c. 25 BC"
+  },
+  "wantzel:1837": {
+    "author": "Pierre Laurent Wantzel",
+    "work": "Recherches sur les moyens de reconnaître si un Problème de Géométrie peut se résoudre avec la règle et le compas",
+    "locus": "Journal de Mathématiques Pures et Appliquées 2 (1837), 366–372"
+  }
+}

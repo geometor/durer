@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 780 620" role="img">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --grid-stroke: #94a3b8;
+    --aux-stroke: #64748b;
+    --durer-stroke: #b45309;
+    --durer-fill: #f59e0b;
+    --euclid-stroke: #0369a1;
+    --euclid-fill: #0ea5e9;
+    --accent-stroke: #0f766e;
+    --accent-fill: #14b8a6;
+    --violet-stroke: #7c3aed;
+    --crimson-stroke: #be123c;
+    font-family: "Inter", "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --grid-stroke: #64748b;
+      --aux-stroke: #94a3b8;
+      --durer-stroke: #fbbf24;
+      --durer-fill: #fbbf24;
+      --euclid-stroke: #38bdf8;
+      --euclid-fill: #38bdf8;
+      --accent-stroke: #2dd4bf;
+      --accent-fill: #2dd4bf;
+      --violet-stroke: #c084fc;
+      --crimson-stroke: #fb7185;
+    }
+  }
+  [data-theme="dark"] .euclid-graphic {
+    --svg-bg: #141417;
+    --ink: #f4f4f5;
+    --label-halo: rgba(20, 20, 23, 0.92);
+    --grid-stroke: #64748b;
+    --aux-stroke: #94a3b8;
+    --durer-stroke: #fbbf24;
+    --durer-fill: #fbbf24;
+    --euclid-stroke: #38bdf8;
+    --euclid-fill: #38bdf8;
+    --accent-stroke: #2dd4bf;
+    --accent-fill: #2dd4bf;
+    --violet-stroke: #c084fc;
+    --crimson-stroke: #fb7185;
+  }
+  .euclid-graphic .canvas-bg { fill: #fafaf9; fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--aux-stroke); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.72; }
+  .euclid-graphic .geom-circle.primary-circle { stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.bowl-circle { stroke: var(--durer-stroke); stroke-width: 2.35; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.serif-circle { stroke: var(--violet-stroke); stroke-width: 1.55; stroke-dasharray: 4 2.5; opacity: 0.85; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--grid-stroke); stroke-width: 1.25; stroke-dasharray: 4 3; opacity: 0.65; }
+  .euclid-graphic .geom-line.ray-line { stroke: var(--durer-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; opacity: 0.82; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--ink); stroke-width: 1.9; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.fold-seam { stroke: var(--euclid-stroke); stroke-width: 1.85; stroke-dasharray: 6 3.5; }
+  .euclid-graphic .geom-segment.cut-seam { stroke: var(--ink); stroke-width: 2.15; }
+  .euclid-graphic .geom-segment.spiral-seg { stroke: var(--durer-stroke); stroke-width: 2.55; }
+  .euclid-graphic .geom-segment.sector-seg { stroke: var(--grid-stroke); stroke-width: 1.05; stroke-dasharray: 3 3; opacity: 0.58; }
+  .euclid-graphic .geom-segment.accent-seg { stroke: var(--accent-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-segment.projector-seg { stroke: var(--grid-stroke); stroke-width: 1.1; stroke-dasharray: 3 3; opacity: 0.7; }
+  .euclid-graphic .geom-polygon { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.durer-poly { fill: var(--durer-fill); fill-opacity: 0.11; stroke: var(--durer-stroke); stroke-width: 2.4; }
+  .euclid-graphic .geom-polygon.euclid-poly { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.2; stroke-dasharray: 7 3.5; }
+  .euclid-graphic .geom-polygon.frame-poly { fill: none; stroke: var(--grid-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; }
+  .euclid-graphic .geom-polygon.glyph-poly { fill: var(--durer-fill); fill-opacity: 0.16; stroke: var(--durer-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-polygon.counter-poly { fill: var(--svg-bg); fill-opacity: 0.92; stroke: var(--euclid-stroke); stroke-width: 1.85; }
+  .euclid-graphic .geom-polygon.net-3gon { fill: var(--euclid-fill); fill-opacity: 0.11; stroke: none; }
+  .euclid-graphic .geom-polygon.net-4gon { fill: var(--durer-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-polygon.net-5gon { fill: var(--accent-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-point { fill: var(--ink); stroke: var(--svg-bg); stroke-width: 1.4; }
+  .euclid-graphic .geom-point.durer-pt { fill: var(--durer-stroke); }
+  .euclid-graphic .geom-point.euclid-pt { fill: var(--euclid-stroke); }
+  .euclid-graphic .geom-point.accent-pt { fill: var(--crimson-stroke); }
+  .euclid-graphic .euclid-label {
+    fill: var(--ink);
+    font-size: 13px;
+    font-weight: 650;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .euclid-sub { font-size: 9.6px; font-weight: 650; }
+  .euclid-graphic .caption-note {
+    fill: var(--aux-stroke);
+    font-size: 12px;
+    font-weight: 550;
+  }
+  </style>
+  <rect class="canvas-bg" x="0" y="0" width="780" height="620" rx="8"/>
+  <g class="layer-polygons">
+    <polygon class="geom-polygon durer-poly" data-ref="&lt; A B H_durer K_durer I_durer &gt;" points="321.05,303.11 458.95,303.11 502.4,172.23 390,92.35 277.6,172.23"/>
+    <polygon class="geom-polygon euclid-poly" data-ref="&lt; A B H_euclid K_euclid I_euclid &gt;" points="321.05,303.11 458.95,303.11 501.56,171.96 390,90.91 278.44,171.96"/>
+  </g>
+  <g class="layer-circles">
+    <circle class="geom-circle" data-ref="c_A" cx="321.05" cy="303.11" r="137.89"/>
+    <circle class="geom-circle" data-ref="c_B" cx="458.95" cy="303.11" r="137.89"/>
+    <circle class="geom-circle" data-ref="c_D" cx="390" cy="422.53" r="137.89"/>
+    <circle class="geom-circle" data-ref="c_H" cx="502.4" cy="172.23" r="137.89"/>
+    <circle class="geom-circle" data-ref="c_I" cx="277.6" cy="172.23" r="137.89"/>
+    <circle class="geom-circle" data-ref="( A Q )" cx="321.05" cy="303.11" r="275.79"/>
+    <circle class="geom-circle" data-ref="( Q A )" cx="596.84" cy="303.11" r="275.79"/>
+    <circle class="geom-circle" data-ref="c_golden" cx="390" cy="303.11" r="154.17"/>
+    <circle class="geom-circle" data-ref="c_diag_A" cx="321.05" cy="303.11" r="223.12"/>
+    <circle class="geom-circle" data-ref="c_diag_B" cx="458.95" cy="303.11" r="223.12"/>
+  </g>
+  <g class="layer-lines">
+    <path class="geom-line" data-ref="AB" d="M 93.53 303.11 L 390 303.11 L 686.47 303.11"/>
+    <path class="geom-line" data-ref="CD" d="M 390 572 L 390 310 L 390 48"/>
+    <path class="geom-line ray-line" data-ref="EG" d="M 102.63 572 L 364.63 310 L 626.63 48"/>
+    <path class="geom-line ray-line" data-ref="FG" d="M 677.37 572 L 415.37 310 L 153.37 48"/>
+    <path class="geom-line" data-ref="[ B S ]" d="M 458.95 572 L 458.95 310 L 458.95 48"/>
+  </g>
+  <g class="layer-segments">
+  </g>
+  <g class="layer-points">
+    <circle class="geom-point" data-ref="A" data-aliases="A,a" data-latex-x="0" data-latex-y="0" cx="321.05" cy="303.11" r="3.7"><title>a: (0, 0)</title></circle>
+    <circle class="geom-point" data-ref="B" data-aliases="B,b" data-latex-x="1" data-latex-y="0" cx="458.95" cy="303.11" r="3.7"><title>b: (1, 0)</title></circle>
+    <circle class="geom-point" data-ref="D" data-aliases="D,d" data-latex-x="\frac{1}{2}" data-latex-y="- \frac{\sqrt{3}}{2}" cx="390" cy="422.53" r="3.7"><title>d: (\frac{1}{2}, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="C_ves" data-aliases="C_ves,c" data-latex-x="\frac{1}{2}" data-latex-y="\frac{\sqrt{3}}{2}" cx="390" cy="183.68" r="3.7"><title>c: (\frac{1}{2}, \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="E" data-aliases="E,e" data-latex-x="- \frac{1}{2}" data-latex-y="- \frac{\sqrt{3}}{2}" cx="252.11" cy="422.53" r="3.7"><title>e: (- \frac{1}{2}, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="F" data-aliases="F,f" data-latex-x="\frac{3}{2}" data-latex-y="- \frac{\sqrt{3}}{2}" cx="527.89" cy="422.53" r="3.7"><title>f: (\frac{3}{2}, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="G" data-aliases="G,g" data-latex-x="\frac{1}{2}" data-latex-y="1 - \frac{\sqrt{3}}{2}" cx="390" cy="284.63" r="3.7"><title>g: (\frac{1}{2}, 1 - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point durer-pt" data-ref="H_durer" data-aliases="H_durer,h" data-latex-x="\frac{1}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}" data-latex-y="- \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4}" cx="502.4" cy="172.23" r="3.7"><title>h: (\frac{1}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}, - \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4})</title></circle>
+    <circle class="geom-point durer-pt" data-ref="I_durer" data-aliases="I_durer,i" data-latex-x="- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} - \frac{\sqrt{3}}{4} + \frac{3}{4}" data-latex-y="- \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4}" cx="277.6" cy="172.23" r="3.7"><title>i: (- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} - \frac{\sqrt{3}}{4} + \frac{3}{4}, - \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4})</title></circle>
+    <circle class="geom-point durer-pt" data-ref="K_durer" data-aliases="K_durer,k" data-latex-x="\frac{- \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} - \frac{\sqrt{3}}{4} + \frac{3}{4}\right)^{2} + \left(- \frac{3}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}\right)^{2} + \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)^{2}}{2 \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)} + \frac{1}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}" data-latex-y="- \frac{\sqrt{3}}{4} - \frac{\sqrt{- \left(- \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} - \frac{\sqrt{3}}{4} + \frac{3}{4}\right)^{2} + \left(- \frac{3}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}\right)^{2} + \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)^{2}\right)^{2} + 4 \left(\left(- \frac{3}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}\right)^{2} + \left(- \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4}\right)^{2}\right) \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)^{2}}}{2 \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4}" cx="390" cy="92.35" r="3.7"><title>k: (\frac{- \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} - \frac{\sqrt{3}}{4} + \frac{3}{4}\right)^{2} + \left(- \frac{3}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}\right)^{2} + \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)^{2}}{2 \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)} + \frac{1}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}, - \frac{\sqrt{3}}{4} - \frac{\sqrt{- \left(- \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} - \frac{\sqrt{3}}{4} + \frac{3}{4}\right)^{2} + \left(- \frac{3}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}\right)^{2} + \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)^{2}\right)^{2} + 4 \left(\left(- \frac{3}{4} + \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4}\right)^{2} + \left(- \frac{\sqrt{3}}{4} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4}\right)^{2}\right) \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)^{2}}}{2 \left(- \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{2} - \frac{\sqrt{3}}{2} + \frac{1}{2}\right)} + \frac{\sqrt{2} \sqrt{-2 + 3 \sqrt{3}}}{4} + \frac{3}{4})</title></circle>
+    <circle class="geom-point" data-ref="X_phi" data-aliases="X_phi,phi" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="0" cx="544.17" cy="303.11" r="3.7"><title>phi: (\frac{1}{2} + \frac{\sqrt{5}}{2}, 0)</title></circle>
+    <circle class="geom-point euclid-pt" data-ref="H_euclid" data-aliases="H_euclid,H_phi" data-latex-x="\frac{\sqrt{5}}{4} + \frac{3}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="501.56" cy="171.96" r="3.7"><title>H_phi: (\frac{\sqrt{5}}{4} + \frac{3}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point euclid-pt" data-ref="I_euclid" data-aliases="I_euclid,I_phi" data-latex-x="\frac{1}{4} - \frac{\sqrt{5}}{4}" data-latex-y="\frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8}" cx="278.44" cy="171.96" r="3.7"><title>I_phi: (\frac{1}{4} - \frac{\sqrt{5}}{4}, \frac{\sqrt{2} \sqrt{5 - \sqrt{5}}}{8} + \frac{\sqrt{10} \sqrt{5 - \sqrt{5}}}{8})</title></circle>
+    <circle class="geom-point euclid-pt" data-ref="K_euclid" data-aliases="K_euclid,K_phi" data-latex-x="\frac{1}{2}" data-latex-y="\frac{\sqrt{2 \sqrt{5} + 5}}{2}" cx="390" cy="90.91" r="3.7"><title>K_phi: (\frac{1}{2}, \frac{\sqrt{2 \sqrt{5} + 5}}{2})</title></circle>
+  </g>
+  <g class="layer-labels">
+    <text class="euclid-label" data-ref="A" x="305.55" y="306.84" text-anchor="middle">a</text>
+    <text class="euclid-label" data-ref="B" x="474.44" y="306.67" text-anchor="middle">b</text>
+    <text class="euclid-label" data-ref="D" x="387.76" y="441.86" text-anchor="middle">d</text>
+    <text class="euclid-label" data-ref="C_ves" x="387.81" y="172.34" text-anchor="middle">c</text>
+    <text class="euclid-label" data-ref="E" x="239.77" y="435.91" text-anchor="middle">e</text>
+    <text class="euclid-label" data-ref="F" x="538.98" y="437.36" text-anchor="middle">f</text>
+    <text class="euclid-label" data-ref="G" x="379.86" y="276.9" text-anchor="middle">g</text>
+    <text class="euclid-label" data-ref="H_durer" x="511.45" y="163.65" text-anchor="middle">h</text>
+    <text class="euclid-label" data-ref="I_durer" x="266.76" y="165.16" text-anchor="middle">i</text>
+    <text class="euclid-label" data-ref="K_durer" x="388.75" y="80.9" text-anchor="middle">k</text>
+    <text class="euclid-label" data-ref="X_phi" x="559.67" y="306.94" text-anchor="middle">phi</text>
+    <text class="euclid-label" data-ref="H_euclid" x="515.53" y="182.67" text-anchor="middle">H<tspan class="euclid-sub" dy="3">phi</tspan></text>
+    <text class="euclid-label" data-ref="I_euclid" x="287.56" y="163.43" text-anchor="middle">I<tspan class="euclid-sub" dy="3">phi</tspan></text>
+    <text class="euclid-label" data-ref="K_euclid" x="405.01" y="91.05" text-anchor="middle">K<tspan class="euclid-sub" dy="3">phi</tspan></text>
+    <text class="caption-note" x="390" y="63.17" text-anchor="middle">Solid Gold: Dürer Rusty Compass (108.37°)  |  Dashed Blue: Euclid Q(phi) (108°)</text>
+  </g>
+</svg>

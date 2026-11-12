@@ -1,0 +1,182 @@
+{
+  "abu-l-wafa": {
+    "name": "Abū al-Wafāʾ al-Būzjānī",
+    "dates": "940–998",
+    "role": "Persian Mathematician & Astronomer in Baghdad",
+    "bio": "Author of Kitāb fīmā yaḥtāju ilayhi al-ṣāniʿ min aʿmāl al-handasa ('On Those Parts of Geometry Needed by Craftsmen'), earliest surviving treatise systematically developing single-aperture ('rusty compass') constructions—including the exact antecedent to Dürer's Book II Fig. 16 pentagon and the equilateral half-side heptagon."
+  },
+  "alberti": {
+    "name": "Leon Battista Alberti",
+    "dates": "1404–1472",
+    "role": "Italian Renaissance Humanist, Architect & Theorist of Perspective",
+    "bio": "Author of De pictura (1435) and De re aedificatoria (1452), who defined the painting as a planar intersection (intersegazione della piramide visiva) of the visual pyramid—realized mechanically in Dürer's Book IV glass frame and thread apparatuses."
+  },
+  "andreae": {
+    "name": "Hieronymus Andreae (Formschneider)",
+    "dates": "d. 1556",
+    "role": "Nuremberg Blockcutter, Punchcutter & Printer of the 1538 Edition",
+    "bio": "Master woodblock cutter and typographer who collaborated closely with Dürer on monumental woodcuts and types, and printed the enlarged posthumous second edition of Underweysung der Messung in 1538."
+  },
+  "apollonius": {
+    "name": "Apollonius of Perga",
+    "dates": "c. 240 – c. 190 BC",
+    "role": "Ancient Greek Geometer, Author of the Conics",
+    "bio": "Coined the Greek terms ellipsis, parabole, and hyperbole for the three planar sections of a circular cone, which Dürer renders into German in Book I (pp. 034–039) as Eierlini, Brennspiegellini, and Gabellini."
+  },
+  "archimedes": {
+    "name": "Archimedes of Syracuse",
+    "dates": "c. 287 – c. 212 BC",
+    "role": "Ancient Greek Mathematician, Physicist & Engineer",
+    "bio": "Author of On Spirals, Measurement of a Circle, and the lost treatise on the thirteen semi-regular solids preserved by Pappus. Dürer reconstructs the Archimedean spiral (Book I, Figs. 7 & 17), cites Archimedes in Book II, and prints the first planar fold-out nets for seven Archimedean solids in Book IV (Figs. 35–41)."
+  },
+  "camerarius": {
+    "name": "Joachim Camerarius",
+    "dates": "1500–1574",
+    "role": "German Classical Scholar & Humanist Latin Translator of Dürer",
+    "bio": "First rector of the Nuremberg Melanchthon-Gymnasium and close friend of Dürer and Pirckheimer. His 1532 Paris Latin translation Institutionum Geometricarum Libri Quatuor made Dürer's geometric treatise accessible across all of learned Europe."
+  },
+  "cardano": {
+    "name": "Gerolamo Cardano",
+    "dates": "1501–1576",
+    "role": "Italian Algebraist & Physician",
+    "bio": "Collaborated with Lodovico Ferrari on De subtilitate (1550) to solve classical constructions with a fixed ('rusty') compass opening, directly continuing the problem tradition popularized in print by Dürer's Book II."
+  },
+  "durer": {
+    "name": "Albrecht Dürer",
+    "dates": "1471–1528",
+    "role": "Nuremberg Painter, Printmaker & Author of the First Printed German Mathematics Treatise",
+    "bio": "Trained in his father's goldsmith workshop and Michael Wolgemut's studio before two transformative Italian journeys (1494–1495, 1505–1507) where he sought out Jacopo de' Barbari and Luca Pacioli's circle in Bologna ('um der kunst der heimlichen perspectiua willen'). His Underweysung der Messung (1525) created scientific German mathematical prose, introduced Mongean two-view descriptive geometry, codified Renaissance geometric typography, and published the first polyhedral fold-out nets in history."
+  },
+  "euclid": {
+    "name": "Euclid of Alexandria",
+    "dates": "fl. c. 300 BC",
+    "role": "Author of the Elements",
+    "bio": "Revered by Dürer throughout the Underweysung as 'der scharpfsinnig Euclides' ('the acute-minded Euclid'). Dürer owned the 1505 Venice Latin Zamberti edition of the Elements (inscribed in Venice in 1507) and explicitly cites Books I, II, IV, VI, XI, XII, and XIII."
+  },
+  "ferrari": {
+    "name": "Lodovico Ferrari",
+    "dates": "1522–1565",
+    "role": "Italian Algebraist, Solver of the Quartic & Rusty-Compass Geometer",
+    "bio": "Proved within decades of Dürer's 1525 treatise that every Euclidean ruler-and-compass construction can be executed with straightedge and a single fixed compass opening."
+  },
+  "gauss": {
+    "name": "Carl Friedrich Gauss",
+    "dates": "1777–1855",
+    "role": "German Mathematician",
+    "bio": "Characterized constructible regular n-gons via Fermat primes in Section VII of Disquisitiones Arithmeticae (1801), providing the modern cyclotomic proof of why Dürer had to label his 7-, 9-, 11-, and 13-gon rules 'mechanice und nit demonstrative'."
+  },
+  "hero": {
+    "name": "Hero of Alexandria",
+    "dates": "fl. c. 60 AD",
+    "role": "Greek Geometer & Engineer",
+    "bio": "Transmitted workshop polygon approximations in the Metrica and the rectangular neusis construction for two mean proportionals reproduced explicitly by Dürer in Book IV, Fig. 51 ('durch Heronem den Krichen')."
+  },
+  "kepler": {
+    "name": "Johannes Kepler",
+    "dates": "1571–1630",
+    "role": "Imperial Mathematician & Astronomer",
+    "bio": "Studied Dürer's Underweysung intensely: in Ad Vitellionem Paralipomena (1604) he corrected Dürer's asymmetric Eierlini intuition by proving the conic ellipse's symmetry, and in Harmonices Mundi Book II (1619) he systematized Dürer's Book II star/pentagon tilings and completed all thirteen Archimedean solids begun in Dürer's Book IV."
+  },
+  "klein": {
+    "name": "Felix Klein",
+    "dates": "1849–1925",
+    "role": "German Mathematician",
+    "bio": "Established the Erlangen Program (1872) classifying geometries by transformation groups and proved algebraic impossibility criteria in Famous Problems of Elementary Geometry (1895) directly governing Dürer's Delian cube duplication, heptagon, trisection, and circle quadrature."
+  },
+  "lemoine": {
+    "name": "Émile Lemoine",
+    "dates": "1840–1912",
+    "role": "French Geometer, Founder of Géométrographie",
+    "bio": "Created Géométrographie (1902) to measure operational simplicity and exactness of ruler-and-compass constructions, providing a rigorous modern metric for comparing Dürer's single-aperture workshop constructions against classical Euclidean protocols."
+  },
+  "leonardo": {
+    "name": "Leonardo da Vinci",
+    "dates": "1452–1519",
+    "role": "Italian Polymath, Painter & Illustrator of Pacioli's Divina Proportione",
+    "bio": "Drew the skeletal perspective woodcuts of Platonic and Archimedean polyhedra for Luca Pacioli's Divina Proportione (1509), which Dürer transformed in Book IV from spatial wireframe renderings into constructible 2D planar fold-out nets."
+  },
+  "monge": {
+    "name": "Gaspard Monge",
+    "dates": "1746–1818",
+    "role": "French Mathematician & Codifier of Descriptive Geometry",
+    "bio": "Systematized Géométrie descriptive (1795/1799) via coupled orthographic plan and elevation views—the exact two-view projection method already invented and published by Dürer in Book I (conic sections), Book III (twisted columns), and Book IV (polyhedral plans and shadow sciagraphy) 270 years earlier."
+  },
+  "neudorfer": {
+    "name": "Johann Neudörfer the Elder",
+    "dates": "1497–1563",
+    "role": "Nuremberg Calligrapher & Rechenmeister",
+    "bio": "Master scribe who inscribed the calligraphic texts on Dürer's Four Apostles (1526) and collaborated in the Nuremberg typographic milieu reflected in Dürer's Book III Textura and Antiqua constructions."
+  },
+  "nicomedes": {
+    "name": "Nicomedes",
+    "dates": "c. 280 – c. 210 BC",
+    "role": "Ancient Greek Geometer, Discoverer of the Conchoid",
+    "bio": "Invented the conchoid curve and its mechanical trammel for angle trisection and cube duplication, reconstructed by Dürer in Book I, Figs. 31–33 as the Muschellini ('mussel-shell line')."
+  },
+  "pacioli": {
+    "name": "Luca Pacioli",
+    "dates": "c. 1447–1517",
+    "role": "Franciscan Mathematician, Author of Summa and Divina Proportione",
+    "bio": "Author of Divina Proportione (Venice, 1509), combining golden-section polyhedra with a 1:9 Roman capital alphabet. Dürer traveled from Venice to Bologna in late 1506 seeking instruction in 'secret perspective' in Pacioli's and Scipione del Ferro's milieu, and his 1525 Underweysung stands as the Northern Renaissance counterpart to Pacioli's treatise."
+  },
+  "pappus": {
+    "name": "Pappus of Alexandria",
+    "dates": "c. 290 – c. 350 AD",
+    "role": "Late Antique Alexandrian Geometer, Author of the Synagoge",
+    "bio": "Preserved Archimedes's 13 semi-regular solids (Book V), the Sporus/Pappus cube-duplication neusis (Book III), and the projective invariance of the cross-ratio (Book VII) governing Dürer's Book IV perspective glass frame."
+  },
+  "piero": {
+    "name": "Piero della Francesca",
+    "dates": "c. 1415–1492",
+    "role": "Italian Painter & Geometer",
+    "bio": "Author of De prospectiva pingendi and Libellus de quinque corporibus regularibus, pioneering plan-and-elevation foreshortening and semi-regular polyhedra prior to Pacioli and Dürer."
+  },
+  "pirckheimer": {
+    "name": "Willibald Pirckheimer",
+    "dates": "1470–1530",
+    "role": "Nuremberg Patrician, Classical Humanist & Dedicatee of the Underweysung",
+    "bio": "Dürer's lifelong closest friend, imperial councillor, and Greek-Latin scholar whose rich library supplied Dürer with Greek mathematical sources (Euclid, Archimedes, Apollonius, Vitruvius, Hero, Sporus, Eutocius) and to whom Dürer dedicated both Underweysung der Messung (1525) and Vier Bücher von menschlicher Proportion (1528)."
+  },
+  "plato": {
+    "name": "Plato",
+    "dates": "c. 428 – c. 348 BC",
+    "role": "Athenian Philosopher & Founder of the Academy",
+    "bio": "Associated in Timaeus (53c–56c) the five regular solids with the four elements and the cosmos, and credited by Eutocius (and Dürer in Book IV, pp. 159–162) with both the Delian altar oracle narrative and the mechanical carpenter's-square instrument (Fig. 50) for two mean proportionals."
+  },
+  "ptolemy": {
+    "name": "Claudius Ptolemy",
+    "dates": "c. 100 – c. 170 AD",
+    "role": "Greco-Roman Astronomer & Geometer",
+    "bio": "Gave in Almagest I.10 the compact single-circle construction simultaneously yielding the regular pentagon and decagon chords—reproduced directly by Dürer as his 'demonstrative' pentagon in Book II, Fig. 15."
+  },
+  "roritzer": {
+    "name": "Matthäus Roriczer",
+    "dates": "c. 1435–1495",
+    "role": "Regensburg Cathedral Master Mason & Author of Geometria Deutsch",
+    "bio": "Published Büchlein von der Fialen Gerechtigkeit (1486) and Geometria Deutsch (c. 1487), the earliest printed German stonemasons' geometry pamphlets, whose workshop single-aperture pentagon and nonagon rules Dürer elevated and critically classified against Euclidean proof."
+  },
+  "sporus": {
+    "name": "Sporus of Nicaea",
+    "dates": "c. 240 – c. 300 AD",
+    "role": "Greek Mathematician & Commentator",
+    "bio": "Cited explicitly by Dürer in Book IV (p. 159: 'durch Sporum') via Eutocius's commentary on Archimedes for the neusis construction of two mean proportionals (Figs. 44–46) doubling and tripling the cube."
+  },
+  "thompson": {
+    "name": "D'Arcy Wentworth Thompson",
+    "dates": "1860–1948",
+    "role": "Scottish Biologist, Classicist & Author of On Growth and Form",
+    "bio": "Explicitly credited Albrecht Dürer's coordinate deformation grids (from the Underweysung and Vier Bücher von menschlicher Proportion) as the direct inspiration for the Cartesian 'Theory of Transformations' in Chapter XVII of On Growth and Form (1917/1942)."
+  },
+  "vitruvius": {
+    "name": "Marcus Vitruvius Pollio",
+    "dates": "c. 80 – c. 15 BC",
+    "role": "Roman Architect & Engineer, Author of De Architectura",
+    "bio": "Explicitly praised by Dürer in Book III as 'der alt Römer Vitruuius' for architectural column proportions, Ionic volutes (Book I, Fig. 24), entasis, sundial analemma gnomonics, and the Delian cube-doubling story."
+  },
+  "wantzel": {
+    "name": "Pierre Laurent Wantzel",
+    "dates": "1814–1848",
+    "role": "French Mathematician",
+    "bio": "Published in 1837 the first complete algebraic proof that cube duplication, general angle trisection, and regular polygons whose side count fails the Gauss-Fermat condition (such as Dürer's 7-, 9-, 11-, and 13-gons) are impossible by unmarked straightedge and compass."
+  }
+}

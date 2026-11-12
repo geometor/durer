@@ -1,0 +1,25 @@
+name: deploy-sphinx-gh-pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-custom-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Deploy Sphinx to GitHub Pages
+        uses: photon-platform/action-deploy-sphinx-gh-pages@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          python_version: '3.13'
+          source_dir: 'docsrc'
+          build_dir: 'docs'
+          cname: ''
+          modules_repo_urls: 'https://github.com/geometor/model.git,https://github.com/geometor/durer.git'

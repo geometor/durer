@@ -1,0 +1,50 @@
+{
+  "work_title_german_1525": "Underweysung der Messung, mit dem Zirckel un[d] Richtscheyt, in Linien Ebnen unnd gantzen Corporen, durch Albrecht Dürer zu sammen getzoge[n], und zu nutz alle[n] kunstliebhabenden mit zu gehörigen figuren, in truck gebracht, im jar. M.D.XXV.",
+  "work_title_english": "Instruction in Measurement, with Compass and Straightedge, in Lines, Planes, and Whole Solid Bodies",
+  "work_title_latin_1532": "Alberti Dureri Clarissimi Pictoris et Geometrae de Symmetria partium ... / Institutionum Geometricarum Libri Quatuor",
+  "author": "Albrecht Dürer (1471–1528)",
+  "dedicatee": "Willibald Pirckheimer (1470–1530)",
+  "place_and_year": "Nuremberg, 1525 (1st ed.); Nuremberg, 1538 (posthumous 2nd ed., Hieronymus Andreae / Formschneider)",
+  "witnesses": [
+    {
+      "id": "slub-1525-princeps",
+      "siglum": "N1525",
+      "title": "Underweysung der Messung (Editio Princeps, Nuremberg 1525)",
+      "repository": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden (SLUB)",
+      "shelfmark_ppn": "PPN 27778509X (S.B. 618)",
+      "pages": "182 digital folio pages (sigs. A–Q, with Author's Errata on p. 182)",
+      "url": "https://digital.slub-dresden.de/werkansicht/dlf/17139/1",
+      "role": "Primary Early New High German copy-text and woodcut diagram authority"
+    },
+    {
+      "id": "wikisource-de-1525",
+      "siglum": "WS1525",
+      "title": "Diplomatic Transcription of SLUB Dresden PPN 27778509X",
+      "repository": "German Wikisource (twice-proofread diplomatic edition)",
+      "url": "https://de.wikisource.org/wiki/Underweysung_der_Messung,_mit_dem_Zirckel_und_Richtscheyt,_in_Linien,_Ebenen_unnd_gantzen_corporen",
+      "license": "Public Domain",
+      "role": "Collated diplomatic transcription preserving 1525 Nuremberg orthography (uᵒ, v/u, cz, ß) and figure numbering"
+    },
+    {
+      "id": "nuremberg-1538-formschneider",
+      "siglum": "N1538",
+      "title": "Underweysung der Messung (2nd Enlarged Posthumous Edition, Nuremberg 1538)",
+      "printer": "Hieronymus Formschneider (Andreae)",
+      "notes": "Incorporates expansions from Dürer's surviving working copy, including two additional Archimedean polyhedral nets and expanded perspective apparatuses in Book IV.",
+      "role": "Secondary German collation witness"
+    },
+    {
+      "id": "camerarius-1532-latin",
+      "siglum": "L1532",
+      "title": "Alberti Dureri Institutionum Geometricarum Libri Quatuor",
+      "translator": "Joachim Camerarius (1500–1574)",
+      "place_and_year": "Paris: Christian Wechel, 1532 (reprinted 1535, Arnhem 1606)",
+      "notes": "Humanist Latin translation that transmitted Dürer's conic projections, polygon constructions, polyhedral nets, and perspective instruments across Europe to Cardano, Clavius, Commandino, Kepler, Galileo, and Monge.",
+      "role": "Latin terminological and mathematical collation witness"
+    }
+  ],
+  "translation_provenance": {
+    "english_track": "Original GEOMETOR English translation prepared directly from the 1525 Nuremberg Early New High German editio princeps (SLUB PPN 27778509X), collated against Joachim Camerarius's 1532 Latin terminology.",
+    "copyright_compliance": "100% independent public-domain translation; zero reliance on Walter L. Strauss's 1977 copyrighted English translation."
+  }
+}

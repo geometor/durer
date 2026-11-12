@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometor-durer"
+dynamic = ["version"]
+description = "Bilingual Digital Scriptorium codex and exact SymPy/geometor.model symbolic constructions for Albrecht Dürer's Underweysung der Messung (1525 / 1538)."
+readme = "README.rst"
+license = { text = "MIT" }
+authors = [
+  { name = "phi ARCHITECT", email = "phi@geometor.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+  "sympy",
+  "rich",
+  "geometor-model",
+]
+
+[project.urls]
+Website = "https://geometor.github.io/durer"
+Repository = "https://github.com/geometor/durer"
+Issues = "https://github.com/geometor/durer/issues"
+
+[project.scripts]
+durer = "geometor.durer.cli:main"
+geometor-durer = "geometor.durer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = { attr = "geometor.durer.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "../model/src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"demos/*.py" = ["E402"]
