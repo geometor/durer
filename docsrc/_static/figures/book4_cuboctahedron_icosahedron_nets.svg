@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 860 480" role="img">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --grid-stroke: #94a3b8;
+    --aux-stroke: #64748b;
+    --durer-stroke: #b45309;
+    --durer-fill: #f59e0b;
+    --euclid-stroke: #0369a1;
+    --euclid-fill: #0ea5e9;
+    --accent-stroke: #0f766e;
+    --accent-fill: #14b8a6;
+    --violet-stroke: #7c3aed;
+    --crimson-stroke: #be123c;
+    font-family: "Inter", "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --grid-stroke: #64748b;
+      --aux-stroke: #94a3b8;
+      --durer-stroke: #fbbf24;
+      --durer-fill: #fbbf24;
+      --euclid-stroke: #38bdf8;
+      --euclid-fill: #38bdf8;
+      --accent-stroke: #2dd4bf;
+      --accent-fill: #2dd4bf;
+      --violet-stroke: #c084fc;
+      --crimson-stroke: #fb7185;
+    }
+  }
+  [data-theme="dark"] .euclid-graphic {
+    --svg-bg: #141417;
+    --ink: #f4f4f5;
+    --label-halo: rgba(20, 20, 23, 0.92);
+    --grid-stroke: #64748b;
+    --aux-stroke: #94a3b8;
+    --durer-stroke: #fbbf24;
+    --durer-fill: #fbbf24;
+    --euclid-stroke: #38bdf8;
+    --euclid-fill: #38bdf8;
+    --accent-stroke: #2dd4bf;
+    --accent-fill: #2dd4bf;
+    --violet-stroke: #c084fc;
+    --crimson-stroke: #fb7185;
+  }
+  .euclid-graphic .canvas-bg { fill: #fafaf9; fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--aux-stroke); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.72; }
+  .euclid-graphic .geom-circle.primary-circle { stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.bowl-circle { stroke: var(--durer-stroke); stroke-width: 2.35; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.serif-circle { stroke: var(--violet-stroke); stroke-width: 1.55; stroke-dasharray: 4 2.5; opacity: 0.85; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--grid-stroke); stroke-width: 1.25; stroke-dasharray: 4 3; opacity: 0.65; }
+  .euclid-graphic .geom-line.ray-line { stroke: var(--durer-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; opacity: 0.82; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--ink); stroke-width: 1.9; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.fold-seam { stroke: var(--euclid-stroke); stroke-width: 1.85; stroke-dasharray: 6 3.5; }
+  .euclid-graphic .geom-segment.cut-seam { stroke: var(--ink); stroke-width: 2.15; }
+  .euclid-graphic .geom-segment.spiral-seg { stroke: var(--durer-stroke); stroke-width: 2.55; }
+  .euclid-graphic .geom-segment.sector-seg { stroke: var(--grid-stroke); stroke-width: 1.05; stroke-dasharray: 3 3; opacity: 0.58; }
+  .euclid-graphic .geom-segment.accent-seg { stroke: var(--accent-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-segment.projector-seg { stroke: var(--grid-stroke); stroke-width: 1.1; stroke-dasharray: 3 3; opacity: 0.7; }
+  .euclid-graphic .geom-polygon { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.durer-poly { fill: var(--durer-fill); fill-opacity: 0.11; stroke: var(--durer-stroke); stroke-width: 2.4; }
+  .euclid-graphic .geom-polygon.euclid-poly { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.2; stroke-dasharray: 7 3.5; }
+  .euclid-graphic .geom-polygon.frame-poly { fill: none; stroke: var(--grid-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; }
+  .euclid-graphic .geom-polygon.glyph-poly { fill: var(--durer-fill); fill-opacity: 0.16; stroke: var(--durer-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-polygon.counter-poly { fill: var(--svg-bg); fill-opacity: 0.92; stroke: var(--euclid-stroke); stroke-width: 1.85; }
+  .euclid-graphic .geom-polygon.net-3gon { fill: var(--euclid-fill); fill-opacity: 0.11; stroke: none; }
+  .euclid-graphic .geom-polygon.net-4gon { fill: var(--durer-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-polygon.net-5gon { fill: var(--accent-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-point { fill: var(--ink); stroke: var(--svg-bg); stroke-width: 1.4; }
+  .euclid-graphic .geom-point.durer-pt { fill: var(--durer-stroke); }
+  .euclid-graphic .geom-point.euclid-pt { fill: var(--euclid-stroke); }
+  .euclid-graphic .geom-point.accent-pt { fill: var(--crimson-stroke); }
+  .euclid-graphic .euclid-label {
+    fill: var(--ink);
+    font-size: 13px;
+    font-weight: 650;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .euclid-sub { font-size: 9.6px; font-weight: 650; }
+  .euclid-graphic .caption-note {
+    fill: var(--aux-stroke);
+    font-size: 12px;
+    font-weight: 550;
+  }
+  </style>
+  <rect class="canvas-bg" x="0" y="0" width="860" height="480" rx="8"/>
+  <g class="layer-polygons">
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; A B C &gt;" points="96.89,246.94 143.16,246.94 120.02,206.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; C B D &gt;" points="120.02,206.87 143.16,246.94 166.29,206.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; D B E &gt;" points="166.29,206.87 143.16,246.94 189.42,246.94"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; D E F &gt;" points="166.29,206.87 189.42,246.94 212.55,206.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; F E G &gt;" points="212.55,206.87 189.42,246.94 235.69,246.94"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; F G H &gt;" points="212.55,206.87 235.69,246.94 258.82,206.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; H G I &gt;" points="258.82,206.87 235.69,246.94 281.95,246.94"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; H I J &gt;" points="258.82,206.87 281.95,246.94 305.08,206.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; J I K &gt;" points="305.08,206.87 281.95,246.94 328.22,246.94"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; J K L &gt;" points="305.08,206.87 328.22,246.94 351.35,206.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; B A M &gt;" points="143.16,246.94 96.89,246.94 120.02,287.01"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; E B N &gt;" points="189.42,246.94 143.16,246.94 166.29,287.01"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; G E O &gt;" points="235.69,246.94 189.42,246.94 212.55,287.01"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; I G P &gt;" points="281.95,246.94 235.69,246.94 258.82,287.01"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; K I Q &gt;" points="328.22,246.94 281.95,246.94 305.08,287.01"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; C D R &gt;" points="120.02,206.87 166.29,206.87 143.16,166.81"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; D F S &gt;" points="166.29,206.87 212.55,206.87 189.42,166.81"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; F H T &gt;" points="212.55,206.87 258.82,206.87 235.69,166.81"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; H J U &gt;" points="258.82,206.87 305.08,206.87 281.95,166.81"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; J L V &gt;" points="305.08,206.87 351.35,206.87 328.22,166.81"/>
+    <polygon class="geom-polygon net-4gon" data-ref="&lt; W X Y Z &gt;" points="536.41,246.94 582.67,246.94 582.67,200.67 536.41,200.67"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; X W AA &gt;" points="582.67,246.94 536.41,246.94 559.54,287.01"/>
+    <polygon class="geom-polygon net-4gon" data-ref="&lt; AA W BB CC &gt;" points="559.54,287.01 536.41,246.94 496.34,270.07 519.48,310.14"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; CC BB DD &gt;" points="519.48,310.14 496.34,270.07 473.21,310.14"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; Y X EE &gt;" points="582.67,200.67 582.67,246.94 622.74,223.81"/>
+    <polygon class="geom-polygon net-4gon" data-ref="&lt; EE X FF GG &gt;" points="622.74,223.81 582.67,246.94 605.81,287.01 645.87,263.87"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; GG FF HH &gt;" points="645.87,263.87 605.81,287.01 645.87,310.14"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; Z Y II &gt;" points="536.41,200.67 582.67,200.67 559.54,160.61"/>
+    <polygon class="geom-polygon net-4gon" data-ref="&lt; II Y JJ KK &gt;" points="559.54,160.61 582.67,200.67 622.74,177.54 599.61,137.48"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; KK JJ LL &gt;" points="599.61,137.48 622.74,177.54 645.87,137.48"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; W Z MM &gt;" points="536.41,246.94 536.41,200.67 496.34,223.81"/>
+    <polygon class="geom-polygon net-4gon" data-ref="&lt; MM Z NN OO &gt;" points="496.34,223.81 536.41,200.67 513.28,160.61 473.21,183.74"/>
+    <polygon class="geom-polygon net-3gon" data-ref="&lt; OO NN PP &gt;" points="473.21,183.74 513.28,160.61 473.21,137.48"/>
+    <polygon class="geom-polygon net-4gon" data-ref="&lt; GG HH QQ RR &gt;" points="645.87,263.87 645.87,310.14 692.14,310.14 692.14,263.87"/>
+  </g>
+  <g class="layer-circles">
+  </g>
+  <g class="layer-segments">
+    <path class="geom-segment fold-seam" data-ref="/ A B /" d="M 96.89 246.94 L 120.02 246.94 L 143.16 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ B C /" d="M 143.16 246.94 L 131.59 226.91 L 120.02 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ B D /" d="M 143.16 246.94 L 154.72 226.91 L 166.29 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ D C /" d="M 166.29 206.87 L 143.16 206.87 L 120.02 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ B E /" d="M 143.16 246.94 L 166.29 246.94 L 189.42 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ E D /" d="M 189.42 246.94 L 177.86 226.91 L 166.29 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ E F /" d="M 189.42 246.94 L 200.99 226.91 L 212.55 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ F D /" d="M 212.55 206.87 L 189.42 206.87 L 166.29 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ E G /" d="M 189.42 246.94 L 212.55 246.94 L 235.69 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ G F /" d="M 235.69 246.94 L 224.12 226.91 L 212.55 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ G H /" d="M 235.69 246.94 L 247.25 226.91 L 258.82 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ H F /" d="M 258.82 206.87 L 235.69 206.87 L 212.55 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ G I /" d="M 235.69 246.94 L 258.82 246.94 L 281.95 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ I H /" d="M 281.95 246.94 L 270.39 226.91 L 258.82 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ I J /" d="M 281.95 246.94 L 293.52 226.91 L 305.08 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ J H /" d="M 305.08 206.87 L 281.95 206.87 L 258.82 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ I K /" d="M 281.95 246.94 L 305.08 246.94 L 328.22 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ K J /" d="M 328.22 246.94 L 316.65 226.91 L 305.08 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ L J /" d="M 351.35 206.87 L 328.22 206.87 L 305.08 206.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ C A /" d="M 120.02 206.87 L 108.46 226.91 L 96.89 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ K L /" d="M 328.22 246.94 L 339.78 226.91 L 351.35 206.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ A M /" d="M 96.89 246.94 L 108.46 266.97 L 120.02 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ M B /" d="M 120.02 287.01 L 131.59 266.97 L 143.16 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ B N /" d="M 143.16 246.94 L 154.72 266.97 L 166.29 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ N E /" d="M 166.29 287.01 L 177.86 266.97 L 189.42 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ E O /" d="M 189.42 246.94 L 200.99 266.97 L 212.55 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ O G /" d="M 212.55 287.01 L 224.12 266.97 L 235.69 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ G P /" d="M 235.69 246.94 L 247.25 266.97 L 258.82 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ P I /" d="M 258.82 287.01 L 270.39 266.97 L 281.95 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ I Q /" d="M 281.95 246.94 L 293.52 266.97 L 305.08 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ Q K /" d="M 305.08 287.01 L 316.65 266.97 L 328.22 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ D R /" d="M 166.29 206.87 L 154.72 186.84 L 143.16 166.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ R C /" d="M 143.16 166.81 L 131.59 186.84 L 120.02 206.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ F S /" d="M 212.55 206.87 L 200.99 186.84 L 189.42 166.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ S D /" d="M 189.42 166.81 L 177.86 186.84 L 166.29 206.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ H T /" d="M 258.82 206.87 L 247.25 186.84 L 235.69 166.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ T F /" d="M 235.69 166.81 L 224.12 186.84 L 212.55 206.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ J U /" d="M 305.08 206.87 L 293.52 186.84 L 281.95 166.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ U H /" d="M 281.95 166.81 L 270.39 186.84 L 258.82 206.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ L V /" d="M 351.35 206.87 L 339.78 186.84 L 328.22 166.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ V J /" d="M 328.22 166.81 L 316.65 186.84 L 305.08 206.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ W X /" d="M 536.41 246.94 L 559.54 246.94 L 582.67 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ X Y /" d="M 582.67 246.94 L 582.67 223.81 L 582.67 200.67"/>
+    <path class="geom-segment fold-seam" data-ref="/ Y Z /" d="M 582.67 200.67 L 559.54 200.67 L 536.41 200.67"/>
+    <path class="geom-segment fold-seam" data-ref="/ Z W /" d="M 536.41 200.67 L 536.41 223.81 L 536.41 246.94"/>
+    <path class="geom-segment fold-seam" data-ref="/ W AA /" d="M 536.41 246.94 L 547.98 266.97 L 559.54 287.01"/>
+    <path class="geom-segment fold-seam" data-ref="/ BB CC /" d="M 496.34 270.07 L 507.91 290.11 L 519.48 310.14"/>
+    <path class="geom-segment fold-seam" data-ref="/ X EE /" d="M 582.67 246.94 L 602.71 235.37 L 622.74 223.81"/>
+    <path class="geom-segment fold-seam" data-ref="/ FF GG /" d="M 605.81 287.01 L 625.84 275.44 L 645.87 263.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ HH GG /" d="M 645.87 310.14 L 645.87 287.01 L 645.87 263.87"/>
+    <path class="geom-segment fold-seam" data-ref="/ Y II /" d="M 582.67 200.67 L 571.11 180.64 L 559.54 160.61"/>
+    <path class="geom-segment fold-seam" data-ref="/ JJ KK /" d="M 622.74 177.54 L 611.18 157.51 L 599.61 137.48"/>
+    <path class="geom-segment fold-seam" data-ref="/ Z MM /" d="M 536.41 200.67 L 516.38 212.24 L 496.34 223.81"/>
+    <path class="geom-segment fold-seam" data-ref="/ NN OO /" d="M 513.28 160.61 L 493.24 172.17 L 473.21 183.74"/>
+    <path class="geom-segment cut-seam" data-ref="/ AA X /" d="M 559.54 287.01 L 571.11 266.97 L 582.67 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ W BB /" d="M 536.41 246.94 L 516.38 258.51 L 496.34 270.07"/>
+    <path class="geom-segment cut-seam" data-ref="/ CC AA /" d="M 519.48 310.14 L 539.51 298.57 L 559.54 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ BB DD /" d="M 496.34 270.07 L 484.78 290.11 L 473.21 310.14"/>
+    <path class="geom-segment cut-seam" data-ref="/ DD CC /" d="M 473.21 310.14 L 496.34 310.14 L 519.48 310.14"/>
+    <path class="geom-segment cut-seam" data-ref="/ EE Y /" d="M 622.74 223.81 L 602.71 212.24 L 582.67 200.67"/>
+    <path class="geom-segment cut-seam" data-ref="/ X FF /" d="M 582.67 246.94 L 594.24 266.97 L 605.81 287.01"/>
+    <path class="geom-segment cut-seam" data-ref="/ GG EE /" d="M 645.87 263.87 L 634.31 243.84 L 622.74 223.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ FF HH /" d="M 605.81 287.01 L 625.84 298.57 L 645.87 310.14"/>
+    <path class="geom-segment cut-seam" data-ref="/ II Z /" d="M 559.54 160.61 L 547.98 180.64 L 536.41 200.67"/>
+    <path class="geom-segment cut-seam" data-ref="/ Y JJ /" d="M 582.67 200.67 L 602.71 189.11 L 622.74 177.54"/>
+    <path class="geom-segment cut-seam" data-ref="/ KK II /" d="M 599.61 137.48 L 579.58 149.04 L 559.54 160.61"/>
+    <path class="geom-segment cut-seam" data-ref="/ JJ LL /" d="M 622.74 177.54 L 634.31 157.51 L 645.87 137.48"/>
+    <path class="geom-segment cut-seam" data-ref="/ LL KK /" d="M 645.87 137.48 L 622.74 137.48 L 599.61 137.48"/>
+    <path class="geom-segment cut-seam" data-ref="/ MM W /" d="M 496.34 223.81 L 516.38 235.37 L 536.41 246.94"/>
+    <path class="geom-segment cut-seam" data-ref="/ Z NN /" d="M 536.41 200.67 L 524.84 180.64 L 513.28 160.61"/>
+    <path class="geom-segment cut-seam" data-ref="/ OO MM /" d="M 473.21 183.74 L 484.78 203.77 L 496.34 223.81"/>
+    <path class="geom-segment cut-seam" data-ref="/ NN PP /" d="M 513.28 160.61 L 493.24 149.04 L 473.21 137.48"/>
+    <path class="geom-segment cut-seam" data-ref="/ PP OO /" d="M 473.21 137.48 L 473.21 160.61 L 473.21 183.74"/>
+    <path class="geom-segment cut-seam" data-ref="/ HH QQ /" d="M 645.87 310.14 L 669.01 310.14 L 692.14 310.14"/>
+    <path class="geom-segment cut-seam" data-ref="/ QQ RR /" d="M 692.14 310.14 L 692.14 287.01 L 692.14 263.87"/>
+    <path class="geom-segment cut-seam" data-ref="/ RR GG /" d="M 692.14 263.87 L 669.01 263.87 L 645.87 263.87"/>
+  </g>
+  <g class="layer-points">
+    <circle class="geom-point" data-ref="A" data-aliases="A,A" data-latex-x="0" data-latex-y="\frac{1}{2}" cx="96.89" cy="246.94" r="2.4"><title>A: (0, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="B" data-aliases="B,B" data-latex-x="1" data-latex-y="\frac{1}{2}" cx="143.16" cy="246.94" r="2.4"><title>B: (1, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="C" data-aliases="C,C" data-latex-x="\frac{1}{2}" data-latex-y="\frac{1}{2} + \frac{\sqrt{3}}{2}" cx="120.02" cy="206.87" r="2.4"><title>C: (\frac{1}{2}, \frac{1}{2} + \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="D" data-aliases="D,D" data-latex-x="\frac{3}{2}" data-latex-y="\frac{1}{2} + \frac{\sqrt{3}}{2}" cx="166.29" cy="206.87" r="2.4"><title>D: (\frac{3}{2}, \frac{1}{2} + \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="E" data-aliases="E,E" data-latex-x="2" data-latex-y="\frac{1}{2}" cx="189.42" cy="246.94" r="2.4"><title>E: (2, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="F" data-aliases="F,F" data-latex-x="\frac{5}{2}" data-latex-y="\frac{1}{2} + \frac{\sqrt{3}}{2}" cx="212.55" cy="206.87" r="2.4"><title>F: (\frac{5}{2}, \frac{1}{2} + \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="G" data-aliases="G,G" data-latex-x="3" data-latex-y="\frac{1}{2}" cx="235.69" cy="246.94" r="2.4"><title>G: (3, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="H" data-aliases="H,H" data-latex-x="\frac{7}{2}" data-latex-y="\frac{1}{2} + \frac{\sqrt{3}}{2}" cx="258.82" cy="206.87" r="2.4"><title>H: (\frac{7}{2}, \frac{1}{2} + \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="I" data-aliases="I,I" data-latex-x="4" data-latex-y="\frac{1}{2}" cx="281.95" cy="246.94" r="2.4"><title>I: (4, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="J" data-aliases="J,J" data-latex-x="\frac{9}{2}" data-latex-y="\frac{1}{2} + \frac{\sqrt{3}}{2}" cx="305.08" cy="206.87" r="2.4"><title>J: (\frac{9}{2}, \frac{1}{2} + \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="K" data-aliases="K,K" data-latex-x="5" data-latex-y="\frac{1}{2}" cx="328.22" cy="246.94" r="2.4"><title>K: (5, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="L" data-aliases="L,L" data-latex-x="\frac{11}{2}" data-latex-y="\frac{1}{2} + \frac{\sqrt{3}}{2}" cx="351.35" cy="206.87" r="2.4"><title>L: (\frac{11}{2}, \frac{1}{2} + \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="M" data-aliases="M,M" data-latex-x="\frac{1}{2}" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="120.02" cy="287.01" r="2.4"><title>M: (\frac{1}{2}, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="N" data-aliases="N,N" data-latex-x="\frac{3}{2}" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="166.29" cy="287.01" r="2.4"><title>N: (\frac{3}{2}, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="O" data-aliases="O,O" data-latex-x="\frac{5}{2}" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="212.55" cy="287.01" r="2.4"><title>O: (\frac{5}{2}, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="P" data-aliases="P,P" data-latex-x="\frac{7}{2}" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="258.82" cy="287.01" r="2.4"><title>P: (\frac{7}{2}, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="Q" data-aliases="Q,Q" data-latex-x="\frac{9}{2}" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="305.08" cy="287.01" r="2.4"><title>Q: (\frac{9}{2}, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="R" data-aliases="R,R" data-latex-x="1" data-latex-y="\frac{1}{2} + \sqrt{3}" cx="143.16" cy="166.81" r="2.4"><title>R: (1, \frac{1}{2} + \sqrt{3})</title></circle>
+    <circle class="geom-point" data-ref="S" data-aliases="S,S" data-latex-x="2" data-latex-y="\frac{1}{2} + \sqrt{3}" cx="189.42" cy="166.81" r="2.4"><title>S: (2, \frac{1}{2} + \sqrt{3})</title></circle>
+    <circle class="geom-point" data-ref="T" data-aliases="T,T" data-latex-x="3" data-latex-y="\frac{1}{2} + \sqrt{3}" cx="235.69" cy="166.81" r="2.4"><title>T: (3, \frac{1}{2} + \sqrt{3})</title></circle>
+    <circle class="geom-point" data-ref="U" data-aliases="U,U" data-latex-x="4" data-latex-y="\frac{1}{2} + \sqrt{3}" cx="281.95" cy="166.81" r="2.4"><title>U: (4, \frac{1}{2} + \sqrt{3})</title></circle>
+    <circle class="geom-point" data-ref="V" data-aliases="V,V" data-latex-x="5" data-latex-y="\frac{1}{2} + \sqrt{3}" cx="328.22" cy="166.81" r="2.4"><title>V: (5, \frac{1}{2} + \sqrt{3})</title></circle>
+    <circle class="geom-point" data-ref="W" data-aliases="W,W" data-latex-x="\frac{19}{2}" data-latex-y="\frac{1}{2}" cx="536.41" cy="246.94" r="2.4"><title>W: (\frac{19}{2}, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="X" data-aliases="X,X" data-latex-x="\frac{21}{2}" data-latex-y="\frac{1}{2}" cx="582.67" cy="246.94" r="2.4"><title>X: (\frac{21}{2}, \frac{1}{2})</title></circle>
+    <circle class="geom-point" data-ref="Y" data-aliases="Y,Y" data-latex-x="\frac{21}{2}" data-latex-y="\frac{3}{2}" cx="582.67" cy="200.67" r="2.4"><title>Y: (\frac{21}{2}, \frac{3}{2})</title></circle>
+    <circle class="geom-point" data-ref="Z" data-aliases="Z,Z" data-latex-x="\frac{19}{2}" data-latex-y="\frac{3}{2}" cx="536.41" cy="200.67" r="2.4"><title>Z: (\frac{19}{2}, \frac{3}{2})</title></circle>
+    <circle class="geom-point" data-ref="AA" data-aliases="AA,AA" data-latex-x="10" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="559.54" cy="287.01" r="2.4"><title>AA: (10, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="BB" data-aliases="BB,BB" data-latex-x="\frac{19}{2} - \frac{\sqrt{3}}{2}" data-latex-y="0" cx="496.34" cy="270.07" r="2.4"><title>BB: (\frac{19}{2} - \frac{\sqrt{3}}{2}, 0)</title></circle>
+    <circle class="geom-point" data-ref="CC" data-aliases="CC,CC" data-latex-x="10 - \frac{\sqrt{3}}{2}" data-latex-y="- \frac{\sqrt{3}}{2}" cx="519.48" cy="310.14" r="2.4"><title>CC: (10 - \frac{\sqrt{3}}{2}, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="DD" data-aliases="DD,DD" data-latex-x="9 - \frac{\sqrt{3}}{2}" data-latex-y="- \frac{\sqrt{3}}{2}" cx="473.21" cy="310.14" r="2.4"><title>DD: (9 - \frac{\sqrt{3}}{2}, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="EE" data-aliases="EE,EE" data-latex-x="\frac{\sqrt{3}}{2} + \frac{21}{2}" data-latex-y="1" cx="622.74" cy="223.81" r="2.4"><title>EE: (\frac{\sqrt{3}}{2} + \frac{21}{2}, 1)</title></circle>
+    <circle class="geom-point" data-ref="FF" data-aliases="FF,FF" data-latex-x="11" data-latex-y="\frac{1}{2} - \frac{\sqrt{3}}{2}" cx="605.81" cy="287.01" r="2.4"><title>FF: (11, \frac{1}{2} - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="GG" data-aliases="GG,GG" data-latex-x="\frac{\sqrt{3}}{2} + 11" data-latex-y="1 - \frac{\sqrt{3}}{2}" cx="645.87" cy="263.87" r="2.4"><title>GG: (\frac{\sqrt{3}}{2} + 11, 1 - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="HH" data-aliases="HH,HH" data-latex-x="\frac{\sqrt{3}}{2} + 11" data-latex-y="- \frac{\sqrt{3}}{2}" cx="645.87" cy="310.14" r="2.4"><title>HH: (\frac{\sqrt{3}}{2} + 11, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="II" data-aliases="II,II" data-latex-x="10" data-latex-y="\frac{\sqrt{3}}{2} + \frac{3}{2}" cx="559.54" cy="160.61" r="2.4"><title>II: (10, \frac{\sqrt{3}}{2} + \frac{3}{2})</title></circle>
+    <circle class="geom-point" data-ref="JJ" data-aliases="JJ,JJ" data-latex-x="\frac{\sqrt{3}}{2} + \frac{21}{2}" data-latex-y="2" cx="622.74" cy="177.54" r="2.4"><title>JJ: (\frac{\sqrt{3}}{2} + \frac{21}{2}, 2)</title></circle>
+    <circle class="geom-point" data-ref="KK" data-aliases="KK,KK" data-latex-x="\frac{\sqrt{3}}{2} + 10" data-latex-y="\frac{\sqrt{3}}{2} + 2" cx="599.61" cy="137.48" r="2.4"><title>KK: (\frac{\sqrt{3}}{2} + 10, \frac{\sqrt{3}}{2} + 2)</title></circle>
+    <circle class="geom-point" data-ref="LL" data-aliases="LL,LL" data-latex-x="\frac{\sqrt{3}}{2} + 11" data-latex-y="\frac{\sqrt{3}}{2} + 2" cx="645.87" cy="137.48" r="2.4"><title>LL: (\frac{\sqrt{3}}{2} + 11, \frac{\sqrt{3}}{2} + 2)</title></circle>
+    <circle class="geom-point" data-ref="MM" data-aliases="MM,MM" data-latex-x="\frac{19}{2} - \frac{\sqrt{3}}{2}" data-latex-y="1" cx="496.34" cy="223.81" r="2.4"><title>MM: (\frac{19}{2} - \frac{\sqrt{3}}{2}, 1)</title></circle>
+    <circle class="geom-point" data-ref="NN" data-aliases="NN,NN" data-latex-x="9" data-latex-y="\frac{\sqrt{3}}{2} + \frac{3}{2}" cx="513.28" cy="160.61" r="2.4"><title>NN: (9, \frac{\sqrt{3}}{2} + \frac{3}{2})</title></circle>
+    <circle class="geom-point" data-ref="OO" data-aliases="OO,OO" data-latex-x="9 - \frac{\sqrt{3}}{2}" data-latex-y="\frac{\sqrt{3}}{2} + 1" cx="473.21" cy="183.74" r="2.4"><title>OO: (9 - \frac{\sqrt{3}}{2}, \frac{\sqrt{3}}{2} + 1)</title></circle>
+    <circle class="geom-point" data-ref="PP" data-aliases="PP,PP" data-latex-x="9 - \frac{\sqrt{3}}{2}" data-latex-y="\frac{\sqrt{3}}{2} + 2" cx="473.21" cy="137.48" r="2.4"><title>PP: (9 - \frac{\sqrt{3}}{2}, \frac{\sqrt{3}}{2} + 2)</title></circle>
+    <circle class="geom-point" data-ref="QQ" data-aliases="QQ,QQ" data-latex-x="\frac{\sqrt{3}}{2} + 12" data-latex-y="- \frac{\sqrt{3}}{2}" cx="692.14" cy="310.14" r="2.4"><title>QQ: (\frac{\sqrt{3}}{2} + 12, - \frac{\sqrt{3}}{2})</title></circle>
+    <circle class="geom-point" data-ref="RR" data-aliases="RR,RR" data-latex-x="\frac{\sqrt{3}}{2} + 12" data-latex-y="1 - \frac{\sqrt{3}}{2}" cx="692.14" cy="263.87" r="2.4"><title>RR: (\frac{\sqrt{3}}{2} + 12, 1 - \frac{\sqrt{3}}{2})</title></circle>
+  </g>
+  <g class="layer-labels">
+    <text class="caption-note" x="226.43" y="413.49" text-anchor="middle">Icosahedron (Fig. 31 — 20 Triangles)</text>
+    <text class="caption-note" x="596.55" y="413.49" text-anchor="middle">Archimedean Cuboctahedron (Fig. 37 — 6 Squares + 8 Triangles)</text>
+  </g>
+</svg>
