@@ -1,0 +1,279 @@
+geometor.durer.polygons
+=======================
+
+.. py:module:: geometor.durer.polygons
+
+.. autoapi-nested-parse::
+
+   Exact symbolic constructions & workshop audits for Book II regular polygons and quadrature.
+
+   Covers Albrecht Dürer's *Underweysung der Messung* (1525), Book II:
+
+   - **Figs. 15 & 16 (pp. 058–059)**: Direct symbolic comparison between:
+
+     1. **Euclid / Ptolemy's exact regular pentagon** over ``Q(phi)`` (``phi = (1 + sqrt(5))/2``),
+        marked *demonstrative* by Dürer, with exact interior angle ``108°`` and diagonal-to-side
+        ratio ``phi``.
+     2. **Dürer's Single-Aperture ("Rusty Compass") Pentagon** (*mit unverrucktem Zirckel*, inherited
+        from Abū al-Wafāʾ and *Geometria Deutsch*), which constructs all five sides with exact unit
+        quadrance ``Q = 1`` and exact bilateral symmetry using a single fixed compass opening, but
+        yields nested quadratic-radical vertices whose base interior angle is ``~108.3660°``
+        (``+0.3660°``, or ``~21.96'`` arcminutes too wide).
+   - **Figs. 11 & 15 (pp. 057–059)**: Dürer's workshop regular heptagon (*7-gon*), taking half the
+     side of the inscribed equilateral triangle ``s_7 = (sqrt(3)/2) * R`` (``Q = 3/4 * R^2``),
+     audited against the irreducible cubic minimal polynomial ``P_7(q) = q^3 - 7*q^2 + 14*q - 7``
+     (Eisenstein at ``p = 7``), with exact rational residual ``P_7(3/4) = -1/64``.
+   - **Fig. 19 (pp. 060–061)**: Workshop *mechanice* rules for the ``11``-gon (``s_11 = 9/16 * R``)
+     and ``13``-gon (``s_13 = 1/2 * R``).
+   - **Fig. 34 (p. 075)**: Workshop quadrature of the circle (square diagonal ``10`` parts, circle
+     diameter ``8`` parts, implying ``pi_Durer = 25/8 = 3.125``).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.durer.polygons.PHI
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.durer.polygons.PentagonComparisonResult
+   geometor.durer.polygons.WorkshopPolygonEntry
+   geometor.durer.polygons.HeptagonWorkshopReport
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.polygons.construct_durer_vs_euclid_pentagon
+   geometor.durer.polygons.construct_durer_heptagon_workshop
+
+
+Module Contents
+---------------
+
+.. py:data:: PHI
+   :type:  sympy.Expr
+
+.. py:class:: PentagonComparisonResult
+
+   Exact symbolic result comparing Dürer's single-aperture pentagon with Euclid's pentagon.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: base_a
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: base_b
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: durer_vertices
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: euclid_vertices
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: durer_aux_points
+      :type:  dict[str, sympy.geometry.Point]
+
+
+   .. py:attribute:: durer_side_quadrances
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: euclid_side_quadrances
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: euclid_diagonal_quadrance
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: durer_base_diagonal_quadrance
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: durer_shoulder_diagonal_quadrance
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: durer_base_spread
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: euclid_base_spread
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: durer_equilateral
+      :type:  bool
+
+
+   .. py:attribute:: durer_equiangular
+      :type:  bool
+
+
+   .. py:attribute:: euclid_regular
+      :type:  bool
+
+
+   .. py:property:: durer_base_interior_deg
+      :type: float
+
+
+      Numerical evaluation (degrees) of Dürer's interior angle at A and B.
+
+
+   .. py:property:: base_angle_error_deg
+      :type: float
+
+
+      Signed error (degrees) of Dürer's base interior angle relative to exact 108°.
+
+
+   .. py:property:: base_angle_error_arcmin
+      :type: float
+
+
+      Signed error (arcminutes) of Dürer's base interior angle relative to exact 108°.
+
+
+.. py:class:: WorkshopPolygonEntry
+
+   Exact algebraic vs. trigonometric audit for one of Dürer's Book II workshop rules.
+
+
+   .. py:attribute:: n_sides
+      :type:  int
+
+
+   .. py:attribute:: durer_label
+      :type:  str
+
+
+   .. py:attribute:: classification
+      :type:  str
+
+
+   .. py:attribute:: exact_chord_over_r
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: exact_quadrance_over_r2
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: true_chord_over_r_float
+      :type:  float
+
+
+   .. py:attribute:: relative_chord_error
+      :type:  float
+
+
+   .. py:attribute:: central_angle_durer_deg
+      :type:  float
+
+
+   .. py:attribute:: central_angle_true_deg
+      :type:  float
+
+
+.. py:class:: HeptagonWorkshopReport
+
+   Exact symbolic construction & cubic-impossibility audit for Dürer's Book II heptagon.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: center
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: circumcircle
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: equilateral_chord_top
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: equilateral_chord_bottom
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: radius_midpoint
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: workshop_vertices
+      :type:  tuple[sympy.geometry.Point, ...]
+
+
+   .. py:attribute:: durer_chord_quadrance
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: minimal_polynomial_expr
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: minimal_polynomial_at_durer
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: eisenstein_prime
+      :type:  int
+
+
+   .. py:attribute:: quadrature_circle_diameter_over_side
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: quadrature_implied_pi
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: workshop_catalog
+      :type:  tuple[WorkshopPolygonEntry, ...]
+
+
+.. py:function:: construct_durer_vs_euclid_pentagon(model: geometor.model.Model | None = None) -> PentagonComparisonResult
+
+   Construct Dürer's single-aperture pentagon and Euclid's exact pentagon on base ``AB``.
+
+   :param model: Optional existing ``geometor.model.Model`` (created with ``auto_intersect=False`` if omitted).
+   :type model: Model | None
+
+   :returns: Exact symbolic coordinates, quadrances, spreads, and regularity audit.
+   :rtype: PentagonComparisonResult
+
+
+.. py:function:: construct_durer_heptagon_workshop(model: geometor.model.Model | None = None) -> HeptagonWorkshopReport
+
+   Construct Dürer's workshop regular heptagon in the unit circle and audit its cubic residual.
+
+   In Book II, Figs. 11 & 15, Dürer sets the heptagon chord equal to the half-side of the
+   inscribed equilateral triangle: ``s_7 = sqrt(3)/2 * R`` (``Q_Durer = 3/4`` for ``R = 1``).
+   The true regular heptagon chord quadrance ``Q_7 = 2*(1 - cos(2*pi/7))`` is a root of the
+   Eisenstein-irreducible cubic ``P_7(q) = q^3 - 7*q^2 + 14*q - 7 = 0``, yielding the exact
+   non-zero rational residual ``P_7(3/4) = -1/64``.
+
+

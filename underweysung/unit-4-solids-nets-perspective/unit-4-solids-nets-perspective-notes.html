@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes — Book IV: Combinatorics of Dürer’s Nets, PHOTONMATHPLACEHOLDER000366END &amp; Projectivity &mdash; Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • durer</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">durer</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../index.html"  >GEOMETOR • Dürer — Underweysung der Messung (Nuremberg, 1525 / 1538)</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; durer</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../unit-3-architecture-sundials-typography/unit-3-architecture-sundials-typography-notes.html" title="Book III — Architecture, Nuremberg Sundials, Optical Scaling &amp; Typography">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="unit-4-solids-nets-perspective-en.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-4-solids-nets-perspective-de.html">German (1525)</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-4-solids-nets-perspective-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Notes</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../concordance.html" title="Cross-Corpus Concordance (Underweysung ↔ GEOMETOR)"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="notes-book-iv-combinatorics-of-durer-s-nets-sqrt-3-2-projectivity">
+        <h1>Notes — Book IV: Combinatorics of Dürer’s Nets, $\sqrt[3]{2}$ &amp; Projectivity<a class="headerlink" href="#notes-book-iv-combinatorics-of-durer-s-nets-sqrt-3-2-projectivity" title="Link to this heading">¶</a></h1>
+        </section>
+        <section class="level-1" id="exact-algebraic-topological-audit-of-durer-s-polyhedral-nets">
+        <h1>1. Exact Algebraic &amp; Topological Audit of Dürer’s Polyhedral Nets<a class="headerlink" href="#exact-algebraic-topological-audit-of-durer-s-polyhedral-nets" title="Link to this heading">¶</a></h1>
+        <p>Book IV (pp. 142–157) marks a watershed between <a class="person-ref" id="occ-person-pacioli-1" href="../persons.html#person-pacioli" data-person="pacioli" title="Luca Pacioli (c. 1447–1517) — Franciscan Mathematician, Author of Summa and Divina Proportione">Luca Pacioli's</a> <em>Divina
+        Proportione</em> (<a class="citation-ref" id="occ-cite-pacioli-1509-1" href="../bibliography.html#cite-pacioli-1509" data-cite="pacioli:1509" title="Luca Pacioli (illus. Leonardo da Vinci) — Divina Proportione: Opera a tutti gl&#x27;ingegni perspicaci e curiosi necessaria (Venice: Paganino de&#x27; Paganini, 1509)">pacioli:1509</a>)—where <a class="person-ref" id="occ-person-leonardo-1" href="../persons.html#person-leonardo" data-person="leonardo" title="Leonardo da Vinci (1452–1519) — Italian Polymath, Painter &amp; Illustrator of Pacioli&#x27;s Divina Proportione">Leonardo da Vinci</a> rendered polyhedra
+        as perspective wooden frames—and <a class="person-ref" id="occ-person-kepler-1" href="../persons.html#person-kepler" data-person="kepler" title="Johannes Kepler (1571–1630) — Imperial Mathematician &amp; Astronomer">Johannes Kepler's</a> <em>Harmonices Mundi</em> Book II
+        (<a class="citation-ref" id="occ-cite-kepler-1619-1" href="../bibliography.html#cite-kepler-1619" data-cite="kepler:1619" title="Johannes Kepler — Harmonices Mundi Libri V, Liber II (De Congruentia Figurarum Harmonicarum) (Linz: Johann Planck, 1619)">kepler:1619</a>), which completed the enumeration of all thirteen Archimedean solids.</p>
+        <p>In <code class="docutils literal notranslate"><span class="pre">geometor.durer</span></code> (<a class="reference internal" href="../../modules/api/geometor/durer/polyhedra/index.html#geometor.durer.polyhedra.construct_durer_polyhedral_nets" title="geometor.durer.polyhedra.construct_durer_polyhedral_nets"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_durer_polyhedral_nets()</span></code></a>), every
+        unfolded planar net is modeled as a connected spanning tree of exact regular polygons with <strong>unit
+        edge quadrance $Q = 1$</strong> across three nested number fields:</p>
+        <ul class="simple">
+        <li><p><strong>Cube</strong> ($F = 6, E = 12, V = 8$): pure rational lattice $\mathbb{Q}$, $5$ interior fold hinges +
+        $14$ open cut boundary edges ($5 + \frac{14}{2} = 12$ edges in 3D).</p></li>
+        <li><p><strong>Tetrahedron</strong> ($4, 6, 4$), <strong>Octahedron</strong> ($8, 12, 6$), <strong>Icosahedron</strong> ($20, 30, 12$), and
+        <strong>Archimedean Cuboctahedron</strong> ($14, 24, 12$): quadratic field $\mathbb{Q}(\sqrt{3})$, verified to
+        have pairwise disjoint face interiors (<code class="docutils literal notranslate"><span class="pre">non_overlapping_verified</span> <span class="pre">=</span> <span class="pre">True</span></code>, zero self-overlap—an
+        early constructive witness to <strong>Dürer’s Conjecture</strong> on edge-unfolding convex polyhedra!).</p></li>
+        <li><p><strong>Regular Dodecahedron</strong> ($12, 30, 20$, Fig. 33): cyclotomic golden-ratio field
+        $\mathbb{Q}(\sqrt{5}, \sin 36^\circ) = \mathbb{Q}\!\left(\sqrt{5},\, \frac{\sqrt{10 - 2\sqrt{5}}}{4}\right)$,
+        unfolded into two six-pentagon rosettes joined across a shared hinge ($11$ interior fold hinges +
+        $38$ open cut edges $\implies 11 + \frac{38}{2} = 30$ edges, Euler characteristic
+        $\chi = V - E + F = 20 - 30 + 12 = 2$).</p></li>
+        </ul>
+        <section class="level-2" id="philological-note-on-figure-35-truncated-tetrahedron-slub-n1525-p-149">
+        <h2>Philological Note on Figure 35 (Truncated Tetrahedron, SLUB N1525 p. 149)<a class="headerlink" href="#philological-note-on-figure-35-truncated-tetrahedron-slub-n1525-p-149" title="Link to this heading">¶</a></h2>
+        <p>On page 149, introducing the first semi-regular solid (Truncated Tetrahedron, <cite>[3.6.6]</cite>), Dürer’s
+        1525 prose inadvertently reads <em>“vier sechs ecketter vnd **drey*</em> dryangletter ebner felder”* (“four
+        hexagonal and <em>three</em> triangular plane faces”), even though he immediately states the true 3D counts
+        (<em>zwelf eck vnnd achtzehen scharpfer seyten</em>: $V = 12, E = 18 \implies F = 2 - 12 + 18 = 8$) and his
+        own woodcut Figure 35 accurately draws <strong>four hexagons and four triangles</strong>! <a class="person-ref" id="occ-person-joachim-camerarius-camerarius-1" href="../persons.html#person-joachim-camerarius-camerarius" data-person="joachim-camerarius-camerarius" title="Person: joachim-camerarius-camerarius">Joachim
+        Camerarius &lt;camerarius&gt;</a> silently restored <em>quatuor triangulis</em> in the 1532 Latin edition
+        (<a class="citation-ref" id="occ-cite-durer-1532-camerarius-1" href="../bibliography.html#cite-durer-1532-camerarius" data-cite="durer:1532:camerarius" title="Albrecht Dürer (trans. Joachim Camerarius) — Alberti Dureri Clarissimi Pictoris et Geometrae Institutionum Geometricarum Libri Quatuor (Paris: Christian Wechel, 1532)">durer:1532:camerarius</a>), and Dürer’s posthumous 1538 edition (<a class="citation-ref" id="occ-cite-durer-1538-1" href="../bibliography.html#cite-durer-1538" data-cite="durer:1538" title="Albrecht Dürer — Underweysung der Messung, mit dem Zirckel und Richtscheyt, in Linien Ebnen unnd gantzen Corporen (2nd enlarged posthumous ed.) (Nürnberg: Hieronymus Formschneider, 1538)">durer:1538</a>) added two
+        further Archimedean truncations (bringing Dürer’s total to nine of Archimedes’s thirteen solids).</p>
+        </section>
+        </section>
+        <section class="level-1" id="two-mean-proportionals-wantzel-s-cubic-impossibility">
+        <h1>2. Two Mean Proportionals &amp; Wantzel’s Cubic Impossibility<a class="headerlink" href="#two-mean-proportionals-wantzel-s-cubic-impossibility" title="Link to this heading">¶</a></h1>
+        <p>In <strong>Plato’s mechanical carpenter’s square</strong> (Fig. 50, p. 163), setting right-angled legs $gb = g$
+        and $be = e$ along orthogonal axes with right angles at $c = (0, c)$ and $d = (-d, 0)$ forces
+        altitude-on-hypotenuse similarity (Euclid VI.8) in $\triangle gcd$ and $\triangle cde$:</p>
+        <p>$$\frac{g}{c} = \frac{c}{d} = \frac{d}{e} \implies c^2 = gd, \quad d^2 = ce \implies c^3 = g^2 e.$$</p>
+        <p>Taking $g = 1$ and $e = 2$ yields $c = \sqrt[3]{2}$ and $d = \sqrt[3]{4}$, so $operatorname{Vol}(c)
+        / operatorname{Vol}(g) = c^3 / g^3 = 2$ identically! Because $x^3 - 2$ is irreducible over
+        $\mathbb{Q}$ of degree $3 \neq 2^k$, <a class="person-ref" id="occ-person-wantzel-1" href="../persons.html#person-wantzel" data-person="wantzel" title="Pierre Laurent Wantzel (1814–1848) — French Mathematician">Pierre Laurent Wantzel</a> (<a class="citation-ref" id="occ-cite-wantzel-1837-1" href="../bibliography.html#cite-wantzel-1837" data-cite="wantzel:1837" title="Pierre Laurent Wantzel — Recherches sur les moyens de reconnaître si un Problème de Géométrie peut se résoudre avec la règle et le compas (Journal de Mathématiques Pures et Appliquées 2 (1837), 366–372)">wantzel:1837</a>)
+        and <a class="person-ref" id="occ-person-klein-1" href="../persons.html#person-klein" data-person="klein" title="Felix Klein (1849–1925) — German Mathematician">Felix Klein</a> (<a class="citation-ref" id="occ-cite-klein-1895-1" href="../bibliography.html#cite-klein-1895" data-cite="klein:1895" title="Felix Klein — Vorträge über ausgewählte Fragen der Elementargeometrie (Famous Problems of Elementary Geometry) (Leipzig: B. G. Teubner, 1895)">klein:1895</a>) proved why all three of Dürer’s Book IV
+        constructions (<strong>Sporus’s</strong> graduated ruler, <strong>Plato’s</strong> sliding square, and <strong>Hero’s</strong> pivoting
+        straightedge) necessarily employ <strong>neusis or mechanical linkage</strong> beyond unmarked straightedge and
+        compass.</p>
+        </section>
+        <section class="level-1" id="homogeneous-central-projection-cross-ratio-invariance">
+        <h1>3. Homogeneous Central Projection &amp; Cross-Ratio Invariance<a class="headerlink" href="#homogeneous-central-projection-cross-ratio-invariance" title="Link to this heading">¶</a></h1>
+        <p>In <a class="reference internal" href="../../modules/api/geometor/durer/conics_perspective/index.html#geometor.durer.conics_perspective.construct_durer_perspective_apparatus" title="geometor.durer.conics_perspective.construct_durer_perspective_apparatus"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_durer_perspective_apparatus()</span></code></a>, let the artist’s
+        fixed <a class="term-ref glossary-term" id="occ-term-augpunct-1" href="../glossary.html#term-augpunct" data-term="augpunct" title="Aug / Gesichtspunct (Eye Point &amp; Principal Vanishing Point) (Station point of the eye and its orthogonal foot on the picture plane): In Book IV (pp. 173–181), Dürer distinguishes the 3D position of the beholder&#x27;s eye (das Aug) from the orthogonal foot of the eye on the picture plane (der nah und hoch punct des gesichts), toward which lines perpendicular to the glass frame converge.">eye point</a> be $E = (-12, 3, 5)$ looking orthogonally toward the vertical
+        glass picture frame $x = 0$ (principal vanishing point $V_x = (3, 5)$ on the glass, focal distance
+        $f = 12$). Every vertex $P = (X, Y, Z) \in \mathbb{Q}^3$ projects along rectilinear sight-ray $EP$
+        to exact rational picture-plane coordinates:</p>
+        <p>$$u(P) = 3 + \frac{12\,(Y - 3)}{X + 12}, \qquad v(P) = 5 + \frac{12\,(Z - 5)}{X + 12}.$$</p>
+        <p>For the cube $[4, 8] \times [-2, 2] \times [0, 4]$:</p>
+        <ol class="arabic">
+        <li><p><strong>Exact Convergence at the Principal Vanishing Point</strong>: All four receding depth edges
+        $A'E', B'F', C'G', D'H'$ intersect on the picture plane at the single point $V_x = (3, 5)$—corresponding
+        to the ideal point at infinity $(1 : 0 : 0 : 0) \in \mathbb{P}^3(\mathbb{Q})$.</p></li>
+        <li><p><strong>Foreshortening &amp; Harmonic Cross-Ratio ($\operatorname{CR} = -1$)</strong>: Along the lower-left depth
+        edge from $A = (4, -2, 0)$ to $E_{\text{back}} = (8, -2, 0)$, the true 3D midpoint
+        $M = (6, -2, 0)$ projects to $M' = \left(-\frac{1}{3},\, \frac{5}{3}\right)$, which is strictly
+        closer to the back corner $E' = (0, 2)$ than to the front corner $A’ = left(-frac{3}{4},,
+        frac{5}{4}right)$—yet its <strong>projective cross-ratio</strong> with vanishing point $V_x = (3, 5)$ (the
+        harmonic fourth of the midpoint and ideal point at infinity, cf. <code class="docutils literal notranslate"><span class="pre">geometor/pappus</span></code>
+        <a class="citation-ref" id="occ-cite-pappus-synagoge-1" href="../bibliography.html#cite-pappus-synagoge" data-cite="pappus:synagoge" title="Pappus of Alexandria — Mathematical Collection (Synagoge, Books III, V &amp; VII) (Alexandria, c. 340 AD)">pappus:synagoge</a>) is preserved with 100% symbolic exactness:</p>
+        <p>$$\operatorname{CR}(A', E';\, M', V_x)
+           = \frac{(u_{A'} - u_{M'})\,(u_{E'} - u_{V_x})}{(u_{A'} - u_{V_x})\,(u_{E'} - u_{M'})}
+           = \frac{\left(-\frac{3}{4} + \frac{1}{3}\right)(0 - 3)}{\left(-\frac{3}{4} - 3\right)\left(0 + \frac{1}{3}\right)}
+           = \frac{\left(-\frac{5}{12}\right)(-3)}{\left(-\frac{15}{4}\right)\left(\frac{1}{3}\right)}
+           = -1.$$</p>
+        </li>
+        </ol>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../unit-3-architecture-sundials-typography/unit-3-architecture-sundials-typography-notes.html" title="Book III — Architecture, Nuremberg Sundials, Optical Scaling &amp; Typography">&larr; <span class="nav-label">Book III — Architecture, Nuremberg Sundials, Optical Scaling & Typography</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../concordance.html" title="Cross-Corpus Concordance (Underweysung ↔ GEOMETOR)"><span class="nav-label">Cross-Corpus Concordance (Underweysung ↔ GEOMETOR)</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.112-initial-codex/index.html">26.112 — Initial Bilingual Codex & Exact Symbolic Engine (v0.1.0)</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1525 Nuremberg (Editio Princeps) • 1532 Camerarius • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

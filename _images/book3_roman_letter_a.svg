@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 640" role="img">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --grid-stroke: #94a3b8;
+    --aux-stroke: #64748b;
+    --durer-stroke: #b45309;
+    --durer-fill: #f59e0b;
+    --euclid-stroke: #0369a1;
+    --euclid-fill: #0ea5e9;
+    --accent-stroke: #0f766e;
+    --accent-fill: #14b8a6;
+    --violet-stroke: #7c3aed;
+    --crimson-stroke: #be123c;
+    font-family: "Inter", "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --grid-stroke: #64748b;
+      --aux-stroke: #94a3b8;
+      --durer-stroke: #fbbf24;
+      --durer-fill: #fbbf24;
+      --euclid-stroke: #38bdf8;
+      --euclid-fill: #38bdf8;
+      --accent-stroke: #2dd4bf;
+      --accent-fill: #2dd4bf;
+      --violet-stroke: #c084fc;
+      --crimson-stroke: #fb7185;
+    }
+  }
+  [data-theme="dark"] .euclid-graphic {
+    --svg-bg: #141417;
+    --ink: #f4f4f5;
+    --label-halo: rgba(20, 20, 23, 0.92);
+    --grid-stroke: #64748b;
+    --aux-stroke: #94a3b8;
+    --durer-stroke: #fbbf24;
+    --durer-fill: #fbbf24;
+    --euclid-stroke: #38bdf8;
+    --euclid-fill: #38bdf8;
+    --accent-stroke: #2dd4bf;
+    --accent-fill: #2dd4bf;
+    --violet-stroke: #c084fc;
+    --crimson-stroke: #fb7185;
+  }
+  .euclid-graphic .canvas-bg { fill: #fafaf9; fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--aux-stroke); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.72; }
+  .euclid-graphic .geom-circle.primary-circle { stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.bowl-circle { stroke: var(--durer-stroke); stroke-width: 2.35; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.serif-circle { stroke: var(--violet-stroke); stroke-width: 1.55; stroke-dasharray: 4 2.5; opacity: 0.85; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--grid-stroke); stroke-width: 1.25; stroke-dasharray: 4 3; opacity: 0.65; }
+  .euclid-graphic .geom-line.ray-line { stroke: var(--durer-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; opacity: 0.82; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--ink); stroke-width: 1.9; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.fold-seam { stroke: var(--euclid-stroke); stroke-width: 1.85; stroke-dasharray: 6 3.5; }
+  .euclid-graphic .geom-segment.cut-seam { stroke: var(--ink); stroke-width: 2.15; }
+  .euclid-graphic .geom-segment.spiral-seg { stroke: var(--durer-stroke); stroke-width: 2.55; }
+  .euclid-graphic .geom-segment.sector-seg { stroke: var(--grid-stroke); stroke-width: 1.05; stroke-dasharray: 3 3; opacity: 0.58; }
+  .euclid-graphic .geom-segment.accent-seg { stroke: var(--accent-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-segment.projector-seg { stroke: var(--grid-stroke); stroke-width: 1.1; stroke-dasharray: 3 3; opacity: 0.7; }
+  .euclid-graphic .geom-polygon { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.durer-poly { fill: var(--durer-fill); fill-opacity: 0.11; stroke: var(--durer-stroke); stroke-width: 2.4; }
+  .euclid-graphic .geom-polygon.euclid-poly { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.2; stroke-dasharray: 7 3.5; }
+  .euclid-graphic .geom-polygon.frame-poly { fill: none; stroke: var(--grid-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; }
+  .euclid-graphic .geom-polygon.glyph-poly { fill: var(--durer-fill); fill-opacity: 0.16; stroke: var(--durer-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-polygon.counter-poly { fill: var(--svg-bg); fill-opacity: 0.92; stroke: var(--euclid-stroke); stroke-width: 1.85; }
+  .euclid-graphic .geom-polygon.net-3gon { fill: var(--euclid-fill); fill-opacity: 0.11; stroke: none; }
+  .euclid-graphic .geom-polygon.net-4gon { fill: var(--durer-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-polygon.net-5gon { fill: var(--accent-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-point { fill: var(--ink); stroke: var(--svg-bg); stroke-width: 1.4; }
+  .euclid-graphic .geom-point.durer-pt { fill: var(--durer-stroke); }
+  .euclid-graphic .geom-point.euclid-pt { fill: var(--euclid-stroke); }
+  .euclid-graphic .geom-point.accent-pt { fill: var(--crimson-stroke); }
+  .euclid-graphic .euclid-label {
+    fill: var(--ink);
+    font-size: 13px;
+    font-weight: 650;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .euclid-sub { font-size: 9.6px; font-weight: 650; }
+  .euclid-graphic .caption-note {
+    fill: var(--aux-stroke);
+    font-size: 12px;
+    font-weight: 550;
+  }
+  </style>
+  <rect class="canvas-bg" x="0" y="0" width="680" height="640" rx="8"/>
+  <g class="layer-polygons">
+    <polygon class="geom-polygon frame-poly" data-ref="&lt; c d b a &gt;" points="120.65,539.35 559.35,539.35 559.35,100.65 120.65,100.65"/>
+    <polygon class="geom-polygon glyph-poly" data-ref="&lt; i T_R_in T_R k k_in G F i_in &gt;" points="164.52,539.35 318.06,100.65 361.94,100.65 515.48,539.35 471.61,539.35 399.96,334.62 250.8,334.62 179.14,539.35"/>
+    <polygon class="geom-polygon counter-poly" data-ref="&lt; D E V_counter &gt;" points="255.91,320 394.84,320 325.38,121.54"/>
+    <polygon class="geom-polygon glyph-poly" data-ref="&lt; F G E D &gt;" points="250.8,334.62 399.96,334.62 394.84,320 255.91,320"/>
+  </g>
+  <g class="layer-circles">
+    <circle class="geom-circle serif-circle" data-ref="c_serif_out_L" cx="120.05" cy="476.68" r="62.67"/>
+    <circle class="geom-circle serif-circle" data-ref="c_serif_out_R" cx="559.95" cy="476.68" r="62.67"/>
+    <circle class="geom-circle serif-circle" data-ref="c_serif_in_L" cx="210.06" cy="517.42" r="21.94"/>
+    <circle class="geom-circle serif-circle" data-ref="c_serif_in_R" cx="440.7" cy="517.42" r="21.94"/>
+  </g>
+  <g class="layer-lines">
+    <path class="geom-line" data-ref="cd" d="M 68 539.35 L 340 539.35 L 612 539.35"/>
+    <path class="geom-line" data-ref="ab" d="M 68 100.65 L 340 100.65 L 612 100.65"/>
+    <path class="geom-line" data-ref="ef" d="M 340 592 L 340 320 L 340 48"/>
+    <path class="geom-line" data-ref="gh" d="M 68 320 L 340 320 L 612 320"/>
+    <path class="geom-line" data-ref="left_outer" d="M 146.09 592 L 241.29 320 L 336.49 48"/>
+    <path class="geom-line" data-ref="left_inner" d="M 160.71 592 L 255.91 320 L 351.11 48"/>
+    <path class="geom-line" data-ref="right_outer" d="M 533.91 592 L 438.71 320 L 343.51 48"/>
+    <path class="geom-line" data-ref="right_inner" d="M 490.04 592 L 394.84 320 L 299.64 48"/>
+    <path class="geom-line" data-ref="[ B C ]" d="M 68 334.62 L 340 334.62 L 612 334.62"/>
+  </g>
+  <g class="layer-segments">
+  </g>
+  <g class="layer-points">
+    <circle class="geom-point" data-ref="a" data-aliases="a,a" data-latex-x="0" data-latex-y="10" cx="120.65" cy="100.65" r="3.7"><title>a: (0, 10)</title></circle>
+    <circle class="geom-point" data-ref="b" data-aliases="b,b" data-latex-x="10" data-latex-y="10" cx="559.35" cy="100.65" r="3.7"><title>b: (10, 10)</title></circle>
+    <circle class="geom-point" data-ref="c" data-aliases="c,c" data-latex-x="0" data-latex-y="0" cx="120.65" cy="539.35" r="3.7"><title>c: (0, 0)</title></circle>
+    <circle class="geom-point" data-ref="d" data-aliases="d,d" data-latex-x="10" data-latex-y="0" cx="559.35" cy="539.35" r="3.7"><title>d: (10, 0)</title></circle>
+    <circle class="geom-point" data-ref="e" data-aliases="e,e" data-latex-x="5" data-latex-y="10" cx="340" cy="100.65" r="3.7"><title>e: (5, 10)</title></circle>
+    <circle class="geom-point" data-ref="f" data-aliases="f,f" data-latex-x="5" data-latex-y="0" cx="340" cy="539.35" r="3.7"><title>f: (5, 0)</title></circle>
+    <circle class="geom-point" data-ref="g" data-aliases="g,g" data-latex-x="0" data-latex-y="5" cx="120.65" cy="320" r="3.7"><title>g: (0, 5)</title></circle>
+    <circle class="geom-point" data-ref="h" data-aliases="h,h" data-latex-x="10" data-latex-y="5" cx="559.35" cy="320" r="3.7"><title>h: (10, 5)</title></circle>
+    <circle class="geom-point" data-ref="i" data-aliases="i,i" data-latex-x="1" data-latex-y="0" cx="164.52" cy="539.35" r="3.7"><title>i: (1, 0)</title></circle>
+    <circle class="geom-point" data-ref="k" data-aliases="k,k" data-latex-x="9" data-latex-y="0" cx="515.48" cy="539.35" r="3.7"><title>k: (9, 0)</title></circle>
+    <circle class="geom-point" data-ref="V_counter" data-aliases="V_counter,V" data-latex-x="\frac{14}{3}" data-latex-y="\frac{200}{21}" cx="325.38" cy="121.54" r="3.7"><title>V: (\frac{14}{3}, \frac{200}{21})</title></circle>
+    <circle class="geom-point" data-ref="S_out_L" data-aliases="S_out_L,S_L" data-latex-x="\frac{3}{2} - \frac{\sqrt{449}}{14}" data-latex-y="\frac{10}{7}" cx="120.05" cy="476.68" r="3.7"><title>S_L: (\frac{3}{2} - \frac{\sqrt{449}}{14}, \frac{10}{7})</title></circle>
+    <circle class="geom-point" data-ref="S_out_R" data-aliases="S_out_R,S_R" data-latex-x="\frac{\sqrt{449}}{14} + \frac{17}{2}" data-latex-y="\frac{10}{7}" cx="559.95" cy="476.68" r="3.7"><title>S_R: (\frac{\sqrt{449}}{14} + \frac{17}{2}, \frac{10}{7})</title></circle>
+  </g>
+  <g class="layer-labels">
+    <text class="euclid-label" data-ref="a" x="111.13" y="92.41" text-anchor="middle">a</text>
+    <text class="euclid-label" data-ref="b" x="569.17" y="92.65" text-anchor="middle">b</text>
+    <text class="euclid-label" data-ref="c" x="108.34" y="552.78" text-anchor="middle">c</text>
+    <text class="euclid-label" data-ref="d" x="571.88" y="552.48" text-anchor="middle">d</text>
+    <text class="euclid-label" data-ref="e" x="340.32" y="89.15" text-anchor="middle">e</text>
+    <text class="euclid-label" data-ref="f" x="340.53" y="558.85" text-anchor="middle">f</text>
+    <text class="euclid-label" data-ref="g" x="105.64" y="320.1" text-anchor="middle">g</text>
+    <text class="euclid-label" data-ref="h" x="574.4" y="320.29" text-anchor="middle">h</text>
+    <text class="euclid-label" data-ref="i" x="153.36" y="554.12" text-anchor="middle">i</text>
+    <text class="euclid-label" data-ref="k" x="526.98" y="553.75" text-anchor="middle">k</text>
+    <text class="euclid-label" data-ref="V_counter" x="324.83" y="110.05" text-anchor="middle">V</text>
+    <text class="euclid-label" data-ref="S_out_L" x="106.03" y="487.3" text-anchor="middle">S<tspan class="euclid-sub" dy="3">L</tspan></text>
+    <text class="euclid-label" data-ref="S_out_R" x="574.09" y="487.03" text-anchor="middle">S<tspan class="euclid-sub" dy="3">R</tspan></text>
+    <text class="caption-note" x="340" y="578.84" text-anchor="middle">Book III, p. 115 — Roman Antiqua A (10x10 Square, 1 : 1/3 Contrast)</text>
+  </g>
+</svg>

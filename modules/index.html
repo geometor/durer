@@ -1,0 +1,1298 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modules &mdash; GEOMETOR • durer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • durer</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">durer</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html"  >GEOMETOR • Dürer — Underweysung der Messung (Nuremberg, 1525 / 1538)</a>
+        </li>
+        <li>
+          <a href="../underweysung/index.html"  >Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+        </li>
+        <li>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">modules</a>
+        </li>
+        <li>
+          <a href="../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; durer</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">GEOMETOR • durer</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../demos/index.html" title="Exact Symbolic Demonstrations (demos/)">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="api/geometor/durer/__main__/index.html" title="geometor.durer.__main__"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="modules">
+        <h1>modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h1>
+        </section>
+        <section class="level-1" id="module-geometor.durer">
+        <span id="geometor-durer"></span><h1>geometor.durer<a class="headerlink" href="#module-geometor.durer" title="Link to this heading">¶</a></h1>
+        <p>GEOMETOR Dürer: Exact symbolic constructions &amp; bilingual codex for <em>Underweysung der Messung</em> (1525).</p>
+        <p>Provides 100% exact SymPy + <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> constructions across all Four Books (<em>Vier Bücher</em>)
+        of Albrecht Dürer’s <em>Underweysung der Messung, mit dem Zirckel un[d] Richtscheyt, in Linien Ebnen
+        unnd gantzen Corporen</em> (Nuremberg, 1525; 2nd ed. 1538; Camerarius Latin ed. 1532):</p>
+        <ul class="simple">
+        <li><p><strong>Book I</strong> (<a class="reference internal" href="api/geometor/durer/conics_perspective/index.html#module-geometor.durer.conics_perspective" title="geometor.durer.conics_perspective"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.durer.conics_perspective</span></code></a>): 12-sector Archimedean spirals
+        (<em>Schneckenlinien</em>) and two-view descriptive geometry of conic sections (<em>Elipsis / Eierlini</em>,
+        <em>Parabola / Brennspiegellini</em>, <em>Hiperbole / Gabellini</em>).</p></li>
+        <li><p><strong>Book II</strong> (<a class="reference internal" href="api/geometor/durer/polygons/index.html#module-geometor.durer.polygons" title="geometor.durer.polygons"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.durer.polygons</span></code></a>): Exact comparison of Dürer’s Single-Aperture
+        (“Rusty Compass”) Pentagon with Euclid’s <code class="docutils literal notranslate"><span class="pre">Q(phi)</span></code> regular pentagon, plus cubic-impossibility
+        and quadrature audits for workshop <code class="docutils literal notranslate"><span class="pre">7</span></code>-, <code class="docutils literal notranslate"><span class="pre">11</span></code>-, and <code class="docutils literal notranslate"><span class="pre">13</span></code>-gons and <code class="docutils literal notranslate"><span class="pre">pi</span> <span class="pre">=</span> <span class="pre">25/8</span></code>.</p></li>
+        <li><p><strong>Book III</strong> (<a class="reference internal" href="api/geometor/durer/typography/index.html#module-geometor.durer.typography" title="geometor.durer.typography"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.durer.typography</span></code></a>): Compass-and-straightedge Roman <em>Antiqua</em>
+        capitals (<code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">O</span></code>, <code class="docutils literal notranslate"><span class="pre">Q</span></code>) in the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square and modular Gothic <em>Textura</em> minuscules.</p></li>
+        <li><p><strong>Book IV</strong> (<a class="reference internal" href="api/geometor/durer/polyhedra/index.html#module-geometor.durer.polyhedra" title="geometor.durer.polyhedra"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.durer.polyhedra</span></code></a>, <a class="reference internal" href="api/geometor/durer/conics_perspective/index.html#module-geometor.durer.conics_perspective" title="geometor.durer.conics_perspective"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.durer.conics_perspective</span></code></a>): Planar
+        fold-out polyhedral nets for Platonic &amp; Archimedean solids, Delian cube duplication, and central
+        perspective projection onto the glass picture plane.</p></li>
+        </ul>
+        <section class="level-2" id="submodules">
+        <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+        <div class="toctree-wrapper compound">
+        <ul>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/__main__/index.html">geometor.durer.__main__</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/cli/index.html">geometor.durer.cli</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/concordance/index.html">geometor.durer.concordance</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/conics_perspective/index.html">geometor.durer.conics_perspective</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/polygons/index.html">geometor.durer.polygons</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/polyhedra/index.html">geometor.durer.polyhedra</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/render/index.html">geometor.durer.render</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/sphinx_ext/index.html">geometor.durer.sphinx_ext</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="api/geometor/durer/typography/index.html">geometor.durer.typography</a></li>
+        </ul>
+        </div>
+        </section>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.PHI" title="geometor.durer.PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.DURER_BOOK4_SOLIDS_CATALOG" title="geometor.durer.DURER_BOOK4_SOLIDS_CATALOG"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DURER_BOOK4_SOLIDS_CATALOG</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.EMBEDDED_SVG_STYLE" title="geometor.durer.EMBEDDED_SVG_STYLE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EMBEDDED_SVG_STYLE</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.__version__" title="geometor.durer.__version__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__version__</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.ConcordanceEntry" title="geometor.durer.ConcordanceEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcordanceEntry</span></code></a></p></td>
+        <td><p>Single cross-corpus concordance link from Dürer's <em>Underweysung</em> to GEOMETOR.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.UnderweysungApparatus" title="geometor.durer.UnderweysungApparatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnderweysungApparatus</span></code></a></p></td>
+        <td><p>Loaded JSON apparatus registries for <code class="docutils literal notranslate"><span class="pre">resources/underweysung/</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.ConicSectionsResult" title="geometor.durer.ConicSectionsResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConicSectionsResult</span></code></a></p></td>
+        <td><p>Exact symbolic audit of Dürer's Book I two-view orthographic conic sections (Figs. 34–37).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.DelianCubeCertificate" title="geometor.durer.DelianCubeCertificate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DelianCubeCertificate</span></code></a></p></td>
+        <td><p>Symbolic verification of Plato's / Sporus's two-mean-proportionals cube duplication.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.PerspectiveApparatusResult" title="geometor.durer.PerspectiveApparatusResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PerspectiveApparatusResult</span></code></a></p></td>
+        <td><p>Exact rational perspective projection of a 3D cube onto Dürer's Book IV glass frame.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.SpiralVoluteResult" title="geometor.durer.SpiralVoluteResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpiralVoluteResult</span></code></a></p></td>
+        <td><p>Exact 12-sector Archimedean spiral (<em>Schneckenlini</em>, Book I, Figs. 7 &amp; 17) over <code class="docutils literal notranslate"><span class="pre">Q(sqrt(3))</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.HeptagonWorkshopReport" title="geometor.durer.HeptagonWorkshopReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HeptagonWorkshopReport</span></code></a></p></td>
+        <td><p>Exact symbolic construction &amp; cubic-impossibility audit for Dürer's Book II heptagon.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.PentagonComparisonResult" title="geometor.durer.PentagonComparisonResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PentagonComparisonResult</span></code></a></p></td>
+        <td><p>Exact symbolic result comparing Dürer's single-aperture pentagon with Euclid's pentagon.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.WorkshopPolygonEntry" title="geometor.durer.WorkshopPolygonEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WorkshopPolygonEntry</span></code></a></p></td>
+        <td><p>Exact algebraic vs. trigonometric audit for one of Dürer's Book II workshop rules.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.Book4SolidCatalogEntry" title="geometor.durer.Book4SolidCatalogEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Book4SolidCatalogEntry</span></code></a></p></td>
+        <td><p>Historical &amp; combinatorial catalog entry for Dürer's Book IV solids (Figs. 29–43).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.PolyhedralFace" title="geometor.durer.PolyhedralFace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PolyhedralFace</span></code></a></p></td>
+        <td><p>Single regular polygon face in an unfolded 2D planar polyhedral net.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.PolyhedralNet" title="geometor.durer.PolyhedralNet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PolyhedralNet</span></code></a></p></td>
+        <td><p>Exact 2D planar fold-out net for a Platonic or Archimedean polyhedron.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.RomanLetterAResult" title="geometor.durer.RomanLetterAResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RomanLetterAResult</span></code></a></p></td>
+        <td><p>Exact symbolic construction of Dürer's Roman <em>Antiqua</em> capital <code class="docutils literal notranslate"><span class="pre">A</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.RomanLetterOQResult" title="geometor.durer.RomanLetterOQResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RomanLetterOQResult</span></code></a></p></td>
+        <td><p>Exact symbolic construction of Dürer's Roman <em>Antiqua</em> <code class="docutils literal notranslate"><span class="pre">O</span></code> or <code class="docutils literal notranslate"><span class="pre">Q</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.TexturaMinusculesResult" title="geometor.durer.TexturaMinusculesResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TexturaMinusculesResult</span></code></a></p></td>
+        <td><p>Exact modular construction of Dürer's Gothic <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, <code class="docutils literal notranslate"><span class="pre">m</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.default_resources_dir" title="geometor.durer.default_resources_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_resources_dir</span></code></a>() → pathlib.Path</p></td>
+        <td><p>Locate <code class="docutils literal notranslate"><span class="pre">resources/underweysung/</span></code> relative to the repository root.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.load_apparatus" title="geometor.durer.load_apparatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_apparatus</span></code></a>([resources_dir]) → UnderweysungApparatus</p></td>
+        <td><p>Load all five JSON apparatus files from <code class="docutils literal notranslate"><span class="pre">resources/underweysung/</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_conic_sections" title="geometor.durer.construct_durer_conic_sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_conic_sections</span></code></a>([model]) → ConicSectionsResult</p></td>
+        <td><p>Construct Dürer's Book I elevation + ground-plan + true-section diagram for the ellipse.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_perspective_apparatus" title="geometor.durer.construct_durer_perspective_apparatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_perspective_apparatus</span></code></a>([model]) → PerspectiveApparatusResult</p></td>
+        <td><p>Project a 3D cube in <code class="docutils literal notranslate"><span class="pre">Q^3</span></code> onto Dürer's picture plane <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0</span></code> from eye <code class="docutils literal notranslate"><span class="pre">E(-12,</span> <span class="pre">3,</span> <span class="pre">5)</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_spiral_volute" title="geometor.durer.construct_durer_spiral_volute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_spiral_volute</span></code></a>([turns, model]) → SpiralVoluteResult</p></td>
+        <td><p>Construct Dürer's Book I Archimedean spiral over <code class="docutils literal notranslate"><span class="pre">Q(sqrt(3))</span></code> using 12 angular sectors.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_heptagon_workshop" title="geometor.durer.construct_durer_heptagon_workshop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_heptagon_workshop</span></code></a>([model]) → HeptagonWorkshopReport</p></td>
+        <td><p>Construct Dürer's workshop regular heptagon in the unit circle and audit its cubic residual.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_vs_euclid_pentagon" title="geometor.durer.construct_durer_vs_euclid_pentagon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_vs_euclid_pentagon</span></code></a>([model]) → PentagonComparisonResult</p></td>
+        <td><p>Construct Dürer's single-aperture pentagon and Euclid's exact pentagon on base <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_polyhedral_nets" title="geometor.durer.construct_durer_polyhedral_nets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_polyhedral_nets</span></code></a>() → dict[str, PolyhedralNet]</p></td>
+        <td><p>Construct all 6 exact symbolic planar polyhedral nets from Dürer's Book IV.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.polyhedral_net_to_model" title="geometor.durer.polyhedral_net_to_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polyhedral_net_to_model</span></code></a>(net[, model]) → geometor.model.Model</p></td>
+        <td><p>Populate a <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code> with exact vertices, face polygons, and fold/cut seams.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.export_svg" title="geometor.durer.export_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export_svg</span></code></a>(svg_text, output_path) → pathlib.Path</p></td>
+        <td><p>Write <code class="docutils literal notranslate"><span class="pre">svg_text</span></code> to <code class="docutils literal notranslate"><span class="pre">output_path</span></code> creating parent directories if needed.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.generate_all_codex_figures" title="geometor.durer.generate_all_codex_figures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_all_codex_figures</span></code></a>(output_dir) → list[pathlib.Path]</p></td>
+        <td><p>Generate all 10 interactive <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG figures for <code class="docutils literal notranslate"><span class="pre">docsrc/_static/figures/</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.render_model_svg" title="geometor.durer.render_model_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_model_svg</span></code></a>(model, *[, width, height, padding, ...]) → str</p></td>
+        <td><p>Serialize a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> into a crisp <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG string.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_roman_letter_A" title="geometor.durer.construct_durer_roman_letter_A"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_roman_letter_A</span></code></a>([model]) → RomanLetterAResult</p></td>
+        <td><p>Construct Dürer's Roman capital <code class="docutils literal notranslate"><span class="pre">A</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_roman_letter_O" title="geometor.durer.construct_durer_roman_letter_O"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_roman_letter_O</span></code></a>([model]) → RomanLetterOQResult</p></td>
+        <td><p>Construct Dürer's Roman capital <code class="docutils literal notranslate"><span class="pre">O</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_roman_letter_Q" title="geometor.durer.construct_durer_roman_letter_Q"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_roman_letter_Q</span></code></a>([model]) → RomanLetterOQResult</p></td>
+        <td><p>Construct Dürer's Roman capital <code class="docutils literal notranslate"><span class="pre">Q</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.construct_durer_textura_minuscules" title="geometor.durer.construct_durer_textura_minuscules"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_textura_minuscules</span></code></a>([model]) → TexturaMinusculesResult</p></td>
+        <td><p>Construct Dürer's modular <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, and <code class="docutils literal notranslate"><span class="pre">m</span></code> from unit squares.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="package-contents">
+        <h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">ConcordanceEntry</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Single cross-corpus concordance link from Dürer’s <em>Underweysung</em> to GEOMETOR.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.id">
+        <span class="sig-name descname"><span class="pre">id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.book">
+        <span class="sig-name descname"><span class="pre">book</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.book" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.unit">
+        <span class="sig-name descname"><span class="pre">unit</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.unit" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.durer_locus">
+        <span class="sig-name descname"><span class="pre">durer_locus</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.durer_locus" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.german_term">
+        <span class="sig-name descname"><span class="pre">german_term</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.german_term" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.latin_1532_term">
+        <span class="sig-name descname"><span class="pre">latin_1532_term</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.latin_1532_term" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.english_title">
+        <span class="sig-name descname"><span class="pre">english_title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.english_title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.classification">
+        <span class="sig-name descname"><span class="pre">classification</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.classification" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.sister_repos">
+        <span class="sig-name descname"><span class="pre">sister_repos</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.sister_repos" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.algebraic_field">
+        <span class="sig-name descname"><span class="pre">algebraic_field</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.algebraic_field" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConcordanceEntry.summary">
+        <span class="sig-name descname"><span class="pre">summary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.ConcordanceEntry.summary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.UnderweysungApparatus">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">UnderweysungApparatus</span></span><a class="headerlink" href="#geometor.durer.UnderweysungApparatus" title="Link to this definition">¶</a></dt>
+        <dd><p>Loaded JSON apparatus registries for <code class="docutils literal notranslate"><span class="pre">resources/underweysung/</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.UnderweysungApparatus.sources_manifest">
+        <span class="sig-name descname"><span class="pre">sources_manifest</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.UnderweysungApparatus.sources_manifest" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.UnderweysungApparatus.concordance">
+        <span class="sig-name descname"><span class="pre">concordance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.durer.ConcordanceEntry" title="geometor.durer.ConcordanceEntry"><span class="pre">ConcordanceEntry</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.UnderweysungApparatus.concordance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.UnderweysungApparatus.persons">
+        <span class="sig-name descname"><span class="pre">persons</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.UnderweysungApparatus.persons" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.UnderweysungApparatus.citations">
+        <span class="sig-name descname"><span class="pre">citations</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.UnderweysungApparatus.citations" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.UnderweysungApparatus.glossary">
+        <span class="sig-name descname"><span class="pre">glossary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.UnderweysungApparatus.glossary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.default_resources_dir">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">default_resources_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#geometor.durer.default_resources_dir" title="Link to this definition">¶</a></dt>
+        <dd><p>Locate <code class="docutils literal notranslate"><span class="pre">resources/underweysung/</span></code> relative to the repository root.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.load_apparatus">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">load_apparatus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.UnderweysungApparatus" title="geometor.durer.UnderweysungApparatus"><span class="pre">UnderweysungApparatus</span></a></span></span><a class="headerlink" href="#geometor.durer.load_apparatus" title="Link to this definition">¶</a></dt>
+        <dd><p>Load all five JSON apparatus files from <code class="docutils literal notranslate"><span class="pre">resources/underweysung/</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">ConicSectionsResult</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic audit of Dürer’s Book I two-view orthographic conic sections (Figs. 34–37).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.cone_radius">
+        <span class="sig-name descname"><span class="pre">cone_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.cone_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.cone_height">
+        <span class="sig-name descname"><span class="pre">cone_height</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.cone_height" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.ellipse_stations">
+        <span class="sig-name descname"><span class="pre">ellipse_stations</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.ellipse_stations" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.ellipse_semi_major">
+        <span class="sig-name descname"><span class="pre">ellipse_semi_major</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.ellipse_semi_major" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.ellipse_semi_minor">
+        <span class="sig-name descname"><span class="pre">ellipse_semi_minor</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.ellipse_semi_minor" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.ellipse_focal_distance">
+        <span class="sig-name descname"><span class="pre">ellipse_focal_distance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.ellipse_focal_distance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.ellipse_eccentricity">
+        <span class="sig-name descname"><span class="pre">ellipse_eccentricity</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.ellipse_eccentricity" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.ellipse_bilateral_symmetry_verified">
+        <span class="sig-name descname"><span class="pre">ellipse_bilateral_symmetry_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.ellipse_bilateral_symmetry_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.parabola_focal_length">
+        <span class="sig-name descname"><span class="pre">parabola_focal_length</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.parabola_focal_length" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.hyperbola_semi_transverse">
+        <span class="sig-name descname"><span class="pre">hyperbola_semi_transverse</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.hyperbola_semi_transverse" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.ConicSectionsResult.hyperbola_semi_conjugate">
+        <span class="sig-name descname"><span class="pre">hyperbola_semi_conjugate</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.ConicSectionsResult.hyperbola_semi_conjugate" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">DelianCubeCertificate</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate" title="Link to this definition">¶</a></dt>
+        <dd><p>Symbolic verification of Plato’s / Sporus’s two-mean-proportionals cube duplication.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate.given_g">
+        <span class="sig-name descname"><span class="pre">given_g</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate.given_g" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate.given_e">
+        <span class="sig-name descname"><span class="pre">given_e</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate.given_e" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate.first_mean_c">
+        <span class="sig-name descname"><span class="pre">first_mean_c</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate.first_mean_c" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate.second_mean_d">
+        <span class="sig-name descname"><span class="pre">second_mean_d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate.second_mean_d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate.volume_ratio">
+        <span class="sig-name descname"><span class="pre">volume_ratio</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate.volume_ratio" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.DelianCubeCertificate.proportion_verified">
+        <span class="sig-name descname"><span class="pre">proportion_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.DelianCubeCertificate.proportion_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">PerspectiveApparatusResult</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact rational perspective projection of a 3D cube onto Dürer’s Book IV glass frame.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.eye_3d">
+        <span class="sig-name descname"><span class="pre">eye_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Integer</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Integer</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Integer</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.eye_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.picture_plane_x">
+        <span class="sig-name descname"><span class="pre">picture_plane_x</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.picture_plane_x" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.vanishing_point">
+        <span class="sig-name descname"><span class="pre">vanishing_point</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.vanishing_point" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.cube_vertices_3d">
+        <span class="sig-name descname"><span class="pre">cube_vertices_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Integer</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Integer</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Integer</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.cube_vertices_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.projected_vertices_2d">
+        <span class="sig-name descname"><span class="pre">projected_vertices_2d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.projected_vertices_2d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.harmonic_cross_ratio_3d">
+        <span class="sig-name descname"><span class="pre">harmonic_cross_ratio_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.harmonic_cross_ratio_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.harmonic_cross_ratio_2d">
+        <span class="sig-name descname"><span class="pre">harmonic_cross_ratio_2d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.harmonic_cross_ratio_2d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.cross_ratio_invariant_verified">
+        <span class="sig-name descname"><span class="pre">cross_ratio_invariant_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.cross_ratio_invariant_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PerspectiveApparatusResult.delian_cube">
+        <span class="sig-name descname"><span class="pre">delian_cube</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.durer.DelianCubeCertificate" title="geometor.durer.DelianCubeCertificate"><span class="pre">DelianCubeCertificate</span></a></span><a class="headerlink" href="#geometor.durer.PerspectiveApparatusResult.delian_cube" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">SpiralVoluteResult</span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact 12-sector Archimedean spiral (<em>Schneckenlini</em>, Book I, Figs. 7 &amp; 17) over <code class="docutils literal notranslate"><span class="pre">Q(sqrt(3))</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult.center">
+        <span class="sig-name descname"><span class="pre">center</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult.center" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult.outer_radius">
+        <span class="sig-name descname"><span class="pre">outer_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult.outer_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult.sector_count">
+        <span class="sig-name descname"><span class="pre">sector_count</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult.sector_count" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult.spiral_points">
+        <span class="sig-name descname"><span class="pre">spiral_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult.spiral_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.SpiralVoluteResult.radii">
+        <span class="sig-name descname"><span class="pre">radii</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.SpiralVoluteResult.radii" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_conic_sections">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_conic_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.ConicSectionsResult" title="geometor.durer.ConicSectionsResult"><span class="pre">ConicSectionsResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_conic_sections" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Book I elevation + ground-plan + true-section diagram for the ellipse.</p>
+        <p>Also computes exact focal and asymptotic invariants for Dürer’s <em>Parabola</em> (<em>Brennspiegellini</em>)
+        and <em>Hiperbole</em> (<em>Gabellini</em>).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_perspective_apparatus">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_perspective_apparatus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.PerspectiveApparatusResult" title="geometor.durer.PerspectiveApparatusResult"><span class="pre">PerspectiveApparatusResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_perspective_apparatus" title="Link to this definition">¶</a></dt>
+        <dd><p>Project a 3D cube in <code class="docutils literal notranslate"><span class="pre">Q^3</span></code> onto Dürer’s picture plane <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0</span></code> from eye <code class="docutils literal notranslate"><span class="pre">E(-12,</span> <span class="pre">3,</span> <span class="pre">5)</span></code>.</p>
+        <p>Verifies:</p>
+        <ol class="arabic simple">
+        <li><p>Exact rational screen coordinates <code class="docutils literal notranslate"><span class="pre">(y',</span> <span class="pre">z')</span> <span class="pre">in</span> <span class="pre">Q^2</span></code> for all 8 cube vertices.</p></li>
+        <li><p>Exact convergence of all 4 depth edges at principal vanishing point <code class="docutils literal notranslate"><span class="pre">V_x</span> <span class="pre">=</span> <span class="pre">(3,</span> <span class="pre">5)</span></code>.</p></li>
+        <li><p>Exact projective cross-ratio invariance <code class="docutils literal notranslate"><span class="pre">CR(P4',</span> <span class="pre">P8';</span> <span class="pre">P6',</span> <span class="pre">V_x)</span> <span class="pre">=</span> <span class="pre">-1</span></code> (harmonic range!).</p></li>
+        <li><p>Exact algebraic verification of Plato’s / Sporus’s two mean proportionals (Book IV, Fig. 50)
+        for doubling the cube (<code class="docutils literal notranslate"><span class="pre">g</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">e</span> <span class="pre">=</span> <span class="pre">2</span> <span class="pre">=&gt;</span> <span class="pre">c</span> <span class="pre">=</span> <span class="pre">2^(1/3),</span> <span class="pre">d</span> <span class="pre">=</span> <span class="pre">2^(2/3),</span> <span class="pre">c^3</span> <span class="pre">=</span> <span class="pre">2</span></code>).</p></li>
+        </ol>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_spiral_volute">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_spiral_volute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">turns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.SpiralVoluteResult" title="geometor.durer.SpiralVoluteResult"><span class="pre">SpiralVoluteResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_spiral_volute" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Book I Archimedean spiral over <code class="docutils literal notranslate"><span class="pre">Q(sqrt(3))</span></code> using 12 angular sectors.</p>
+        <p>Dürer divides the outer circle into 12 radial rays (<code class="docutils literal notranslate"><span class="pre">1..12</span></code>, every <code class="docutils literal notranslate"><span class="pre">30°</span></code>) and divides the
+        outer radius <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">=</span> <span class="pre">12</span></code> into <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">*</span> <span class="pre">turns</span></code> equal radial steps <code class="docutils literal notranslate"><span class="pre">r_k</span> <span class="pre">=</span> <span class="pre">k</span> <span class="pre">/</span> <span class="pre">turns</span></code>, plotting
+        <code class="docutils literal notranslate"><span class="pre">P_k</span> <span class="pre">=</span> <span class="pre">(r_k</span> <span class="pre">*</span> <span class="pre">cos(k</span> <span class="pre">*</span> <span class="pre">30°),</span> <span class="pre">r_k</span> <span class="pre">*</span> <span class="pre">sin(k</span> <span class="pre">*</span> <span class="pre">30°))</span></code> with 100% exact coordinates in <code class="docutils literal notranslate"><span class="pre">Q(sqrt(3))</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.durer.PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PHI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">HeptagonWorkshopReport</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic construction &amp; cubic-impossibility audit for Dürer’s Book II heptagon.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.center">
+        <span class="sig-name descname"><span class="pre">center</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.center" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.circumcircle">
+        <span class="sig-name descname"><span class="pre">circumcircle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Circle</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.circumcircle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.equilateral_chord_top">
+        <span class="sig-name descname"><span class="pre">equilateral_chord_top</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.equilateral_chord_top" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.equilateral_chord_bottom">
+        <span class="sig-name descname"><span class="pre">equilateral_chord_bottom</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.equilateral_chord_bottom" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.radius_midpoint">
+        <span class="sig-name descname"><span class="pre">radius_midpoint</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.radius_midpoint" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.workshop_vertices">
+        <span class="sig-name descname"><span class="pre">workshop_vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.workshop_vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.durer_chord_quadrance">
+        <span class="sig-name descname"><span class="pre">durer_chord_quadrance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.durer_chord_quadrance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.minimal_polynomial_expr">
+        <span class="sig-name descname"><span class="pre">minimal_polynomial_expr</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.minimal_polynomial_expr" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.minimal_polynomial_at_durer">
+        <span class="sig-name descname"><span class="pre">minimal_polynomial_at_durer</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.minimal_polynomial_at_durer" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.eisenstein_prime">
+        <span class="sig-name descname"><span class="pre">eisenstein_prime</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.eisenstein_prime" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.quadrature_circle_diameter_over_side">
+        <span class="sig-name descname"><span class="pre">quadrature_circle_diameter_over_side</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.quadrature_circle_diameter_over_side" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.quadrature_implied_pi">
+        <span class="sig-name descname"><span class="pre">quadrature_implied_pi</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.quadrature_implied_pi" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.HeptagonWorkshopReport.workshop_catalog">
+        <span class="sig-name descname"><span class="pre">workshop_catalog</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.durer.WorkshopPolygonEntry" title="geometor.durer.WorkshopPolygonEntry"><span class="pre">WorkshopPolygonEntry</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.HeptagonWorkshopReport.workshop_catalog" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">PentagonComparisonResult</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic result comparing Dürer’s single-aperture pentagon with Euclid’s pentagon.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.base_a">
+        <span class="sig-name descname"><span class="pre">base_a</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.base_a" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.base_b">
+        <span class="sig-name descname"><span class="pre">base_b</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.base_b" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_vertices">
+        <span class="sig-name descname"><span class="pre">durer_vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.euclid_vertices">
+        <span class="sig-name descname"><span class="pre">euclid_vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.euclid_vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_aux_points">
+        <span class="sig-name descname"><span class="pre">durer_aux_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_aux_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_side_quadrances">
+        <span class="sig-name descname"><span class="pre">durer_side_quadrances</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_side_quadrances" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.euclid_side_quadrances">
+        <span class="sig-name descname"><span class="pre">euclid_side_quadrances</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.euclid_side_quadrances" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.euclid_diagonal_quadrance">
+        <span class="sig-name descname"><span class="pre">euclid_diagonal_quadrance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.euclid_diagonal_quadrance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_base_diagonal_quadrance">
+        <span class="sig-name descname"><span class="pre">durer_base_diagonal_quadrance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_base_diagonal_quadrance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_shoulder_diagonal_quadrance">
+        <span class="sig-name descname"><span class="pre">durer_shoulder_diagonal_quadrance</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_shoulder_diagonal_quadrance" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_base_spread">
+        <span class="sig-name descname"><span class="pre">durer_base_spread</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_base_spread" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.euclid_base_spread">
+        <span class="sig-name descname"><span class="pre">euclid_base_spread</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.euclid_base_spread" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_equilateral">
+        <span class="sig-name descname"><span class="pre">durer_equilateral</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_equilateral" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_equiangular">
+        <span class="sig-name descname"><span class="pre">durer_equiangular</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_equiangular" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.euclid_regular">
+        <span class="sig-name descname"><span class="pre">euclid_regular</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.euclid_regular" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.durer_base_interior_deg">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">durer_base_interior_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.durer_base_interior_deg" title="Link to this definition">¶</a></dt>
+        <dd><p>Numerical evaluation (degrees) of Dürer’s interior angle at A and B.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.base_angle_error_deg">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">base_angle_error_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.base_angle_error_deg" title="Link to this definition">¶</a></dt>
+        <dd><p>Signed error (degrees) of Dürer’s base interior angle relative to exact 108°.</p>
+        </dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.durer.PentagonComparisonResult.base_angle_error_arcmin">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">base_angle_error_arcmin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.PentagonComparisonResult.base_angle_error_arcmin" title="Link to this definition">¶</a></dt>
+        <dd><p>Signed error (arcminutes) of Dürer’s base interior angle relative to exact 108°.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">WorkshopPolygonEntry</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact algebraic vs. trigonometric audit for one of Dürer’s Book II workshop rules.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.n_sides">
+        <span class="sig-name descname"><span class="pre">n_sides</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.n_sides" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.durer_label">
+        <span class="sig-name descname"><span class="pre">durer_label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.durer_label" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.classification">
+        <span class="sig-name descname"><span class="pre">classification</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.classification" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.exact_chord_over_r">
+        <span class="sig-name descname"><span class="pre">exact_chord_over_r</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.exact_chord_over_r" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.exact_quadrance_over_r2">
+        <span class="sig-name descname"><span class="pre">exact_quadrance_over_r2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.exact_quadrance_over_r2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.true_chord_over_r_float">
+        <span class="sig-name descname"><span class="pre">true_chord_over_r_float</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.true_chord_over_r_float" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.relative_chord_error">
+        <span class="sig-name descname"><span class="pre">relative_chord_error</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.relative_chord_error" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.central_angle_durer_deg">
+        <span class="sig-name descname"><span class="pre">central_angle_durer_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.central_angle_durer_deg" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.WorkshopPolygonEntry.central_angle_true_deg">
+        <span class="sig-name descname"><span class="pre">central_angle_true_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.durer.WorkshopPolygonEntry.central_angle_true_deg" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_heptagon_workshop">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_heptagon_workshop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.HeptagonWorkshopReport" title="geometor.durer.HeptagonWorkshopReport"><span class="pre">HeptagonWorkshopReport</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_heptagon_workshop" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s workshop regular heptagon in the unit circle and audit its cubic residual.</p>
+        <p>In Book II, Figs. 11 &amp; 15, Dürer sets the heptagon chord equal to the half-side of the
+        inscribed equilateral triangle: <code class="docutils literal notranslate"><span class="pre">s_7</span> <span class="pre">=</span> <span class="pre">sqrt(3)/2</span> <span class="pre">*</span> <span class="pre">R</span></code> (<code class="docutils literal notranslate"><span class="pre">Q_Durer</span> <span class="pre">=</span> <span class="pre">3/4</span></code> for <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">=</span> <span class="pre">1</span></code>).
+        The true regular heptagon chord quadrance <code class="docutils literal notranslate"><span class="pre">Q_7</span> <span class="pre">=</span> <span class="pre">2*(1</span> <span class="pre">-</span> <span class="pre">cos(2*pi/7))</span></code> is a root of the
+        Eisenstein-irreducible cubic <code class="docutils literal notranslate"><span class="pre">P_7(q)</span> <span class="pre">=</span> <span class="pre">q^3</span> <span class="pre">-</span> <span class="pre">7*q^2</span> <span class="pre">+</span> <span class="pre">14*q</span> <span class="pre">-</span> <span class="pre">7</span> <span class="pre">=</span> <span class="pre">0</span></code>, yielding the exact
+        non-zero rational residual <code class="docutils literal notranslate"><span class="pre">P_7(3/4)</span> <span class="pre">=</span> <span class="pre">-1/64</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_vs_euclid_pentagon">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_vs_euclid_pentagon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.PentagonComparisonResult" title="geometor.durer.PentagonComparisonResult"><span class="pre">PentagonComparisonResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_vs_euclid_pentagon" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s single-aperture pentagon and Euclid’s exact pentagon on base <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> (<em>Model</em><em> | </em><em>None</em>) – Optional existing <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code> (created with <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code> if omitted).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic coordinates, quadrances, spreads, and regularity audit.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference internal" href="#geometor.durer.PentagonComparisonResult" title="geometor.durer.PentagonComparisonResult">PentagonComparisonResult</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.durer.DURER_BOOK4_SOLIDS_CATALOG">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">DURER_BOOK4_SOLIDS_CATALOG</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.durer.Book4SolidCatalogEntry" title="geometor.durer.Book4SolidCatalogEntry"><span class="pre">Book4SolidCatalogEntry</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.DURER_BOOK4_SOLIDS_CATALOG" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">Book4SolidCatalogEntry</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Historical &amp; combinatorial catalog entry for Dürer’s Book IV solids (Figs. 29–43).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.figure_num">
+        <span class="sig-name descname"><span class="pre">figure_num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.figure_num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.slub_page">
+        <span class="sig-name descname"><span class="pre">slub_page</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.slub_page" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.german_name_1525">
+        <span class="sig-name descname"><span class="pre">german_name_1525</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.german_name_1525" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.english_name">
+        <span class="sig-name descname"><span class="pre">english_name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.english_name" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.family">
+        <span class="sig-name descname"><span class="pre">family</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.family" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.vertex_config">
+        <span class="sig-name descname"><span class="pre">vertex_config</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.vertex_config" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.vertices">
+        <span class="sig-name descname"><span class="pre">vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.edges">
+        <span class="sig-name descname"><span class="pre">edges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.edges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.faces">
+        <span class="sig-name descname"><span class="pre">faces</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.faces" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.Book4SolidCatalogEntry.face_summary">
+        <span class="sig-name descname"><span class="pre">face_summary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.Book4SolidCatalogEntry.face_summary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralFace">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">PolyhedralFace</span></span><a class="headerlink" href="#geometor.durer.PolyhedralFace" title="Link to this definition">¶</a></dt>
+        <dd><p>Single regular polygon face in an unfolded 2D planar polyhedral net.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralFace.face_id">
+        <span class="sig-name descname"><span class="pre">face_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.PolyhedralFace.face_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralFace.n_gon">
+        <span class="sig-name descname"><span class="pre">n_gon</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.PolyhedralFace.n_gon" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralFace.vertices">
+        <span class="sig-name descname"><span class="pre">vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PolyhedralFace.vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">PolyhedralNet</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact 2D planar fold-out net for a Platonic or Archimedean polyhedron.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.key">
+        <span class="sig-name descname"><span class="pre">key</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.key" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.durer_figure">
+        <span class="sig-name descname"><span class="pre">durer_figure</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.durer_figure" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.family">
+        <span class="sig-name descname"><span class="pre">family</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.family" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.algebraic_field">
+        <span class="sig-name descname"><span class="pre">algebraic_field</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.algebraic_field" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.vertices_3d">
+        <span class="sig-name descname"><span class="pre">vertices_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.vertices_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.edges_3d">
+        <span class="sig-name descname"><span class="pre">edges_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.edges_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.faces_3d">
+        <span class="sig-name descname"><span class="pre">faces_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.faces_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.faces">
+        <span class="sig-name descname"><span class="pre">faces</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.durer.PolyhedralFace" title="geometor.durer.PolyhedralFace"><span class="pre">PolyhedralFace</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.faces" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.fold_edges">
+        <span class="sig-name descname"><span class="pre">fold_edges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.fold_edges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.cut_edges">
+        <span class="sig-name descname"><span class="pre">cut_edges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.cut_edges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.unit_edge_verified">
+        <span class="sig-name descname"><span class="pre">unit_edge_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.unit_edge_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.euler_characteristic">
+        <span class="sig-name descname"><span class="pre">euler_characteristic</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.euler_characteristic" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.seam_count_verified">
+        <span class="sig-name descname"><span class="pre">seam_count_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.seam_count_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.PolyhedralNet.non_overlapping_verified">
+        <span class="sig-name descname"><span class="pre">non_overlapping_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.PolyhedralNet.non_overlapping_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_polyhedral_nets">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_polyhedral_nets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.durer.PolyhedralNet" title="geometor.durer.PolyhedralNet"><span class="pre">PolyhedralNet</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.durer.construct_durer_polyhedral_nets" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct all 6 exact symbolic planar polyhedral nets from Dürer’s Book IV.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Mapping from <code class="docutils literal notranslate"><span class="pre">'tetrahedron'</span></code>, <code class="docutils literal notranslate"><span class="pre">'cube'</span></code>, <code class="docutils literal notranslate"><span class="pre">'octahedron'</span></code>, <code class="docutils literal notranslate"><span class="pre">'dodecahedron'</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">'icosahedron'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'cuboctahedron'</span></code> to verified exact planar nets.</p>
+        </dd>
+        <dt class="field-even">Return type<span class="colon">:</span></dt>
+        <dd class="field-even"><p>dict[str, <a class="reference internal" href="#geometor.durer.PolyhedralNet" title="geometor.durer.PolyhedralNet">PolyhedralNet</a>]</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedral_net_to_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">polyhedral_net_to_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">net</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.durer.PolyhedralNet" title="geometor.durer.PolyhedralNet"><span class="pre">PolyhedralNet</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geometor.model.Model</span></span></span><a class="headerlink" href="#geometor.durer.polyhedral_net_to_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Populate a <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code> with exact vertices, face polygons, and fold/cut seams.</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.durer.EMBEDDED_SVG_STYLE">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">EMBEDDED_SVG_STYLE</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#geometor.durer.EMBEDDED_SVG_STYLE" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.export_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">export_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">svg_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#geometor.durer.export_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Write <code class="docutils literal notranslate"><span class="pre">svg_text</span></code> to <code class="docutils literal notranslate"><span class="pre">output_path</span></code> creating parent directories if needed.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.generate_all_codex_figures">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">generate_all_codex_figures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">pathlib.Path</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.durer.generate_all_codex_figures" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate all 10 interactive <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG figures for <code class="docutils literal notranslate"><span class="pre">docsrc/_static/figures/</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.render_model_svg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">render_model_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">760</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">560</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">48.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">math_bounds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labeled_keys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_annotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_lines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_unlabeled_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#geometor.durer.render_model_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Serialize a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> into a crisp <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG string.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">RomanLetterAResult</span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic construction of Dürer’s Roman <em>Antiqua</em> capital <code class="docutils literal notranslate"><span class="pre">A</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.square_corners">
+        <span class="sig-name descname"><span class="pre">square_corners</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.square_corners" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.thick_stroke">
+        <span class="sig-name descname"><span class="pre">thick_stroke</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.thick_stroke" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.thin_stroke">
+        <span class="sig-name descname"><span class="pre">thin_stroke</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.thin_stroke" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.outer_serif_radius">
+        <span class="sig-name descname"><span class="pre">outer_serif_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.outer_serif_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.inner_serif_radius">
+        <span class="sig-name descname"><span class="pre">inner_serif_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.inner_serif_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.counter_triangle">
+        <span class="sig-name descname"><span class="pre">counter_triangle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.counter_triangle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.crossbar_quad">
+        <span class="sig-name descname"><span class="pre">crossbar_quad</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.crossbar_quad" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterAResult.serif_centers">
+        <span class="sig-name descname"><span class="pre">serif_centers</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterAResult.serif_centers" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">RomanLetterOQResult</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic construction of Dürer’s Roman <em>Antiqua</em> <code class="docutils literal notranslate"><span class="pre">O</span></code> or <code class="docutils literal notranslate"><span class="pre">Q</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.letter">
+        <span class="sig-name descname"><span class="pre">letter</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.letter" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.square_corners">
+        <span class="sig-name descname"><span class="pre">square_corners</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.square_corners" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.center_i">
+        <span class="sig-name descname"><span class="pre">center_i</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.center_i" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.shifted_center_f">
+        <span class="sig-name descname"><span class="pre">shifted_center_f</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.shifted_center_f" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.shifted_center_g">
+        <span class="sig-name descname"><span class="pre">shifted_center_g</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.shifted_center_g" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.bowl_radius">
+        <span class="sig-name descname"><span class="pre">bowl_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.bowl_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.circle_f">
+        <span class="sig-name descname"><span class="pre">circle_f</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Circle</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.circle_f" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.circle_g">
+        <span class="sig-name descname"><span class="pre">circle_g</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Circle</span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.circle_g" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.crossover_points">
+        <span class="sig-name descname"><span class="pre">crossover_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.crossover_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.RomanLetterOQResult.tail_points">
+        <span class="sig-name descname"><span class="pre">tail_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.RomanLetterOQResult.tail_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.TexturaMinusculesResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">TexturaMinusculesResult</span></span><a class="headerlink" href="#geometor.durer.TexturaMinusculesResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact modular construction of Dürer’s Gothic <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, <code class="docutils literal notranslate"><span class="pre">m</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.TexturaMinusculesResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.TexturaMinusculesResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.TexturaMinusculesResult.stem_width">
+        <span class="sig-name descname"><span class="pre">stem_width</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.TexturaMinusculesResult.stem_width" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.TexturaMinusculesResult.stacked_square_count">
+        <span class="sig-name descname"><span class="pre">stacked_square_count</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.TexturaMinusculesResult.stacked_square_count" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.TexturaMinusculesResult.diamond_side">
+        <span class="sig-name descname"><span class="pre">diamond_side</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.TexturaMinusculesResult.diamond_side" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.TexturaMinusculesResult.glyph_polygons">
+        <span class="sig-name descname"><span class="pre">glyph_polygons</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.TexturaMinusculesResult.glyph_polygons" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_roman_letter_A">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_roman_letter_A</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.RomanLetterAResult" title="geometor.durer.RomanLetterAResult"><span class="pre">RomanLetterAResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_roman_letter_A" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Roman capital <code class="docutils literal notranslate"><span class="pre">A</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>.</p>
+        <p>Dürer labels the framing square (<em>rechte fierung</em>) <code class="docutils literal notranslate"><span class="pre">a</span></code> top-left <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">10)</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> top-right
+        <code class="docutils literal notranslate"><span class="pre">(10,</span> <span class="pre">10)</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code> bottom-left <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0)</span></code>, <code class="docutils literal notranslate"><span class="pre">d</span></code> bottom-right <code class="docutils literal notranslate"><span class="pre">(10,</span> <span class="pre">0)</span></code>, with midlines
+        <code class="docutils literal notranslate"><span class="pre">ef</span></code> (vertical) and <code class="docutils literal notranslate"><span class="pre">gh</span></code> (horizontal), thick stroke <code class="docutils literal notranslate"><span class="pre">1</span></code> (<code class="docutils literal notranslate"><span class="pre">1/10</span></code> of <code class="docutils literal notranslate"><span class="pre">10</span></code>), thin stroke
+        <code class="docutils literal notranslate"><span class="pre">1/3</span></code>, outer foot serifs of radius <code class="docutils literal notranslate"><span class="pre">10/7</span></code>, and inner foot serifs of radius <code class="docutils literal notranslate"><span class="pre">1/2</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_roman_letter_O">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_roman_letter_O</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.RomanLetterOQResult" title="geometor.durer.RomanLetterOQResult"><span class="pre">RomanLetterOQResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_roman_letter_O" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Roman capital <code class="docutils literal notranslate"><span class="pre">O</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_roman_letter_Q">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_roman_letter_Q</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.RomanLetterOQResult" title="geometor.durer.RomanLetterOQResult"><span class="pre">RomanLetterOQResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_roman_letter_Q" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Roman capital <code class="docutils literal notranslate"><span class="pre">Q</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.construct_durer_textura_minuscules">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">construct_durer_textura_minuscules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.TexturaMinusculesResult" title="geometor.durer.TexturaMinusculesResult"><span class="pre">TexturaMinusculesResult</span></a></span></span><a class="headerlink" href="#geometor.durer.construct_durer_textura_minuscules" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s modular <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, and <code class="docutils literal notranslate"><span class="pre">m</span></code> from unit squares.</p>
+        <p>In Book III (p. 136), Dürer constructs <code class="docutils literal notranslate"><span class="pre">i</span></code> first because nearly the entire Gothic minuscule
+        alphabet is generated combinatorially from its modular stem. For <code class="docutils literal notranslate"><span class="pre">n</span></code> (two stems) and <code class="docutils literal notranslate"><span class="pre">m</span></code>
+        (three stems), adjacent stems touch corner-to-corner at their <code class="docutils literal notranslate"><span class="pre">45°</span></code> diamond caps!
+        Wait: look at the spacing when adjacent top diamonds touch corner-to-corner:
+        Top diamond of stem 1 has right corner at <code class="docutils literal notranslate"><span class="pre">x0</span> <span class="pre">+</span> <span class="pre">1/3</span> <span class="pre">+</span> <span class="pre">sqrt(2)/2</span></code> and left corner at
+        <code class="docutils literal notranslate"><span class="pre">x0</span> <span class="pre">+</span> <span class="pre">1/3</span> <span class="pre">-</span> <span class="pre">sqrt(2)/2</span></code>, so corner-to-corner contact spaces consecutive stems by exact pitch
+        <code class="docutils literal notranslate"><span class="pre">sqrt(2)</span></code> (leaving interior counter gap <code class="docutils literal notranslate"><span class="pre">sqrt(2)</span> <span class="pre">-</span> <span class="pre">1</span> <span class="pre">≈</span> <span class="pre">0.414</span> <span class="pre">&lt;</span> <span class="pre">1</span></code>, matching Dürer’s exact
+        words: <em>“so wirt das felt schlemer zwischen den zügen dann ein zug des pustaben preyt ist”</em>!).</p>
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.durer.__version__">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.</span></span><span class="sig-name descname"><span class="pre">__version__</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'0.1.0'</span></span><a class="headerlink" href="#geometor.durer.__version__" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../demos/index.html" title="Exact Symbolic Demonstrations (demos/)">&larr; <span class="nav-label">Exact Symbolic Demonstrations (demos/)</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">GEOMETOR • durer</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="api/geometor/durer/__main__/index.html" title="geometor.durer.__main__"><span class="nav-label">geometor.durer.__main__</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../log/26.112-initial-codex/index.html">26.112 — Initial Bilingual Codex & Exact Symbolic Engine (v0.1.0)</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1525 Nuremberg (Editio Princeps) • 1532 Camerarius • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

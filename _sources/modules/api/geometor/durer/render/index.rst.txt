@@ -1,0 +1,56 @@
+geometor.durer.render
+=====================
+
+.. py:module:: geometor.durer.render
+
+.. autoapi-nested-parse::
+
+   Theme-adaptive ``.euclid-graphic`` SVG renderer & figure generator for ``geometor.durer``.
+
+   Serializes exact :class:`~geometor.model.Model` constructions from Books I–IV of Albrecht Dürer's
+   *Underweysung der Messung* (1525) into interactive, publication-grade ``.euclid-graphic`` SVGs
+   compatible with ``photon-platform/publish``'s ``.. picture::`` directive and ``:g:`` hover roles.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.durer.render.EMBEDDED_SVG_STYLE
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.render.render_model_svg
+   geometor.durer.render.export_svg
+   geometor.durer.render.generate_all_codex_figures
+
+
+Module Contents
+---------------
+
+.. py:data:: EMBEDDED_SVG_STYLE
+   :type:  str
+   :value: ''
+
+
+.. py:function:: render_model_svg(model: geometor.model.Model, *, width: int = 760, height: int = 560, padding: float = 48.0, math_bounds: tuple[float, float, float, float] | None = None, labeled_keys: dict[str, str] | None = None, extra_annotations: list[tuple[float, float, str]] | None = None, show_lines: bool = True, show_unlabeled_points: bool = False) -> str
+
+   Serialize a :class:`~geometor.model.Model` into a crisp ``.euclid-graphic`` SVG string.
+
+
+.. py:function:: export_svg(svg_text: str, output_path: str | pathlib.Path) -> pathlib.Path
+
+   Write ``svg_text`` to ``output_path`` creating parent directories if needed.
+
+
+.. py:function:: generate_all_codex_figures(output_dir: str | pathlib.Path) -> list[pathlib.Path]
+
+   Generate all 10 interactive ``.euclid-graphic`` SVG figures for ``docsrc/_static/figures/``.
+
+

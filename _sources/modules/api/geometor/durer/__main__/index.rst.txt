@@ -1,0 +1,11 @@
+geometor.durer.__main__
+=======================
+
+.. py:module:: geometor.durer.__main__
+
+.. autoapi-nested-parse::
+
+   Module entrypoint for ``python -m geometor.durer``.
+
+
+

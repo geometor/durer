@@ -1,0 +1,116 @@
+geometor.durer.concordance
+==========================
+
+.. py:module:: geometor.durer.concordance
+
+.. autoapi-nested-parse::
+
+   Scholarly apparatus & cross-corpus concordance loader for *Underweysung der Messung* (1525).
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.durer.concordance.ConcordanceEntry
+   geometor.durer.concordance.UnderweysungApparatus
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.concordance.default_resources_dir
+   geometor.durer.concordance.load_apparatus
+
+
+Module Contents
+---------------
+
+.. py:class:: ConcordanceEntry
+
+   Single cross-corpus concordance link from Dürer's *Underweysung* to GEOMETOR.
+
+
+   .. py:attribute:: id
+      :type:  str
+
+
+   .. py:attribute:: book
+      :type:  int
+
+
+   .. py:attribute:: unit
+      :type:  str
+
+
+   .. py:attribute:: durer_locus
+      :type:  str
+
+
+   .. py:attribute:: german_term
+      :type:  str
+
+
+   .. py:attribute:: latin_1532_term
+      :type:  str
+
+
+   .. py:attribute:: english_title
+      :type:  str
+
+
+   .. py:attribute:: classification
+      :type:  str
+
+
+   .. py:attribute:: sister_repos
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: algebraic_field
+      :type:  str
+
+
+   .. py:attribute:: summary
+      :type:  str
+
+
+.. py:class:: UnderweysungApparatus
+
+   Loaded JSON apparatus registries for ``resources/underweysung/``.
+
+
+   .. py:attribute:: sources_manifest
+      :type:  dict[str, Any]
+
+
+   .. py:attribute:: concordance
+      :type:  tuple[ConcordanceEntry, ...]
+
+
+   .. py:attribute:: persons
+      :type:  dict[str, dict[str, Any]]
+
+
+   .. py:attribute:: citations
+      :type:  dict[str, dict[str, Any]]
+
+
+   .. py:attribute:: glossary
+      :type:  dict[str, dict[str, Any]]
+
+
+.. py:function:: default_resources_dir() -> pathlib.Path
+
+   Locate ``resources/underweysung/`` relative to the repository root.
+
+
+.. py:function:: load_apparatus(resources_dir: str | pathlib.Path | None = None) -> UnderweysungApparatus
+
+   Load all five JSON apparatus files from ``resources/underweysung/``.
+
+

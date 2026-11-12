@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.durer.polyhedra &mdash; GEOMETOR • durer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • durer</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">durer</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../index.html"  >GEOMETOR • Dürer — Underweysung der Messung (Nuremberg, 1525 / 1538)</a>
+        </li>
+        <li>
+          <a href="../../../../../underweysung/index.html"  >Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; durer</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • durer</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../polygons/index.html" title="geometor.durer.polygons">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.durer.render"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.durer.polyhedra">
+        <span id="geometor-durer-polyhedra"></span><h1>geometor.durer.polyhedra<a class="headerlink" href="#module-geometor.durer.polyhedra" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic planar polyhedral nets from Book IV of Dürer’s <em>Underweysung der Messung</em> (1525).</p>
+        <p>In Book IV (pp. 142–158, Figs. 29–43), Albrecht Dürer published the <strong>first printed fold-out
+        planar polyhedral nets in the history of mathematics</strong> (<em>aufgeschnittene und nidergelegte Corpora</em>),
+        covering all 5 Platonic solids, 7 Archimedean semi-regular solids, and 2 invented composite solids.</p>
+        <p>Every net constructed in this module uses <strong>100% exact symbolic SymPy coordinates</strong> with unit edge
+        quadrance <code class="docutils literal notranslate"><span class="pre">Q</span> <span class="pre">=</span> <span class="pre">1</span></code>:</p>
+        <ul class="simple">
+        <li><p><strong>Tetrahedron</strong> (Fig. 29), <strong>Octahedron</strong> (Fig. 30), <strong>Icosahedron</strong> (Fig. 31), and
+        <strong>Cuboctahedron</strong> (Fig. 37): coordinates in <code class="docutils literal notranslate"><span class="pre">Q(sqrt(3))</span></code>.</p></li>
+        <li><p><strong>Cube</strong> (Fig. 32): coordinates in <code class="docutils literal notranslate"><span class="pre">Q</span></code>.</p></li>
+        <li><p><strong>Dodecahedron</strong> (Fig. 33 — two 6-pentagon rosettes hinged across a shared outer petal edge):
+        coordinates in the degree-4 cyclotomic subfield <code class="docutils literal notranslate"><span class="pre">Q(sqrt(5),</span> <span class="pre">sin(36°))</span></code> where
+        <code class="docutils literal notranslate"><span class="pre">sin(36°)</span> <span class="pre">=</span> <span class="pre">sqrt(10</span> <span class="pre">-</span> <span class="pre">2*sqrt(5))</span> <span class="pre">/</span> <span class="pre">4</span></code> and <code class="docutils literal notranslate"><span class="pre">phi</span> <span class="pre">=</span> <span class="pre">(1</span> <span class="pre">+</span> <span class="pre">sqrt(5))</span> <span class="pre">/</span> <span class="pre">2</span></code>.</p></li>
+        </ul>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.polyhedra.DURER_BOOK4_SOLIDS_CATALOG" title="geometor.durer.polyhedra.DURER_BOOK4_SOLIDS_CATALOG"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DURER_BOOK4_SOLIDS_CATALOG</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.polyhedra.PolyhedralFace" title="geometor.durer.polyhedra.PolyhedralFace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PolyhedralFace</span></code></a></p></td>
+        <td><p>Single regular polygon face in an unfolded 2D planar polyhedral net.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.polyhedra.PolyhedralNet" title="geometor.durer.polyhedra.PolyhedralNet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PolyhedralNet</span></code></a></p></td>
+        <td><p>Exact 2D planar fold-out net for a Platonic or Archimedean polyhedron.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry" title="geometor.durer.polyhedra.Book4SolidCatalogEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Book4SolidCatalogEntry</span></code></a></p></td>
+        <td><p>Historical &amp; combinatorial catalog entry for Dürer's Book IV solids (Figs. 29–43).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.polyhedra.construct_durer_polyhedral_nets" title="geometor.durer.polyhedra.construct_durer_polyhedral_nets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_polyhedral_nets</span></code></a>() → dict[str, PolyhedralNet]</p></td>
+        <td><p>Construct all 6 exact symbolic planar polyhedral nets from Dürer's Book IV.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.polyhedra.polyhedral_net_to_model" title="geometor.durer.polyhedra.polyhedral_net_to_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polyhedral_net_to_model</span></code></a>(net[, model]) → geometor.model.Model</p></td>
+        <td><p>Populate a <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code> with exact vertices, face polygons, and fold/cut seams.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralFace">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.polyhedra.</span></span><span class="sig-name descname"><span class="pre">PolyhedralFace</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralFace" title="Link to this definition">¶</a></dt>
+        <dd><p>Single regular polygon face in an unfolded 2D planar polyhedral net.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralFace.face_id">
+        <span class="sig-name descname"><span class="pre">face_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralFace.face_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralFace.n_gon">
+        <span class="sig-name descname"><span class="pre">n_gon</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralFace.n_gon" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralFace.vertices">
+        <span class="sig-name descname"><span class="pre">vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralFace.vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.polyhedra.</span></span><span class="sig-name descname"><span class="pre">PolyhedralNet</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact 2D planar fold-out net for a Platonic or Archimedean polyhedron.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.key">
+        <span class="sig-name descname"><span class="pre">key</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.key" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.durer_figure">
+        <span class="sig-name descname"><span class="pre">durer_figure</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.durer_figure" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.family">
+        <span class="sig-name descname"><span class="pre">family</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.family" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.algebraic_field">
+        <span class="sig-name descname"><span class="pre">algebraic_field</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.algebraic_field" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.vertices_3d">
+        <span class="sig-name descname"><span class="pre">vertices_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.vertices_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.edges_3d">
+        <span class="sig-name descname"><span class="pre">edges_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.edges_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.faces_3d">
+        <span class="sig-name descname"><span class="pre">faces_3d</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.faces_3d" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.faces">
+        <span class="sig-name descname"><span class="pre">faces</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.durer.polyhedra.PolyhedralFace" title="geometor.durer.polyhedra.PolyhedralFace"><span class="pre">PolyhedralFace</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.faces" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.fold_edges">
+        <span class="sig-name descname"><span class="pre">fold_edges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.fold_edges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.cut_edges">
+        <span class="sig-name descname"><span class="pre">cut_edges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.cut_edges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.unit_edge_verified">
+        <span class="sig-name descname"><span class="pre">unit_edge_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.unit_edge_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.euler_characteristic">
+        <span class="sig-name descname"><span class="pre">euler_characteristic</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.euler_characteristic" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.seam_count_verified">
+        <span class="sig-name descname"><span class="pre">seam_count_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.seam_count_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.PolyhedralNet.non_overlapping_verified">
+        <span class="sig-name descname"><span class="pre">non_overlapping_verified</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.durer.polyhedra.PolyhedralNet.non_overlapping_verified" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.polyhedra.</span></span><span class="sig-name descname"><span class="pre">Book4SolidCatalogEntry</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Historical &amp; combinatorial catalog entry for Dürer’s Book IV solids (Figs. 29–43).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.figure_num">
+        <span class="sig-name descname"><span class="pre">figure_num</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.figure_num" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.slub_page">
+        <span class="sig-name descname"><span class="pre">slub_page</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.slub_page" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.german_name_1525">
+        <span class="sig-name descname"><span class="pre">german_name_1525</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.german_name_1525" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.english_name">
+        <span class="sig-name descname"><span class="pre">english_name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.english_name" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.family">
+        <span class="sig-name descname"><span class="pre">family</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.family" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.vertex_config">
+        <span class="sig-name descname"><span class="pre">vertex_config</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.vertex_config" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.vertices">
+        <span class="sig-name descname"><span class="pre">vertices</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.vertices" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.edges">
+        <span class="sig-name descname"><span class="pre">edges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.edges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.faces">
+        <span class="sig-name descname"><span class="pre">faces</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.faces" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.Book4SolidCatalogEntry.face_summary">
+        <span class="sig-name descname"><span class="pre">face_summary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry.face_summary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.DURER_BOOK4_SOLIDS_CATALOG">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.polyhedra.</span></span><span class="sig-name descname"><span class="pre">DURER_BOOK4_SOLIDS_CATALOG</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.durer.polyhedra.Book4SolidCatalogEntry" title="geometor.durer.polyhedra.Book4SolidCatalogEntry"><span class="pre">Book4SolidCatalogEntry</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.DURER_BOOK4_SOLIDS_CATALOG" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.construct_durer_polyhedral_nets">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.polyhedra.</span></span><span class="sig-name descname"><span class="pre">construct_durer_polyhedral_nets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.durer.polyhedra.PolyhedralNet" title="geometor.durer.polyhedra.PolyhedralNet"><span class="pre">PolyhedralNet</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.construct_durer_polyhedral_nets" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct all 6 exact symbolic planar polyhedral nets from Dürer’s Book IV.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Mapping from <code class="docutils literal notranslate"><span class="pre">'tetrahedron'</span></code>, <code class="docutils literal notranslate"><span class="pre">'cube'</span></code>, <code class="docutils literal notranslate"><span class="pre">'octahedron'</span></code>, <code class="docutils literal notranslate"><span class="pre">'dodecahedron'</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">'icosahedron'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'cuboctahedron'</span></code> to verified exact planar nets.</p>
+        </dd>
+        <dt class="field-even">Return type<span class="colon">:</span></dt>
+        <dd class="field-even"><p>dict[str, <a class="reference internal" href="#geometor.durer.polyhedra.PolyhedralNet" title="geometor.durer.polyhedra.PolyhedralNet">PolyhedralNet</a>]</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.polyhedra.polyhedral_net_to_model">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.polyhedra.</span></span><span class="sig-name descname"><span class="pre">polyhedral_net_to_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">net</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.durer.polyhedra.PolyhedralNet" title="geometor.durer.polyhedra.PolyhedralNet"><span class="pre">PolyhedralNet</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geometor.model.Model</span></span></span><a class="headerlink" href="#geometor.durer.polyhedra.polyhedral_net_to_model" title="Link to this definition">¶</a></dt>
+        <dd><p>Populate a <code class="docutils literal notranslate"><span class="pre">geometor.model.Model</span></code> with exact vertices, face polygons, and fold/cut seams.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../polygons/index.html" title="geometor.durer.polygons">&larr; <span class="nav-label">geometor.durer.polygons</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • durer</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.durer.render"><span class="nav-label">geometor.durer.render</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.112-initial-codex/index.html">26.112 — Initial Bilingual Codex & Exact Symbolic Engine (v0.1.0)</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1525 Nuremberg (Editio Princeps) • 1532 Camerarius • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

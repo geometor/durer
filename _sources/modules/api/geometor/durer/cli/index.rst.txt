@@ -1,0 +1,27 @@
+geometor.durer.cli
+==================
+
+.. py:module:: geometor.durer.cli
+
+.. autoapi-nested-parse::
+
+   Command-line interface for ``geometor.durer``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.cli.main
+
+
+Module Contents
+---------------
+
+.. py:function:: main(argv: list[str] | None = None) -> int
+
+   Run the ``geometor-durer`` CLI.
+
+

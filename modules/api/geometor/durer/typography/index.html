@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.durer.typography &mdash; GEOMETOR • durer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • durer</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">durer</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../index.html"  >GEOMETOR • Dürer — Underweysung der Messung (Nuremberg, 1525 / 1538)</a>
+        </li>
+        <li>
+          <a href="../../../../../underweysung/index.html"  >Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+        <li>
+          <a href="../../../../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; durer</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • durer</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../sphinx_ext/index.html" title="geometor.durer.sphinx_ext">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../../../../log/index.html" title="log"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.durer.typography">
+        <span id="geometor-durer-typography"></span><h1>geometor.durer.typography<a class="headerlink" href="#module-geometor.durer.typography" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic compass-and-straightedge typography from Book III of <em>Underweysung der Messung</em>.</p>
+        <p>Implements Albrecht Dürer’s 1525 Nuremberg geometric constructions for:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Roman *Antiqua* Capitals</strong> (Book III, pp. 115–135) inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>
+        (with thick stroke width <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">1/10</span></code> of the square side and thin stroke width <code class="docutils literal notranslate"><span class="pre">1/3</span></code>),
+        in direct mathematical dialogue with Luca Pacioli’s <em>Divina Proportione</em> (1509, <code class="docutils literal notranslate"><span class="pre">1:9</span></code> grid):</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_durer_roman_letter_A</span></code>: Inclined thin/thick legs, inner triangular counter,
+        sub-midline crossbar, and circular serif fillets (<em>Ausschweiffung</em>) of radii <code class="docutils literal notranslate"><span class="pre">10/7</span></code> (outer)
+        and <code class="docutils literal notranslate"><span class="pre">1/2</span></code> (inner).</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_durer_roman_letter_O</span></code>: Dürer’s two-circle diagonal-shift construction along
+        <code class="docutils literal notranslate"><span class="pre">CB</span></code> (<code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">x</span></code>), where two congruent circles of exact radius <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">-</span> <span class="pre">sqrt(2)/4</span></code> separated
+        by unit stroke distance <code class="docutils literal notranslate"><span class="pre">|FG|</span> <span class="pre">=</span> <span class="pre">1</span></code> form both the outer contour and inner counter.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_durer_roman_letter_Q</span></code>: Extends <code class="docutils literal notranslate"><span class="pre">O</span></code> along anti-diagonal <code class="docutils literal notranslate"><span class="pre">AD</span></code> (<code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">10</span></code>)
+        with Dürer’s sweeping circular tail through corner <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">=</span> <span class="pre">(10,</span> <span class="pre">0)</span></code>.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Modular Gothic *Textura* Minuscules</strong> (Book III, pp. 136–141):</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_durer_textura_minuscules</span></code>: Constructs <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, and <code class="docutils literal notranslate"><span class="pre">m</span></code> strictly from
+        stacked unit squares (<em>rechte fierungen</em>) capped by <code class="docutils literal notranslate"><span class="pre">45°</span></code> diamond squares (<em>ort fierungen</em>)
+        anchored at exact <code class="docutils literal notranslate"><span class="pre">1/3</span></code> division points—an early discrete modular grid system.</p></li>
+        </ul>
+        </li>
+        </ol>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.typography.RomanLetterAResult" title="geometor.durer.typography.RomanLetterAResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RomanLetterAResult</span></code></a></p></td>
+        <td><p>Exact symbolic construction of Dürer's Roman <em>Antiqua</em> capital <code class="docutils literal notranslate"><span class="pre">A</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.typography.RomanLetterOQResult" title="geometor.durer.typography.RomanLetterOQResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RomanLetterOQResult</span></code></a></p></td>
+        <td><p>Exact symbolic construction of Dürer's Roman <em>Antiqua</em> <code class="docutils literal notranslate"><span class="pre">O</span></code> or <code class="docutils literal notranslate"><span class="pre">Q</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.typography.TexturaMinusculesResult" title="geometor.durer.typography.TexturaMinusculesResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TexturaMinusculesResult</span></code></a></p></td>
+        <td><p>Exact modular construction of Dürer's Gothic <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, <code class="docutils literal notranslate"><span class="pre">m</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.typography.construct_durer_roman_letter_A" title="geometor.durer.typography.construct_durer_roman_letter_A"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_roman_letter_A</span></code></a>([model]) → RomanLetterAResult</p></td>
+        <td><p>Construct Dürer's Roman capital <code class="docutils literal notranslate"><span class="pre">A</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.typography.construct_durer_roman_letter_O" title="geometor.durer.typography.construct_durer_roman_letter_O"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_roman_letter_O</span></code></a>([model]) → RomanLetterOQResult</p></td>
+        <td><p>Construct Dürer's Roman capital <code class="docutils literal notranslate"><span class="pre">O</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.durer.typography.construct_durer_roman_letter_Q" title="geometor.durer.typography.construct_durer_roman_letter_Q"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_roman_letter_Q</span></code></a>([model]) → RomanLetterOQResult</p></td>
+        <td><p>Construct Dürer's Roman capital <code class="docutils literal notranslate"><span class="pre">Q</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.durer.typography.construct_durer_textura_minuscules" title="geometor.durer.typography.construct_durer_textura_minuscules"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_durer_textura_minuscules</span></code></a>([model]) → TexturaMinusculesResult</p></td>
+        <td><p>Construct Dürer's modular <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, and <code class="docutils literal notranslate"><span class="pre">m</span></code> from unit squares.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">RomanLetterAResult</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic construction of Dürer’s Roman <em>Antiqua</em> capital <code class="docutils literal notranslate"><span class="pre">A</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.square_corners">
+        <span class="sig-name descname"><span class="pre">square_corners</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.square_corners" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.thick_stroke">
+        <span class="sig-name descname"><span class="pre">thick_stroke</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.thick_stroke" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.thin_stroke">
+        <span class="sig-name descname"><span class="pre">thin_stroke</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.thin_stroke" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.outer_serif_radius">
+        <span class="sig-name descname"><span class="pre">outer_serif_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.outer_serif_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.inner_serif_radius">
+        <span class="sig-name descname"><span class="pre">inner_serif_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.inner_serif_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.counter_triangle">
+        <span class="sig-name descname"><span class="pre">counter_triangle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.counter_triangle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.crossbar_quad">
+        <span class="sig-name descname"><span class="pre">crossbar_quad</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.crossbar_quad" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterAResult.serif_centers">
+        <span class="sig-name descname"><span class="pre">serif_centers</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterAResult.serif_centers" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">RomanLetterOQResult</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic construction of Dürer’s Roman <em>Antiqua</em> <code class="docutils literal notranslate"><span class="pre">O</span></code> or <code class="docutils literal notranslate"><span class="pre">Q</span></code> in a <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.letter">
+        <span class="sig-name descname"><span class="pre">letter</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.letter" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.square_corners">
+        <span class="sig-name descname"><span class="pre">square_corners</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.square_corners" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.center_i">
+        <span class="sig-name descname"><span class="pre">center_i</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.center_i" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.shifted_center_f">
+        <span class="sig-name descname"><span class="pre">shifted_center_f</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.shifted_center_f" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.shifted_center_g">
+        <span class="sig-name descname"><span class="pre">shifted_center_g</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.shifted_center_g" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.bowl_radius">
+        <span class="sig-name descname"><span class="pre">bowl_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.bowl_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.circle_f">
+        <span class="sig-name descname"><span class="pre">circle_f</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Circle</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.circle_f" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.circle_g">
+        <span class="sig-name descname"><span class="pre">circle_g</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Circle</span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.circle_g" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.crossover_points">
+        <span class="sig-name descname"><span class="pre">crossover_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.crossover_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.RomanLetterOQResult.tail_points">
+        <span class="sig-name descname"><span class="pre">tail_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.RomanLetterOQResult.tail_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.durer.typography.TexturaMinusculesResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">TexturaMinusculesResult</span></span><a class="headerlink" href="#geometor.durer.typography.TexturaMinusculesResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact modular construction of Dürer’s Gothic <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, <code class="docutils literal notranslate"><span class="pre">m</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.TexturaMinusculesResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.durer.typography.TexturaMinusculesResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.TexturaMinusculesResult.stem_width">
+        <span class="sig-name descname"><span class="pre">stem_width</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.durer.typography.TexturaMinusculesResult.stem_width" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.TexturaMinusculesResult.stacked_square_count">
+        <span class="sig-name descname"><span class="pre">stacked_square_count</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.durer.typography.TexturaMinusculesResult.stacked_square_count" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.TexturaMinusculesResult.diamond_side">
+        <span class="sig-name descname"><span class="pre">diamond_side</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.durer.typography.TexturaMinusculesResult.diamond_side" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.durer.typography.TexturaMinusculesResult.glyph_polygons">
+        <span class="sig-name descname"><span class="pre">glyph_polygons</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.durer.typography.TexturaMinusculesResult.glyph_polygons" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.typography.construct_durer_roman_letter_A">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">construct_durer_roman_letter_A</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.typography.RomanLetterAResult" title="geometor.durer.typography.RomanLetterAResult"><span class="pre">RomanLetterAResult</span></a></span></span><a class="headerlink" href="#geometor.durer.typography.construct_durer_roman_letter_A" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Roman capital <code class="docutils literal notranslate"><span class="pre">A</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>.</p>
+        <p>Dürer labels the framing square (<em>rechte fierung</em>) <code class="docutils literal notranslate"><span class="pre">a</span></code> top-left <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">10)</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> top-right
+        <code class="docutils literal notranslate"><span class="pre">(10,</span> <span class="pre">10)</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code> bottom-left <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0)</span></code>, <code class="docutils literal notranslate"><span class="pre">d</span></code> bottom-right <code class="docutils literal notranslate"><span class="pre">(10,</span> <span class="pre">0)</span></code>, with midlines
+        <code class="docutils literal notranslate"><span class="pre">ef</span></code> (vertical) and <code class="docutils literal notranslate"><span class="pre">gh</span></code> (horizontal), thick stroke <code class="docutils literal notranslate"><span class="pre">1</span></code> (<code class="docutils literal notranslate"><span class="pre">1/10</span></code> of <code class="docutils literal notranslate"><span class="pre">10</span></code>), thin stroke
+        <code class="docutils literal notranslate"><span class="pre">1/3</span></code>, outer foot serifs of radius <code class="docutils literal notranslate"><span class="pre">10/7</span></code>, and inner foot serifs of radius <code class="docutils literal notranslate"><span class="pre">1/2</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.typography.construct_durer_roman_letter_O">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">construct_durer_roman_letter_O</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.typography.RomanLetterOQResult" title="geometor.durer.typography.RomanLetterOQResult"><span class="pre">RomanLetterOQResult</span></a></span></span><a class="headerlink" href="#geometor.durer.typography.construct_durer_roman_letter_O" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Roman capital <code class="docutils literal notranslate"><span class="pre">O</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.typography.construct_durer_roman_letter_Q">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">construct_durer_roman_letter_Q</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.typography.RomanLetterOQResult" title="geometor.durer.typography.RomanLetterOQResult"><span class="pre">RomanLetterOQResult</span></a></span></span><a class="headerlink" href="#geometor.durer.typography.construct_durer_roman_letter_Q" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s Roman capital <code class="docutils literal notranslate"><span class="pre">Q</span></code> inside the <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">x</span> <span class="pre">10</span></code> square.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.durer.typography.construct_durer_textura_minuscules">
+        <span class="sig-prename descclassname"><span class="pre">geometor.durer.typography.</span></span><span class="sig-name descname"><span class="pre">construct_durer_textura_minuscules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.durer.typography.TexturaMinusculesResult" title="geometor.durer.typography.TexturaMinusculesResult"><span class="pre">TexturaMinusculesResult</span></a></span></span><a class="headerlink" href="#geometor.durer.typography.construct_durer_textura_minuscules" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Dürer’s modular <em>Textura</em> minuscules <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code>, and <code class="docutils literal notranslate"><span class="pre">m</span></code> from unit squares.</p>
+        <p>In Book III (p. 136), Dürer constructs <code class="docutils literal notranslate"><span class="pre">i</span></code> first because nearly the entire Gothic minuscule
+        alphabet is generated combinatorially from its modular stem. For <code class="docutils literal notranslate"><span class="pre">n</span></code> (two stems) and <code class="docutils literal notranslate"><span class="pre">m</span></code>
+        (three stems), adjacent stems touch corner-to-corner at their <code class="docutils literal notranslate"><span class="pre">45°</span></code> diamond caps!
+        Wait: look at the spacing when adjacent top diamonds touch corner-to-corner:
+        Top diamond of stem 1 has right corner at <code class="docutils literal notranslate"><span class="pre">x0</span> <span class="pre">+</span> <span class="pre">1/3</span> <span class="pre">+</span> <span class="pre">sqrt(2)/2</span></code> and left corner at
+        <code class="docutils literal notranslate"><span class="pre">x0</span> <span class="pre">+</span> <span class="pre">1/3</span> <span class="pre">-</span> <span class="pre">sqrt(2)/2</span></code>, so corner-to-corner contact spaces consecutive stems by exact pitch
+        <code class="docutils literal notranslate"><span class="pre">sqrt(2)</span></code> (leaving interior counter gap <code class="docutils literal notranslate"><span class="pre">sqrt(2)</span> <span class="pre">-</span> <span class="pre">1</span> <span class="pre">≈</span> <span class="pre">0.414</span> <span class="pre">&lt;</span> <span class="pre">1</span></code>, matching Dürer’s exact
+        words: <em>“so wirt das felt schlemer zwischen den zügen dann ein zug des pustaben preyt ist”</em>!).</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../sphinx_ext/index.html" title="geometor.durer.sphinx_ext">&larr; <span class="nav-label">geometor.durer.sphinx_ext</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • durer</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../../../../log/index.html" title="log"><span class="nav-label">log</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.112-initial-codex/index.html">26.112 — Initial Bilingual Codex & Exact Symbolic Engine (v0.1.0)</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1525 Nuremberg (Editio Princeps) • 1532 Camerarius • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

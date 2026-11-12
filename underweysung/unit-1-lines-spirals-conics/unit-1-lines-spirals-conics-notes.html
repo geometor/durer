@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes — Book I: Descriptive Geometry &amp; the Eierlini Symmetry Proof &mdash; Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • durer</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">durer</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../index.html"  >GEOMETOR • Dürer — Underweysung der Messung (Nuremberg, 1525 / 1538)</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; durer</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="unit-1-lines-spirals-conics-en.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-1-lines-spirals-conics-de.html">German (1525)</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-1-lines-spirals-conics-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Notes</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../unit-2-planes-polygons-tilings/unit-2-planes-polygons-tilings-notes.html" title="Book II — Plane Figures, Regular Polygons, Parquetries &amp; Quadrature"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="notes-book-i-descriptive-geometry-the-eierlini-symmetry-proof">
+        <h1>Notes — Book I: Descriptive Geometry &amp; the <em>Eierlini</em> Symmetry Proof<a class="headerlink" href="#notes-book-i-descriptive-geometry-the-eierlini-symmetry-proof" title="Link to this heading">¶</a></h1>
+        </section>
+        <section class="level-1" id="birth-of-two-view-descriptive-geometry-270-years-before-monge">
+        <h1>1. Birth of Two-View Descriptive Geometry (270 Years Before Monge)<a class="headerlink" href="#birth-of-two-view-descriptive-geometry-270-years-before-monge" title="Link to this heading">¶</a></h1>
+        <p>Before <a class="person-ref" id="occ-person-monge-1" href="../persons.html#person-monge" data-person="monge" title="Gaspard Monge (1746–1818) — French Mathematician &amp; Codifier of Descriptive Geometry">Gaspard Monge's</a> <em>Géométrie descriptive</em> (<a class="citation-ref" id="occ-cite-monge-1799-1" href="../bibliography.html#cite-monge-1799" data-cite="monge:1799" title="Gaspard Monge — Géométrie descriptive (Paris: Baudouin, An VII (1799))">monge:1799</a>), stonecutters
+        and architects knew empirical plan-and-elevation templates, and <a class="person-ref" id="occ-person-piero-1" href="../persons.html#person-piero" data-person="piero" title="Piero della Francesca (c. 1415–1492) — Italian Painter &amp; Geometer">Piero della Francesca</a>
+        applied coupled projections to human heads in <em>De prospectiva pingendi</em>. Yet Book I, Figures
+        34–37 of Dürer’s 1525 <em>Underweysung</em> represent the <strong>first printed mathematical application of
+        coupled orthographic elevation and ground-plan views to determine the true metric locus of
+        curved three-dimensional sections</strong>.</p>
+        </section>
+        <section class="level-1" id="exact-algebraic-resolution-of-durer-s-eierlini-paradox">
+        <h1>2. Exact Algebraic Resolution of Dürer’s <em>Eierlini</em> Paradox<a class="headerlink" href="#exact-algebraic-resolution-of-durer-s-eierlini-paradox" title="Link to this heading">¶</a></h1>
+        <p>Why did Dürer translate Apollonius’s <em>ellipsis</em> as <a class="term-ref glossary-term" id="occ-term-eierlini-1" href="../glossary.html#term-eierlini" data-term="eierlini" title="Eierlini (Elipsis / Egg-Line) (Egg-line (Dürer&#x27;s vernacular coinage for the conic ellipse)): Dürer&#x27;s German coinage in Book I (Fig. 34, pp. 034–036) for Apollonius&#x27;s ellipsis (&#x27;ein gebrechliche lini&#x27;). Although Dürer&#x27;s own 12-station descriptive-geometry transfer rule w_k = sqrt(r_k^2 - x_k^2) produces a strictly bilaterally symmetric ellipse (w_{12-k} = w_k), foreshortening near the narrower upper cone led his woodcut curve to taper slightly like a hen&#x27;s egg.">Eierlini</a> (“egg-line”, <em>“darumb
+        das sie schyer einem ey gleich ist”</em>) and draw his 1525 woodcut Fig. 34 slightly narrower at the
+        upper end near the cone’s apex?</p>
+        <p>Let us evaluate <strong>Dürer’s own 12-station algorithm</strong> symbolically in <code class="docutils literal notranslate"><span class="pre">geometor.durer</span></code>
+        (<a class="reference internal" href="../../modules/api/geometor/durer/conics_perspective/index.html#geometor.durer.conics_perspective.construct_durer_conic_sections" title="geometor.durer.conics_perspective.construct_durer_conic_sections"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_durer_conic_sections()</span></code></a>). Take a right circular
+        cone of base radius $R = 6$ and height $H = 12$, so at height $z \in [0, 12]$ the horizontal
+        circular cross-section has radius</p>
+        <p>$$r(z) = \frac{12 - z}{2}.$$</p>
+        <p>Slice the cone obliquely along segment $fg$ from $F = (-4, 4)$ on the left generator to
+        $G = (2, 8)$ on the right generator, divided into 12 equal parts $k = 0, 1, \dots, 12$:</p>
+        <p>$$x_k = -4 + \frac{k}{2}, \qquad z_k = 4 + \frac{k}{3}, \qquad r_k = 4 - \frac{k}{6}.$$</p>
+        <p>In the circular ground plan (<em>Grundriss</em>), the vertical projector at $x_k$ cuts the horizontal
+        section circle $x^2 + y^2 = r_k^2$ in a chord of exact half-width $w_k$:</p>
+        <p>$$w_k^2 = r_k^2 - x_k^2 = \left(4 - \frac{k}{6}\right)^2 - \left(-4 + \frac{k}{2}\right)^2
+        = \left(16 - \frac{4}{3}k + \frac{k^2}{36}\right) - \left(16 - 4k + \frac{k^2}{4}\right)
+        = \frac{2}{9}\,k\,(12 - k).$$</p>
+        <p>Hence for every station $k \in \{0, 1, \dots, 12\}$:</p>
+        <p>$$w_k = \frac{\sqrt{2\,k\,(12 - k)}}{3} = w_{12 - k}!$$</p>
+        <p><strong>Dürer’s geometric construction rule is 100% exact and strictly symmetric</strong> under $k \mapsto 12 - k$!
+        Because $|FG| = \sqrt{6^2 + 4^2} = 2\sqrt{13}$, the curve is a true Apollonian ellipse with
+        semi-major axis $a = \sqrt{13}$, semi-minor axis $b = w_6 = 2\sqrt{2}$, focal distance
+        $c = \sqrt{a^2 - b^2} = \sqrt{5}$, and eccentricity $e = \frac{\sqrt{65}}{13}$.</p>
+        <p>Why then did Dürer suspect asymmetry? In the <strong>ground plan</strong> (<em>der grund zum kegell</em>), the
+        upper half of the cutting plane ($k = 7, \dots, 12$) crosses directly over the cone’s apex
+        projection $O_{\text{plan}} = (0, 0)$ at $k = 8$ ($x_8 = 0$), crowding the upper concentric
+        circles tightly around the center, whereas near $k = 1, 2, 3$ the arcs sweep broadly near the rim!
+        A slight compass transfer error on the crowded upper circles immediately pinches the top of the
+        plotted curve into an egg shape—an optical and draftsmanship trap definitively resolved by
+        <a class="person-ref" id="occ-person-kepler-1" href="../persons.html#person-kepler" data-person="kepler" title="Johannes Kepler (1571–1630) — Imperial Mathematician &amp; Astronomer">Johannes Kepler</a> in Chapter IV of <em>Ad Vitellionem Paralipomena</em>
+        (<a class="citation-ref" id="occ-cite-kepler-1604-1" href="../bibliography.html#cite-kepler-1604" data-cite="kepler:1604" title="Johannes Kepler — Ad Vitellionem Paralipomena, Quibus Astronomiae Pars Optica Traditur, Cap. IV (De Coni sectionibus) (Frankfurt: Claudius Marnius, 1604)">kepler:1604</a>).</p>
+        </section>
+        <section class="level-1" id="exact-polar-stations-of-the-12-sector-spiral-over-mathbb-q-sqrt-3">
+        <h1>3. Exact Polar Stations of the 12-Sector Spiral over $\mathbb{Q}(\sqrt{3})$<a class="headerlink" href="#exact-polar-stations-of-the-12-sector-spiral-over-mathbb-q-sqrt-3" title="Link to this heading">¶</a></h1>
+        <p>Because $\cos(k \cdot 30^\circ), \sin(k \cdot 30^\circ) \in \left\{0, \pm\frac{1}{2}, \pm\frac{\sqrt{3}}{2}, \pm 1\right\}$
+        for every integer $k$, all 25 stations of Dürer’s two-turn 12-sector Archimedean spiral
+        $P_k = \left(\frac{k}{2}\cos\frac{k\pi}{6},\, \frac{k}{2}\sin\frac{k\pi}{6}\right)$ belong
+        entirely to the quadratic field $\mathbb{Q}(\sqrt{3})$, requiring zero floating-point evaluation
+        in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>.</p>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)">&larr; <span class="nav-label">Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Underweysung der Messung (Nuremberg, 1525 / Camerarius, 1532)</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../unit-2-planes-polygons-tilings/unit-2-planes-polygons-tilings-notes.html" title="Book II — Plane Figures, Regular Polygons, Parquetries &amp; Quadrature"><span class="nav-label">Book II — Plane Figures, Regular Polygons, Parquetries & Quadrature</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.112-initial-codex/index.html">26.112 — Initial Bilingual Codex & Exact Symbolic Engine (v0.1.0)</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 1525 Nuremberg (Editio Princeps) • 1532 Camerarius • Digital Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

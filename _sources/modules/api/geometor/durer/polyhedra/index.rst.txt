@@ -1,0 +1,199 @@
+geometor.durer.polyhedra
+========================
+
+.. py:module:: geometor.durer.polyhedra
+
+.. autoapi-nested-parse::
+
+   Exact symbolic planar polyhedral nets from Book IV of Dürer's *Underweysung der Messung* (1525).
+
+   In Book IV (pp. 142–158, Figs. 29–43), Albrecht Dürer published the **first printed fold-out
+   planar polyhedral nets in the history of mathematics** (*aufgeschnittene und nidergelegte Corpora*),
+   covering all 5 Platonic solids, 7 Archimedean semi-regular solids, and 2 invented composite solids.
+
+   Every net constructed in this module uses **100% exact symbolic SymPy coordinates** with unit edge
+   quadrance ``Q = 1``:
+
+   - **Tetrahedron** (Fig. 29), **Octahedron** (Fig. 30), **Icosahedron** (Fig. 31), and
+     **Cuboctahedron** (Fig. 37): coordinates in ``Q(sqrt(3))``.
+   - **Cube** (Fig. 32): coordinates in ``Q``.
+   - **Dodecahedron** (Fig. 33 — two 6-pentagon rosettes hinged across a shared outer petal edge):
+     coordinates in the degree-4 cyclotomic subfield ``Q(sqrt(5), sin(36°))`` where
+     ``sin(36°) = sqrt(10 - 2*sqrt(5)) / 4`` and ``phi = (1 + sqrt(5)) / 2``.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.durer.polyhedra.DURER_BOOK4_SOLIDS_CATALOG
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.durer.polyhedra.PolyhedralFace
+   geometor.durer.polyhedra.PolyhedralNet
+   geometor.durer.polyhedra.Book4SolidCatalogEntry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.polyhedra.construct_durer_polyhedral_nets
+   geometor.durer.polyhedra.polyhedral_net_to_model
+
+
+Module Contents
+---------------
+
+.. py:class:: PolyhedralFace
+
+   Single regular polygon face in an unfolded 2D planar polyhedral net.
+
+
+   .. py:attribute:: face_id
+      :type:  str
+
+
+   .. py:attribute:: n_gon
+      :type:  int
+
+
+   .. py:attribute:: vertices
+      :type:  tuple[tuple[sympy.Expr, sympy.Expr], ...]
+
+
+.. py:class:: PolyhedralNet
+
+   Exact 2D planar fold-out net for a Platonic or Archimedean polyhedron.
+
+
+   .. py:attribute:: key
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: durer_figure
+      :type:  str
+
+
+   .. py:attribute:: family
+      :type:  str
+
+
+   .. py:attribute:: algebraic_field
+      :type:  str
+
+
+   .. py:attribute:: vertices_3d
+      :type:  int
+
+
+   .. py:attribute:: edges_3d
+      :type:  int
+
+
+   .. py:attribute:: faces_3d
+      :type:  int
+
+
+   .. py:attribute:: faces
+      :type:  tuple[PolyhedralFace, ...]
+
+
+   .. py:attribute:: fold_edges
+      :type:  tuple[tuple[tuple[sympy.Expr, sympy.Expr], tuple[sympy.Expr, sympy.Expr]], ...]
+
+
+   .. py:attribute:: cut_edges
+      :type:  tuple[tuple[tuple[sympy.Expr, sympy.Expr], tuple[sympy.Expr, sympy.Expr]], ...]
+
+
+   .. py:attribute:: unit_edge_verified
+      :type:  bool
+
+
+   .. py:attribute:: euler_characteristic
+      :type:  int
+
+
+   .. py:attribute:: seam_count_verified
+      :type:  bool
+
+
+   .. py:attribute:: non_overlapping_verified
+      :type:  bool
+
+
+.. py:class:: Book4SolidCatalogEntry
+
+   Historical & combinatorial catalog entry for Dürer's Book IV solids (Figs. 29–43).
+
+
+   .. py:attribute:: figure_num
+      :type:  int
+
+
+   .. py:attribute:: slub_page
+      :type:  int
+
+
+   .. py:attribute:: german_name_1525
+      :type:  str
+
+
+   .. py:attribute:: english_name
+      :type:  str
+
+
+   .. py:attribute:: family
+      :type:  str
+
+
+   .. py:attribute:: vertex_config
+      :type:  str
+
+
+   .. py:attribute:: vertices
+      :type:  int
+
+
+   .. py:attribute:: edges
+      :type:  int
+
+
+   .. py:attribute:: faces
+      :type:  int
+
+
+   .. py:attribute:: face_summary
+      :type:  str
+
+
+.. py:data:: DURER_BOOK4_SOLIDS_CATALOG
+   :type:  tuple[Book4SolidCatalogEntry, ...]
+
+.. py:function:: construct_durer_polyhedral_nets() -> dict[str, PolyhedralNet]
+
+   Construct all 6 exact symbolic planar polyhedral nets from Dürer's Book IV.
+
+   :returns: Mapping from ``'tetrahedron'``, ``'cube'``, ``'octahedron'``, ``'dodecahedron'``,
+             ``'icosahedron'``, and ``'cuboctahedron'`` to verified exact planar nets.
+   :rtype: dict[str, PolyhedralNet]
+
+
+.. py:function:: polyhedral_net_to_model(net: PolyhedralNet, model: geometor.model.Model | None = None) -> geometor.model.Model
+
+   Populate a ``geometor.model.Model`` with exact vertices, face polygons, and fold/cut seams.
+
+

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 740 560" role="img">
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --grid-stroke: #94a3b8;
+    --aux-stroke: #64748b;
+    --durer-stroke: #b45309;
+    --durer-fill: #f59e0b;
+    --euclid-stroke: #0369a1;
+    --euclid-fill: #0ea5e9;
+    --accent-stroke: #0f766e;
+    --accent-fill: #14b8a6;
+    --violet-stroke: #7c3aed;
+    --crimson-stroke: #be123c;
+    font-family: "Inter", "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --grid-stroke: #64748b;
+      --aux-stroke: #94a3b8;
+      --durer-stroke: #fbbf24;
+      --durer-fill: #fbbf24;
+      --euclid-stroke: #38bdf8;
+      --euclid-fill: #38bdf8;
+      --accent-stroke: #2dd4bf;
+      --accent-fill: #2dd4bf;
+      --violet-stroke: #c084fc;
+      --crimson-stroke: #fb7185;
+    }
+  }
+  [data-theme="dark"] .euclid-graphic {
+    --svg-bg: #141417;
+    --ink: #f4f4f5;
+    --label-halo: rgba(20, 20, 23, 0.92);
+    --grid-stroke: #64748b;
+    --aux-stroke: #94a3b8;
+    --durer-stroke: #fbbf24;
+    --durer-fill: #fbbf24;
+    --euclid-stroke: #38bdf8;
+    --euclid-fill: #38bdf8;
+    --accent-stroke: #2dd4bf;
+    --accent-fill: #2dd4bf;
+    --violet-stroke: #c084fc;
+    --crimson-stroke: #fb7185;
+  }
+  .euclid-graphic .canvas-bg { fill: #fafaf9; fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle { fill: none; stroke: var(--aux-stroke); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.72; }
+  .euclid-graphic .geom-circle.primary-circle { stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.bowl-circle { stroke: var(--durer-stroke); stroke-width: 2.35; stroke-dasharray: none; opacity: 0.95; }
+  .euclid-graphic .geom-circle.serif-circle { stroke: var(--violet-stroke); stroke-width: 1.55; stroke-dasharray: 4 2.5; opacity: 0.85; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--grid-stroke); stroke-width: 1.25; stroke-dasharray: 4 3; opacity: 0.65; }
+  .euclid-graphic .geom-line.ray-line { stroke: var(--durer-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; opacity: 0.82; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--ink); stroke-width: 1.9; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.fold-seam { stroke: var(--euclid-stroke); stroke-width: 1.85; stroke-dasharray: 6 3.5; }
+  .euclid-graphic .geom-segment.cut-seam { stroke: var(--ink); stroke-width: 2.15; }
+  .euclid-graphic .geom-segment.spiral-seg { stroke: var(--durer-stroke); stroke-width: 2.55; }
+  .euclid-graphic .geom-segment.sector-seg { stroke: var(--grid-stroke); stroke-width: 1.05; stroke-dasharray: 3 3; opacity: 0.58; }
+  .euclid-graphic .geom-segment.accent-seg { stroke: var(--accent-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-segment.projector-seg { stroke: var(--grid-stroke); stroke-width: 1.1; stroke-dasharray: 3 3; opacity: 0.7; }
+  .euclid-graphic .geom-polygon { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.15; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.durer-poly { fill: var(--durer-fill); fill-opacity: 0.11; stroke: var(--durer-stroke); stroke-width: 2.4; }
+  .euclid-graphic .geom-polygon.euclid-poly { fill: var(--euclid-fill); fill-opacity: 0.08; stroke: var(--euclid-stroke); stroke-width: 2.2; stroke-dasharray: 7 3.5; }
+  .euclid-graphic .geom-polygon.frame-poly { fill: none; stroke: var(--grid-stroke); stroke-width: 1.5; stroke-dasharray: 5 3; }
+  .euclid-graphic .geom-polygon.glyph-poly { fill: var(--durer-fill); fill-opacity: 0.16; stroke: var(--durer-stroke); stroke-width: 2.35; }
+  .euclid-graphic .geom-polygon.counter-poly { fill: var(--svg-bg); fill-opacity: 0.92; stroke: var(--euclid-stroke); stroke-width: 1.85; }
+  .euclid-graphic .geom-polygon.net-3gon { fill: var(--euclid-fill); fill-opacity: 0.11; stroke: none; }
+  .euclid-graphic .geom-polygon.net-4gon { fill: var(--durer-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-polygon.net-5gon { fill: var(--accent-fill); fill-opacity: 0.13; stroke: none; }
+  .euclid-graphic .geom-point { fill: var(--ink); stroke: var(--svg-bg); stroke-width: 1.4; }
+  .euclid-graphic .geom-point.durer-pt { fill: var(--durer-stroke); }
+  .euclid-graphic .geom-point.euclid-pt { fill: var(--euclid-stroke); }
+  .euclid-graphic .geom-point.accent-pt { fill: var(--crimson-stroke); }
+  .euclid-graphic .euclid-label {
+    fill: var(--ink);
+    font-size: 13px;
+    font-weight: 650;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.5px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .euclid-sub { font-size: 9.6px; font-weight: 650; }
+  .euclid-graphic .caption-note {
+    fill: var(--aux-stroke);
+    font-size: 12px;
+    font-weight: 550;
+  }
+  </style>
+  <rect class="canvas-bg" x="0" y="0" width="740" height="560" rx="8"/>
+  <g class="layer-polygons">
+    <polygon class="geom-polygon frame-poly" data-ref="&lt; A B C D &gt;" points="149.6,483 584.6,483 584.6,77 149.6,77"/>
+    <polygon class="geom-polygon durer-poly" data-ref="&lt; F_BL F_BR F_TR F_TL &gt;" points="280.1,352.5 454.1,352.5 454.1,178.5 280.1,178.5"/>
+    <polygon class="geom-polygon" data-ref="&lt; B_BL B_BR B_TR B_TL &gt;" points="323.6,309 462.8,309 462.8,169.8 323.6,169.8"/>
+  </g>
+  <g class="layer-circles">
+  </g>
+  <g class="layer-lines">
+    <path class="geom-line ray-line" data-ref="[ F_BL B_BL ]" d="M 126.4 506.2 L 355.5 277.1 L 584.6 48"/>
+    <path class="geom-line ray-line" data-ref="[ F_BR B_BR ]" d="M 422.2 512 L 468.6 280 L 515 48"/>
+    <path class="geom-line ray-line" data-ref="[ F_TL B_TL ]" d="M 126.4 209.24 L 370 160.52 L 613.6 111.8"/>
+  </g>
+  <g class="layer-segments">
+    <path class="geom-segment" data-ref="/ F_BL B_BL /" d="M 280.1 352.5 L 301.85 330.75 L 323.6 309"/>
+    <path class="geom-segment" data-ref="/ F_BR B_BR /" d="M 454.1 352.5 L 458.45 330.75 L 462.8 309"/>
+    <path class="geom-segment" data-ref="/ F_TR B_TR /" d="M 454.1 178.5 L 458.45 174.15 L 462.8 169.8"/>
+    <path class="geom-segment" data-ref="/ F_TL B_TL /" d="M 280.1 178.5 L 301.85 174.15 L 323.6 169.8"/>
+    <path class="geom-segment sector-seg" data-ref="/ B_BL V_x /" d="M 323.6 309 L 410.6 222 L 497.6 135"/>
+    <path class="geom-segment sector-seg" data-ref="/ B_BR V_x /" d="M 462.8 309 L 480.2 222 L 497.6 135"/>
+    <path class="geom-segment sector-seg" data-ref="/ B_TR V_x /" d="M 462.8 169.8 L 480.2 152.4 L 497.6 135"/>
+    <path class="geom-segment sector-seg" data-ref="/ B_TL V_x /" d="M 323.6 169.8 L 410.6 152.4 L 497.6 135"/>
+  </g>
+  <g class="layer-points">
+    <circle class="geom-point" data-ref="F_BL" data-aliases="F_BL,A&#x27;" data-latex-x="- \frac{3}{4}" data-latex-y="\frac{5}{4}" cx="280.1" cy="352.5" r="3.7"><title>A&#x27;: (- \frac{3}{4}, \frac{5}{4})</title></circle>
+    <circle class="geom-point" data-ref="F_BR" data-aliases="F_BR,B&#x27;" data-latex-x="\frac{9}{4}" data-latex-y="\frac{5}{4}" cx="454.1" cy="352.5" r="3.7"><title>B&#x27;: (\frac{9}{4}, \frac{5}{4})</title></circle>
+    <circle class="geom-point" data-ref="F_TR" data-aliases="F_TR,C&#x27;" data-latex-x="\frac{9}{4}" data-latex-y="\frac{17}{4}" cx="454.1" cy="178.5" r="3.7"><title>C&#x27;: (\frac{9}{4}, \frac{17}{4})</title></circle>
+    <circle class="geom-point" data-ref="F_TL" data-aliases="F_TL,D&#x27;" data-latex-x="- \frac{3}{4}" data-latex-y="\frac{17}{4}" cx="280.1" cy="178.5" r="3.7"><title>D&#x27;: (- \frac{3}{4}, \frac{17}{4})</title></circle>
+    <circle class="geom-point" data-ref="B_BL" data-aliases="B_BL,E&#x27;" data-latex-x="0" data-latex-y="2" cx="323.6" cy="309" r="3.7"><title>E&#x27;: (0, 2)</title></circle>
+    <circle class="geom-point" data-ref="B_BR" data-aliases="B_BR,F&#x27;" data-latex-x="\frac{12}{5}" data-latex-y="2" cx="462.8" cy="309" r="3.7"><title>F&#x27;: (\frac{12}{5}, 2)</title></circle>
+    <circle class="geom-point" data-ref="B_TR" data-aliases="B_TR,G&#x27;" data-latex-x="\frac{12}{5}" data-latex-y="\frac{22}{5}" cx="462.8" cy="169.8" r="3.7"><title>G&#x27;: (\frac{12}{5}, \frac{22}{5})</title></circle>
+    <circle class="geom-point" data-ref="B_TL" data-aliases="B_TL,H&#x27;" data-latex-x="0" data-latex-y="\frac{22}{5}" cx="323.6" cy="169.8" r="3.7"><title>H&#x27;: (0, \frac{22}{5})</title></circle>
+    <circle class="geom-point accent-pt" data-ref="V_x" data-aliases="V_x,V_x" data-latex-x="3" data-latex-y="5" cx="497.6" cy="135" r="3.7"><title>V_x: (3, 5)</title></circle>
+    <circle class="geom-point" data-ref="M_depth" data-aliases="M_depth,M&#x27;" data-latex-x="- \frac{1}{3}" data-latex-y="\frac{5}{3}" cx="304.27" cy="328.33" r="3.7"><title>M&#x27;: (- \frac{1}{3}, \frac{5}{3})</title></circle>
+  </g>
+  <g class="layer-labels">
+    <text class="euclid-label" data-ref="F_BL" x="268.91" y="367.22" text-anchor="middle">A&#x27;</text>
+    <text class="euclid-label" data-ref="F_BR" x="463.67" y="368.69" text-anchor="middle">B&#x27;</text>
+    <text class="euclid-label" data-ref="F_TR" x="464.76" y="171.25" text-anchor="middle">C&#x27;</text>
+    <text class="euclid-label" data-ref="F_TL" x="267.96" y="172.86" text-anchor="middle">D&#x27;</text>
+    <text class="euclid-label" data-ref="B_BL" x="312.23" y="323.53" text-anchor="middle">E&#x27;</text>
+    <text class="euclid-label" data-ref="B_BR" x="475.98" y="321.16" text-anchor="middle">F&#x27;</text>
+    <text class="euclid-label" data-ref="B_TR" x="452.11" y="185.02" text-anchor="middle">G&#x27;</text>
+    <text class="euclid-label" data-ref="B_TL" x="315.27" y="160.73" text-anchor="middle">H&#x27;</text>
+    <text class="euclid-label" data-ref="V_x" x="508.37" y="127.85" text-anchor="middle">V<tspan class="euclid-sub" dy="3">x</tspan></text>
+    <text class="euclid-label" data-ref="M_depth" x="293" y="342.98" text-anchor="middle">M&#x27;</text>
+    <text class="caption-note" x="370" y="497.5" text-anchor="middle">Book IV, Figs. 56–63 — Glass Picture Plane Projection (CR(A&#x27;, E&#x27;; M&#x27;, V_x) = -1)</text>
+  </g>
+</svg>

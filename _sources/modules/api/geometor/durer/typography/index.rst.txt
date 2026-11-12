@@ -1,0 +1,205 @@
+geometor.durer.typography
+=========================
+
+.. py:module:: geometor.durer.typography
+
+.. autoapi-nested-parse::
+
+   Exact symbolic compass-and-straightedge typography from Book III of *Underweysung der Messung*.
+
+   Implements Albrecht Dürer's 1525 Nuremberg geometric constructions for:
+
+   1. **Roman *Antiqua* Capitals** (Book III, pp. 115–135) inside the ``10 x 10`` square ``ABCD``
+      (with thick stroke width ``1 = 1/10`` of the square side and thin stroke width ``1/3``),
+      in direct mathematical dialogue with Luca Pacioli's *Divina Proportione* (1509, ``1:9`` grid):
+
+      - ``construct_durer_roman_letter_A``: Inclined thin/thick legs, inner triangular counter,
+        sub-midline crossbar, and circular serif fillets (*Ausschweiffung*) of radii ``10/7`` (outer)
+        and ``1/2`` (inner).
+      - ``construct_durer_roman_letter_O``: Dürer's two-circle diagonal-shift construction along
+        ``CB`` (``y = x``), where two congruent circles of exact radius ``5 - sqrt(2)/4`` separated
+        by unit stroke distance ``|FG| = 1`` form both the outer contour and inner counter.
+      - ``construct_durer_roman_letter_Q``: Extends ``O`` along anti-diagonal ``AD`` (``x + y = 10``)
+        with Dürer's sweeping circular tail through corner ``D = (10, 0)``.
+
+   2. **Modular Gothic *Textura* Minuscules** (Book III, pp. 136–141):
+
+      - ``construct_durer_textura_minuscules``: Constructs ``i``, ``n``, and ``m`` strictly from
+        stacked unit squares (*rechte fierungen*) capped by ``45°`` diamond squares (*ort fierungen*)
+        anchored at exact ``1/3`` division points—an early discrete modular grid system.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.durer.typography.RomanLetterAResult
+   geometor.durer.typography.RomanLetterOQResult
+   geometor.durer.typography.TexturaMinusculesResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.typography.construct_durer_roman_letter_A
+   geometor.durer.typography.construct_durer_roman_letter_O
+   geometor.durer.typography.construct_durer_roman_letter_Q
+   geometor.durer.typography.construct_durer_textura_minuscules
+
+
+Module Contents
+---------------
+
+.. py:class:: RomanLetterAResult
+
+   Exact symbolic construction of Dürer's Roman *Antiqua* capital ``A`` in a ``10 x 10`` square.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: square_corners
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: thick_stroke
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: thin_stroke
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: outer_serif_radius
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: inner_serif_radius
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: counter_triangle
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: crossbar_quad
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: serif_centers
+      :type:  dict[str, sympy.geometry.Point]
+
+
+.. py:class:: RomanLetterOQResult
+
+   Exact symbolic construction of Dürer's Roman *Antiqua* ``O`` or ``Q`` in a ``10 x 10`` square.
+
+
+   .. py:attribute:: letter
+      :type:  str
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: square_corners
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: center_i
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: shifted_center_f
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: shifted_center_g
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: bowl_radius
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: circle_f
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: circle_g
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: crossover_points
+      :type:  tuple[sympy.geometry.Point, sympy.geometry.Point]
+
+
+   .. py:attribute:: tail_points
+      :type:  tuple[sympy.geometry.Point, ...]
+
+
+.. py:class:: TexturaMinusculesResult
+
+   Exact modular construction of Dürer's Gothic *Textura* minuscules ``i``, ``n``, ``m``.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: stem_width
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: stacked_square_count
+      :type:  int
+
+
+   .. py:attribute:: diamond_side
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: glyph_polygons
+      :type:  dict[str, list[tuple[tuple[sympy.Expr, sympy.Expr], ...]]]
+
+
+.. py:function:: construct_durer_roman_letter_A(model: geometor.model.Model | None = None) -> RomanLetterAResult
+
+   Construct Dürer's Roman capital ``A`` inside the ``10 x 10`` square ``ABCD``.
+
+   Dürer labels the framing square (*rechte fierung*) ``a`` top-left ``(0, 10)``, ``b`` top-right
+   ``(10, 10)``, ``c`` bottom-left ``(0, 0)``, ``d`` bottom-right ``(10, 0)``, with midlines
+   ``ef`` (vertical) and ``gh`` (horizontal), thick stroke ``1`` (``1/10`` of ``10``), thin stroke
+   ``1/3``, outer foot serifs of radius ``10/7``, and inner foot serifs of radius ``1/2``.
+
+
+.. py:function:: construct_durer_roman_letter_O(model: geometor.model.Model | None = None) -> RomanLetterOQResult
+
+   Construct Dürer's Roman capital ``O`` inside the ``10 x 10`` square.
+
+
+.. py:function:: construct_durer_roman_letter_Q(model: geometor.model.Model | None = None) -> RomanLetterOQResult
+
+   Construct Dürer's Roman capital ``Q`` inside the ``10 x 10`` square.
+
+
+.. py:function:: construct_durer_textura_minuscules(model: geometor.model.Model | None = None) -> TexturaMinusculesResult
+
+   Construct Dürer's modular *Textura* minuscules ``i``, ``n``, and ``m`` from unit squares.
+
+   In Book III (p. 136), Dürer constructs ``i`` first because nearly the entire Gothic minuscule
+   alphabet is generated combinatorially from its modular stem. For ``n`` (two stems) and ``m``
+   (three stems), adjacent stems touch corner-to-corner at their ``45°`` diamond caps!
+   Wait: look at the spacing when adjacent top diamonds touch corner-to-corner:
+   Top diamond of stem 1 has right corner at ``x0 + 1/3 + sqrt(2)/2`` and left corner at
+   ``x0 + 1/3 - sqrt(2)/2``, so corner-to-corner contact spaces consecutive stems by exact pitch
+   ``sqrt(2)`` (leaving interior counter gap ``sqrt(2) - 1 ≈ 0.414 < 1``, matching Dürer's exact
+   words: *"so wirt das felt schlemer zwischen den zügen dann ein zug des pustaben preyt ist"*!).
+
+

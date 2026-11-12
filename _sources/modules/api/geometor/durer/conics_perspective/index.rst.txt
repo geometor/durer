@@ -1,0 +1,242 @@
+geometor.durer.conics_perspective
+=================================
+
+.. py:module:: geometor.durer.conics_perspective
+
+.. autoapi-nested-parse::
+
+   Exact symbolic constructions for Book I spirals & conic projections and Book IV perspective.
+
+   Covers two landmark innovations in Albrecht Dürer's *Underweysung der Messung* (1525):
+
+   1. **Book I — Spirals & Two-View Descriptive Geometry of Conic Sections** (pp. 011, 018, 034–039):
+
+      - ``construct_durer_spiral_volute``: Exact 12-sector Archimedean spiral (*Schneckenlini*,
+        Book I, Figs. 7 & 17) over ``Q(sqrt(3))``.
+      - ``construct_durer_conic_sections``: Dürer's orthographic elevation (*Aufriss*) + circular
+        ground plan (*Grundriss*) + rotated true-shape section plane for the right circular cone
+        (radius ``R = 6``, height ``H = 12``), proving algebraically that his 12-station transfer
+        algorithm yields ``w_k^2 = (2/9)*k*(12 - k)``—identically symmetric (``w_{12-k} = w_k``),
+        confirming a true Apollonian ellipse rather than an asymmetric *Eierlini* (egg-curve)—alongside
+        exact focal and asymptotic laws for the *Parabola / Brennspiegellini* and *Hiperbole / Gabellini*.
+
+   2. **Book IV — Central Perspective Apparatus & Delian Cube Duplication** (pp. 159–181):
+
+      - ``construct_durer_perspective_apparatus``: Exact homogeneous ray-plane intersection over ``Q``
+        from eye point ``E = (-12, 3, 5)`` onto picture plane ``x = 0`` for cube
+        ``[4, 8] x [-2, 2] x [0, 4]``, verifying convergence at principal vanishing point
+        ``V_x = (3, 5)``, harmonic cross-ratio invariance ``CR(P4', P8'; P6', V_x) = -1``, and
+        Plato's two-mean-proportionals identity ``c^3 = g^2 * e`` for doubling the cube.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.durer.conics_perspective.SpiralVoluteResult
+   geometor.durer.conics_perspective.ConicSectionsResult
+   geometor.durer.conics_perspective.DelianCubeCertificate
+   geometor.durer.conics_perspective.PerspectiveApparatusResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.durer.conics_perspective.construct_durer_spiral_volute
+   geometor.durer.conics_perspective.construct_durer_conic_sections
+   geometor.durer.conics_perspective.construct_durer_perspective_apparatus
+
+
+Module Contents
+---------------
+
+.. py:class:: SpiralVoluteResult
+
+   Exact 12-sector Archimedean spiral (*Schneckenlini*, Book I, Figs. 7 & 17) over ``Q(sqrt(3))``.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: center
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: outer_radius
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: sector_count
+      :type:  int
+
+
+   .. py:attribute:: spiral_points
+      :type:  tuple[sympy.geometry.Point, ...]
+
+
+   .. py:attribute:: radii
+      :type:  tuple[sympy.Expr, ...]
+
+
+.. py:class:: ConicSectionsResult
+
+   Exact symbolic audit of Dürer's Book I two-view orthographic conic sections (Figs. 34–37).
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: cone_radius
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: cone_height
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: ellipse_stations
+      :type:  tuple[tuple[int, sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr], ...]
+
+
+   .. py:attribute:: ellipse_semi_major
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ellipse_semi_minor
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ellipse_focal_distance
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ellipse_eccentricity
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ellipse_bilateral_symmetry_verified
+      :type:  bool
+
+
+   .. py:attribute:: parabola_focal_length
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: hyperbola_semi_transverse
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: hyperbola_semi_conjugate
+      :type:  sympy.Integer
+
+
+.. py:class:: DelianCubeCertificate
+
+   Symbolic verification of Plato's / Sporus's two-mean-proportionals cube duplication.
+
+
+   .. py:attribute:: given_g
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: given_e
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: first_mean_c
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: second_mean_d
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: volume_ratio
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: proportion_verified
+      :type:  bool
+
+
+.. py:class:: PerspectiveApparatusResult
+
+   Exact rational perspective projection of a 3D cube onto Dürer's Book IV glass frame.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: eye_3d
+      :type:  tuple[sympy.Integer, sympy.Integer, sympy.Integer]
+
+
+   .. py:attribute:: picture_plane_x
+      :type:  sympy.Integer
+
+
+   .. py:attribute:: vanishing_point
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: cube_vertices_3d
+      :type:  dict[str, tuple[sympy.Integer, sympy.Integer, sympy.Integer]]
+
+
+   .. py:attribute:: projected_vertices_2d
+      :type:  dict[str, sympy.geometry.Point]
+
+
+   .. py:attribute:: harmonic_cross_ratio_3d
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: harmonic_cross_ratio_2d
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: cross_ratio_invariant_verified
+      :type:  bool
+
+
+   .. py:attribute:: delian_cube
+      :type:  DelianCubeCertificate
+
+
+.. py:function:: construct_durer_spiral_volute(turns: int = 2, model: geometor.model.Model | None = None) -> SpiralVoluteResult
+
+   Construct Dürer's Book I Archimedean spiral over ``Q(sqrt(3))`` using 12 angular sectors.
+
+   Dürer divides the outer circle into 12 radial rays (``1..12``, every ``30°``) and divides the
+   outer radius ``R = 12`` into ``12 * turns`` equal radial steps ``r_k = k / turns``, plotting
+   ``P_k = (r_k * cos(k * 30°), r_k * sin(k * 30°))`` with 100% exact coordinates in ``Q(sqrt(3))``.
+
+
+.. py:function:: construct_durer_conic_sections(model: geometor.model.Model | None = None) -> ConicSectionsResult
+
+   Construct Dürer's Book I elevation + ground-plan + true-section diagram for the ellipse.
+
+   Also computes exact focal and asymptotic invariants for Dürer's *Parabola* (*Brennspiegellini*)
+   and *Hiperbole* (*Gabellini*).
+
+
+.. py:function:: construct_durer_perspective_apparatus(model: geometor.model.Model | None = None) -> PerspectiveApparatusResult
+
+   Project a 3D cube in ``Q^3`` onto Dürer's picture plane ``x = 0`` from eye ``E(-12, 3, 5)``.
+
+   Verifies:
+
+   1. Exact rational screen coordinates ``(y', z') in Q^2`` for all 8 cube vertices.
+   2. Exact convergence of all 4 depth edges at principal vanishing point ``V_x = (3, 5)``.
+   3. Exact projective cross-ratio invariance ``CR(P4', P8'; P6', V_x) = -1`` (harmonic range!).
+   4. Exact algebraic verification of Plato's / Sporus's two mean proportionals (Book IV, Fig. 50)
+      for doubling the cube (``g = 1, e = 2 => c = 2^(1/3), d = 2^(2/3), c^3 = 2``).
+
+
