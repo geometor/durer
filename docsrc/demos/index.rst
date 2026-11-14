@@ -1,6 +1,12 @@
-====================================================
-Exact Symbolic Demonstrations (``demos/``)
-====================================================
+:navigation: header
+:order: 25
+:nav_title: Demos
+
+=====
+Demos
+=====
+
+.. rubric:: Exact Symbolic Demonstrations in Python & SymPy
 
 All executable Python constructions for Albrecht Dürer's *Underweysung der Messung* live
 cleanly outside the historical codex in ``demos/`` and ``src/geometor/durer/``. Every

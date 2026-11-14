@@ -1,3 +1,7 @@
+:navigation: footer
+:order: 50
+:nav_title: About
+
 =====
 About
 =====
@@ -27,7 +31,7 @@ Archival & Translation Integrity
 ================================
 
 - **German (1525) Track**: Diplomatic Early New High German transcription of the 1525 Nuremberg
-  *editio princeps* held by SLUB Dresden (`PPN 27778509X`), preserving original folio pagination,
+  first edition held by SLUB Dresden (`PPN 27778509X`), preserving original folio pagination,
   orthographic superscripts (`uᵒ`), and Dürer's own 1525 Errata.
 - **English Track**: Fresh, independent GEOMETOR English translation prepared directly from
   Dürer's 1525 Nuremberg German and collated against Camerarius's 1532 Latin terminology.

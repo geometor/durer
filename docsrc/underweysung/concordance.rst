@@ -1,3 +1,7 @@
+:navigation: footer
+:order: 90
+:nav_title: Concordance
+
 ======================================================
 Cross-Corpus Concordance (*Underweysung* ↔ GEOMETOR)
 ======================================================
