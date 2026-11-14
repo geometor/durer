@@ -46,7 +46,7 @@
           <a href="../underweysung/bibliography.html"  >Bibliography</a>
         </li>
         <li>
-          <a href="../mission/index.html"  >Mission</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">About</a>
         </li>
         <li>
           <a href="../usage/index.html"  >Usage</a>
@@ -81,46 +81,43 @@
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../mission/index.html" title="Mission"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../demos/index.html" title="Demos"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <section class="level-1" id="about">
-        <h1>About<a class="headerlink" href="#about" title="Link to this heading">¶</a></h1>
-        <p><strong>GEOMETOR • durer</strong> is the scholarly Digital Scriptorium edition and exact symbolic engine for
-        <strong>Albrecht Dürer’s</strong> <em>Underweysung der Messung, mit dem Zirckel un[d] Richtscheyt, in Linien
-        Ebnen unnd gantzen Corporen</em> (Nuremberg, 1525; 2nd ed. 1538), collated with <strong>Joachim
-        Camerarius’s</strong> 1532 Paris Latin translation <em>Institutionum Geometricarum Libri Quatuor</em>.</p>
+        <section class="level-1" id="about-durer">
+        <span id="about-index"></span><span id="about"></span><span id="id1"></span><h1>About<a class="headerlink" href="#about-durer" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Extracting Historical Semantic Knowledge &amp; Repurposing It for Exact Symbolic Reasoning</p>
+        <section class="level-2" id="about-this-edition">
+        <h2>About This Edition<a class="headerlink" href="#about-this-edition" title="Link to this heading">¶</a></h2>
+        <p><strong>GEOMETOR • durer</strong> is the scholarly Digital Scriptorium edition and exact symbolic engine for <strong>Albrecht Dürer’s</strong> landmark treatise, <em>Underweysung der Messung, mit dem Zirckel un[d] Richtscheyt, in Linien Ebnen unnd gantzen Corporen</em> (<em>Instruction in Measurement, with Compass and Straightedge, in Lines, Planes, and Whole Solid Bodies</em>, Nuremberg, 1525; 2nd enlarged ed., 1538), collated with <strong>Joachim Camerarius’s</strong> 1532 Paris Latin translation, <em>Institutionum Geometricarum Libri Quatuor</em>. Dedicated to his humanist patron <strong>Willibald Pirckheimer</strong>, Dürer’s <em>Underweysung</em> stands as the first printed mathematics book in the German language and the decisive intellectual bridge connecting classical Greek demonstrative geometry with Northern and Italian Renaissance workshop practice.</p>
+        <p>The edition reconstructs all four books (<em>Vier Bücher</em>) through a synchronized four-track codex structure (diplomatic 1525 Nuremberg German, modern English translation, structural digest, and mathematical notes). Implicit geometric concepts across Dürer’s curriculum are extracted into machine-addressable semantic elements: two-view descriptive geometry of conic sections (<em>Eierlini</em>, <em>Brennspiegellini</em>, <em>Gabellini</em>), 12-sector Archimedean spirals and spatial helices, regular polygon constructions and modular parquetries, architectural sundials ($49^\circ$ Nuremberg gnomonics) and Roman <em>Antiqua</em> capitals, planar fold-out polyhedral nets (the first in print history), the Delian doubling of the cube, and the four perspective projection devices.</p>
+        <p>Crucially, the edition honors Dürer’s profound epistemic distinction between exact Euclidean demonstration (<em>demonstrative</em>) and rapid workshop approximation (<em>mechanice</em>). Using <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.model</span></code> and <a class="reference external" href="https://www.sympy.org">SymPy</a>, every construction is certified algebraically without floating-point injection—proving the exact cubic residual <span class="math notranslate nohighlight">\(P_7(\frac{3}{4}) = -\frac{1}{64}\)</span> of his heptagon, the nested quadratic radicals of his single-aperture pentagon, and the bilateral symmetry of his two-view conic sections. This work connects Dürer’s Nuremberg workshop directly to sister GEOMETOR treatises: the foundational canons of <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor.euclid</span></code>, Luca Pacioli’s <code class="docutils literal notranslate"><span class="pre">geometor.pacioli</span></code> (<em>De Divina Proportione</em>), and the golden ratio discovery canon <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>.</p>
         </section>
-        <section class="level-1" id="historical-significance">
-        <h1>Historical Significance<a class="headerlink" href="#historical-significance" title="Link to this heading">¶</a></h1>
-        <p>Published in Nuremberg in 1525 and dedicated to his lifelong humanist friend <strong>Willibald
-        Pirckheimer</strong>, Dürer’s <em>Underweysung der Messung</em> is the <strong>first printed mathematics book in the
-        German language</strong> and the decisive bridge between two worlds:</p>
-        <ol class="arabic simple">
-        <li><p><strong>Classical Greek Deductive Geometry</strong> (<em>demonstrative</em>): Euclid’s <em>Elements</em>, Archimedes’s
-        spirals and semi-regular polyhedra, Apollonius’s conic sections, Nicomedes’s conchoid, and
-        Plato/Sporus/Hero’s solutions to the Delian doubling of the cube.</p></li>
-        <li><p><strong>Northern &amp; Italian Workshop Practice</strong> (<em>mechanice</em>): Medieval stonemasons’ single-aperture
-        compass traditions (<em>Geometria Deutsch</em>, Matthäus Roriczer, Abū al-Wafāʾ), Luca Pacioli and
-        Leonardo da Vinci’s <em>Divina Proportione</em> (1509), Leon Battista Alberti and Piero della
-        Francesca’s linear perspective, Vitruvian architecture and gnomonics, and Nuremberg punchcutting
-        and calligraphy.</p></li>
-        </ol>
+        <section class="level-2" id="the-geometor-mission">
+        <h2>The GEOMETOR Mission<a class="headerlink" href="#the-geometor-mission" title="Link to this heading">¶</a></h2>
+        <p>Founded by <strong>phi ARCHITECT</strong>, the GEOMETOR project is dedicated to three foundational pillars:</p>
+        <dl class="simple">
+        <dt>Extracting Historical Semantic Knowledge</dt><dd><p>Moving beyond passive page scans and OCR to recover the living deductive structure of 2,300+ years of geometric, axiomatic, and philosophical treatises. GEOMETOR elevates prose, marginal citations, primary-source folios (via <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), and calibrated Ink-to-Vector <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams into structured, machine-addressable semantic graphs.</p>
+        </dd>
+        <dt>Exact Symbolic Grounding (<code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>)</dt><dd><p>Anchoring geometric constructions in 100% exact symbolic algebra (<a class="reference external" href="https://www.sympy.org">SymPy</a>) and Rational Trigonometry invariants (quadrance, spread, cross-ratio) over exact algebraic number fields rather than floating-point approximations. Every geometric theorem and construction is mathematically verified and permanently reproducible.</p>
+        </dd>
+        <dt>Repurposing Knowledge Across Mediums</dt><dd><p>Re-deploying extracted semantic and algebraic structures across synchronized multi-track <strong>Book Codices</strong> and EPUB 3 editions (<code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>), computable deductive canons (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), interactive SVG laboratories (<code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>), QHD visual broadcasts, and neuro-symbolic program synthesis (<code class="docutils literal notranslate"><span class="pre">geometor.seer</span></code>) across <a class="reference external" href="https://geometor.com">geometor.com</a>.</p>
+        </dd>
+        </dl>
         </section>
-        <section class="level-1" id="archival-translation-integrity">
-        <h1>Archival &amp; Translation Integrity<a class="headerlink" href="#archival-translation-integrity" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="sources-provenance-methodology">
+        <h2>Sources, Provenance &amp; Methodology<a class="headerlink" href="#sources-provenance-methodology" title="Link to this heading">¶</a></h2>
+        <p>The Digital Scriptorium edition of <em>Underweysung der Messung</em> is established on primary archival witnesses and rigorous symbolic methods:</p>
         <ul class="simple">
-        <li><p><strong>German (1525) Track</strong>: Diplomatic Early New High German transcription of the 1525 Nuremberg
-        first edition held by SLUB Dresden (<cite>PPN 27778509X</cite>), preserving original folio pagination,
-        orthographic superscripts (<cite>uᵒ</cite>), and Dürer’s own 1525 Errata.</p></li>
-        <li><p><strong>English Track</strong>: Fresh, independent GEOMETOR English translation prepared directly from
-        Dürer’s 1525 Nuremberg German and collated against Camerarius’s 1532 Latin terminology.</p></li>
-        <li><p><strong>Exact Symbolic Engine</strong>: Every geometric construction in <code class="docutils literal notranslate"><span class="pre">geometor.durer</span></code> preserves 100%
-        exact algebraic coordinates in <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> and <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> without floating-point
-        injection.</p></li>
+        <li><p><strong>German (1525) Copy-Text</strong>: Diplomatic Early New High German transcription of the 1525 Nuremberg first edition held by the Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden (SLUB Dresden, <a class="reference external" href="https://kxp.k10plus.de/DB=1.65/PPNSET?PPN=27778509X">PPN 27778509X</a>), preserving original folio pagination, orthographic superscripts (<span class="math notranslate nohighlight">\(u^\circ\)</span>), and Dürer’s own 1525 Errata list.</p></li>
+        <li><p><strong>Latin Translation (1532)</strong>: Joachim Camerarius, <em>Institutionum Geometricarum Libri Quatuor</em> (Paris: Christian Wechel, 1532), establishing humanistic Latin nomenclature for Dürer’s vernacular terminology.</p></li>
+        <li><p><strong>Second German Edition (1538)</strong>: <em>Underweysung der Messung</em> (Nuremberg: Hieronymus Andreae, 1538), incorporating Dürer’s posthumous expansions and additional figures.</p></li>
+        <li><p><strong>English Translation</strong>: Modern, independent scholarly translation prepared directly from the 1525 copy-text, collated with Camerarius (1532) and Walter L. Strauss’s commentary (Abaris Books, 1977).</p></li>
+        <li><p><strong>Exact Symbolic Engine</strong>: Every geometric construction in <code class="docutils literal notranslate"><span class="pre">geometor.durer</span></code> preserves 100% exact algebraic coordinates in SymPy and <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.model</span></code> without floating-point error, compiled through the Photon Publisher framework.</p></li>
         </ul>
+        </section>
         </section>
 
       </div>
@@ -134,7 +131,7 @@
             <a class="book-toc-link" href="../index.html">GEOMETOR • durer</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../mission/index.html" title="Mission"><span class="nav-label">Mission</span> &rarr;</a>
+            <a class="book-nav-btn" href="../demos/index.html" title="Demos"><span class="nav-label">Demos</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -175,7 +172,6 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="#" class="is-active" aria-selected="true" aria-current="page">About</a></li>
         <li><a href="../underweysung/concordance.html"  >Concordance</a></li>
         <li><a href="../underweysung/glossary.html"  >Glossary</a></li>
       </ul>
@@ -190,11 +186,12 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=92734c54"></script>
+  <script src="../_static/documentation_options.js?v=360bc84d"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../_static/js/search_highlight.js"></script>
 
 </body>

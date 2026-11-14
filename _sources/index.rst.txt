@@ -67,7 +67,6 @@ Codex & Symbolic Architecture
    underweysung/persons
    underweysung/bibliography
    about/index
-   mission/index
    demos/index
    modules/index
    log/index
