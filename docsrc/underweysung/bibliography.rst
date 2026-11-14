@@ -1,6 +1,12 @@
-====================================
-Bibliography & Archival Witnesses
-====================================
+:navigation: header
+:order: 6
+:nav_title: Bibliography
+
+============
+Bibliography
+============
+
+.. rubric:: Primary Editions of Albrecht Dürer, Renaissance Treatises & Critical Commentaries
 
 Primary Editions of Dürer
 =========================

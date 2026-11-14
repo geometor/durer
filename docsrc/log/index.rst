@@ -1,7 +1,9 @@
 :navigation: header
-:order: 50
+:order: 30
+:nav_title: Log
 
-log
+===
+Log
 ===
 
 .. toctree::
