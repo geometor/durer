@@ -66,7 +66,7 @@ from geometor.durer.typography import (
     construct_durer_textura_minuscules,
 )
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 __all__ = [
     "DURER_BOOK4_SOLIDS_CATALOG",
