@@ -35,7 +35,7 @@ def _assert_zero_floats_in_model(model: Model) -> None:
 
 
 def test_version_and_public_api() -> None:
-    assert gd.__version__ == "0.1.0"
+    assert gd.__version__ == "0.1.1"
     assert zero_test(gd.PHI**2 - gd.PHI - 1)
 
 

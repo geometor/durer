@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.1.1 (2026-11-13)
+==================
+
+- Resolve 100% of marginal ``.. folio::`` source links (28 directives) to SLUB Dresden digital facsimile page anchors via ``publish folio-links``.
+
 0.1.0 (2026-11-12)
 ==================
 
