@@ -1,6 +1,50 @@
-========================
-Dramatis Personae
-========================
+:navigation: header
+:order: 5
+:nav_title: People
+
+======
+People
+======
+
+.. rubric:: Historical Register & Interlocutors
+
+Biographical registry of classical, Renaissance, and modern mathematicians, humanists, and geometers connected with Albrecht Dürer's *Underweysung der Messung*.
+
+Authors, Translators & Editors
+------------------------------
+
+.. _person-durer:
+
+Albrecht Dürer (1471–1528)
+==========================
+Nuremberg painter, engraver, woodcut master, and mathematician. Combining goldsmith precision,
+Italian perspective theory, and Pirckheimer's Greek mathematical library, he created in
+*Underweysung der Messung* (1525) the first printed German mathematical treatise, two-view
+descriptive geometry, Renaissance geometric typography, and planar polyhedral fold-out nets.
+
+.. _person-camerarius:
+
+Joachim Camerarius (1500–1574)
+==============================
+Nuremberg humanist scholar and rector whose 1532 Paris Latin translation *Institutionum
+Geometricarum Libri Quatuor* carried Dürer's geometric discoveries across learned Europe.
+
+.. _person-andreae:
+
+Hieronymus Andreae / Formschneider (d. 1556)
+============================================
+Nuremberg master blockcutter and typographer who cut types and woodblocks for Dürer and printed
+the enlarged posthumous second edition of *Underweysung der Messung* (1538).
+
+.. _person-pirckheimer:
+
+Willibald Pirckheimer (1470–1530)
+=================================
+Nuremberg patrician humanist, translator of Greek classics, Dürer's closest friend, and dedicatee
+of *Underweysung der Messung* (1525).
+
+Cited Geometers, Philosophers & Scholars
+----------------------------------------
 
 .. _person-abu-l-wafa:
 
@@ -18,13 +62,6 @@ Italian humanist and architect whose *De pictura* (1435) formulated linear persp
 planar intersection (*intersegazione*) of the visual pyramid, realized physically in Dürer's
 Book IV glass-frame and sighting-thread instruments.
 
-.. _person-andreae:
-
-Hieronymus Andreae / Formschneider (d. 1556)
-============================================
-Nuremberg master blockcutter and typographer who cut types and woodblocks for Dürer and printed
-the enlarged posthumous second edition of *Underweysung der Messung* (1538).
-
 .. _person-apollonius:
 
 Apollonius of Perga (c. 240 – c. 190 BC)
@@ -41,28 +78,12 @@ Greek geometer whose *On Spirals*, *Measurement of a Circle*, and thirteen semi-
 underpin Dürer's Book I spirals, Book II circle quadrature discussion, and Book IV Archimedean
 polyhedral nets.
 
-.. _person-camerarius:
-
-Joachim Camerarius (1500–1574)
-==============================
-Nuremberg humanist scholar and rector whose 1532 Paris Latin translation *Institutionum
-Geometricarum Libri Quatuor* carried Dürer's geometric discoveries across learned Europe.
-
 .. _person-cardano:
 
 Gerolamo Cardano (1501–1576)
 ============================
 Italian algebraist who, together with Lodovico Ferrari, proved in *De subtilitate* (1550) that
 every Euclidean construction can be carried out with straightedge and a fixed compass opening.
-
-.. _person-durer:
-
-Albrecht Dürer (1471–1528)
-==========================
-Nuremberg painter, engraver, woodcut master, and mathematician. Combining goldsmith precision,
-Italian perspective theory, and Pirckheimer's Greek mathematical library, he created in
-*Underweysung der Messung* (1525) the first printed German mathematical treatise, two-view
-descriptive geometry, Renaissance geometric typography, and planar polyhedral fold-out nets.
 
 .. _person-euclid:
 
@@ -161,13 +182,6 @@ Piero della Francesca (c. 1415–1492)
 ====================================
 Author of *De prospectiva pingendi* and *Libellus de quinque corporibus regularibus*, foundational
 precursor to Renaissance descriptive foreshortening and polyhedral geometry.
-
-.. _person-pirckheimer:
-
-Willibald Pirckheimer (1470–1530)
-=================================
-Nuremberg patrician humanist, translator of Greek classics, Dürer's closest friend, and dedicatee
-of *Underweysung der Messung* (1525).
 
 .. _person-plato:
 

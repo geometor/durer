@@ -1,5 +1,3 @@
-:navigation: header
-
 ==========================================================================
 GEOMETOR • Dürer — *Underweysung der Messung* (Nuremberg, 1525 / 1538)
 ==========================================================================
@@ -49,18 +47,27 @@ Codex & Symbolic Architecture
      Delian **Doubling of the Cube** (Sporus, Plato's mechanical square, Hero, and cannonball
      scaling), cube shadow sciagraphy, and the **four perspective instruments**.
 
-2. :doc:`demos/index` — **Executable Exact Symbolic Demonstrations** auditing every construction
+2. :doc:`usage/index` — **Reader's Guide** explaining tracks, high-resolution folio milestones, interactive diagrams, search highlighting, and Python API.
+
+3. :doc:`underweysung/persons` — **People & Interlocutors** (Nuremberg Humanists, Classical Geometers & Editors).
+
+4. :doc:`underweysung/bibliography` — **Bibliography & Primary Witnesses** (SLUB Dresden Facsimile, Camerarius Latin 1532, Second Edition 1538).
+
+5. :doc:`demos/index` — **Executable Exact Symbolic Demonstrations** auditing every construction
    in ``SymPy`` and ``geometor.model`` with zero floating-point coordinates.
 
-3. :doc:`modules/index` — **Python Package Reference** for ``geometor.durer``.
+6. :doc:`modules/index` — **Python Package Reference** for ``geometor.durer``.
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
+   underweysung/index
+   usage/index
+   underweysung/persons
+   underweysung/bibliography
    about/index
    mission/index
-   underweysung/index
    demos/index
    modules/index
    log/index
