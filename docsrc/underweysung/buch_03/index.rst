@@ -1,0 +1,42 @@
+:layout: book
+:order: 3
+:type: book
+:canonical_id: Buch III
+:nav_title: Drittes Büchlein
+:breadcrumb_title: Drittes Büchlein
+:book_title: Drittes Büchlein: Columns, Sundials & Roman/Gothic Typography
+:book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
+:author: Albrecht Dürer
+:year: 1525
+:excerpt: Vitruvian columns, 60-station enveloped-sphere helices, Nuremberg gnomonics for 49° latitude, optical tower scaling, Roman Antiqua A–Z, and modular Gothic Textura.
+:featured_image: /_static/figures/book3_roman_letter_a.svg
+
+.. _buch-03:
+.. _buch_03:
+.. _unit-3-architecture-sundials-typography:
+.. _unit-3-architecture-sundials-typography-en:
+.. _unit-3-architecture-sundials-typography-de:
+.. _unit-3-architecture-sundials-typography-summary:
+.. _unit-3-architecture-sundials-typography-notes:
+
+=============================================================
+Drittes Büchlein: Columns, Sundials & Roman/Gothic Typography
+=============================================================
+
+.. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
+
+
+.. picture:: /_static/figures/book3_roman_letter_a.svg
+
+Sections
+--------
+
+.. collection::
+   :sort: order
+
+.. toctree::
+   :hidden:
+
+   sec_01/index
+   sec_02/index
+   sec_03/index

@@ -34,7 +34,9 @@ if "geometor.durer.sphinx_ext" not in extensions:  # noqa: F405
 register_german_1525_book_track()
 configure_local_intersphinx(intersphinx_mapping, _REPO_ROOT)  # noqa: F405
 
-project = "GEOMETOR • durer"
+site_title = "Albrecht Dürer"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 author = "Albrecht Dürer"
 copyright = "1525 Nuremberg (Editio Princeps) • 1532 Camerarius • Digital Edition GEOMETOR"
 

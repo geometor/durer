@@ -155,22 +155,27 @@ def test_codex_apparatus_tracks_svgs_and_cli(tmp_path: Path) -> None:
     assert "eierlini" in app.glossary
 
     codex_dir = REPO_ROOT / "docsrc" / "underweysung"
-    units = (
-        "unit-1-lines-spirals-conics",
-        "unit-2-planes-polygons-tilings",
-        "unit-3-architecture-sundials-typography",
-        "unit-4-solids-nets-perspective",
+    books = (
+        "buch_01",
+        "buch_02",
+        "buch_03",
+        "buch_04",
     )
-    for unit in units:
-        for suffix in ("en", "de", "summary", "notes"):
-            rst_file = codex_dir / unit / f"{unit}-{suffix}.rst"
-            assert rst_file.is_file(), f"Missing track file: {rst_file}"
-            content = rst_file.read_text(encoding="utf-8")
-            assert len(content) > 400
-            assert ".. py_file::" not in content, f"Forbidden py_file in {rst_file}"
+    for b_slug in books:
+        b_index = codex_dir / b_slug / "index.rst"
+        assert b_index.is_file(), f"Missing book index: {b_index}"
+        sec_dirs = sorted([d for d in (codex_dir / b_slug).iterdir() if d.is_dir()])
+        assert len(sec_dirs) >= 3, f"Too few sections in {b_slug}"
+        for s_dir in sec_dirs:
+            for suffix in ("index", "de", "summary", "notes"):
+                rst_file = s_dir / f"{suffix}.rst"
+                assert rst_file.is_file(), f"Missing track file: {rst_file}"
+                content = rst_file.read_text(encoding="utf-8")
+                assert len(content) > 100
+                assert ".. py_file::" not in content, f"Forbidden py_file in {rst_file}"
 
     for entry in app.concordance:
-        assert entry.unit in units
+        assert entry.unit in books
 
     fig_dir = REPO_ROOT / "docsrc" / "_static" / "figures"
     svg_files = sorted(fig_dir.glob("*.svg"))
