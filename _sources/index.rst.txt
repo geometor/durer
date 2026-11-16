@@ -2,13 +2,13 @@
 
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • the works of
 
 ==============
 Albrecht Dürer
 ==============
 
-The mission of this project is to capture a semantic digital library of the works of :person:`Albrecht Dürer <durer>` (1471–1528), the Nuremberg master whose *Underweysung der Messung* introduced descriptive geometry, planar polyhedral nets, and Renaissance measurement to northern Europe.
+The works of :person:`Albrecht Dürer <durer>` (1471–1528) stand as a monumental Renaissance synthesis of geometric rigor and workshop practice, introducing descriptive geometry, planar polyhedral nets, and the theory of perspective to Northern Europe. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, Dürer's landmark treatise is liberated from static print bounds—decomposed into addressable semantic units, calibrated vector diagrams, primary-source folio provenance, and cross-corpus citations speaking one shared geometric language.
 
 .. collection::
    :type: book
