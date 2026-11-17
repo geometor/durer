@@ -28,21 +28,6 @@ Mathematical Demonstrations & Symbolic Modules
 - **Book III**: Classical Roman Antiqua typography and modular Textura minuscules.
 - **Book IV**: Planar fold-out nets for Platonic and Archimedean polyhedra, Delian cube duplication, and central perspective projection.
 
-Python Package & Modules
-------------------------
-
-The ``geometor-durer`` Python package (``import geometor.durer``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
-
-- ``concordance.py`` — Scholarly apparatus & cross-corpus concordance loader for *Underweysung der Messung* (1525).
-- ``conics_perspective.py`` — Exact symbolic constructions for Book I spirals & conic projections and Book IV perspective.
-- ``polygons.py`` — Exact symbolic constructions & workshop audits for Book II regular polygons and quadrature.
-- ``polyhedra.py`` — Exact symbolic planar polyhedral nets from Book IV of Dürer's *Underweysung der Messung* (1525).
-- ``render.py`` — Theme-adaptive ``.euclid-graphic`` SVG renderer & figure generator for ``geometor.durer``.
-- ``typography.py`` — Exact symbolic compass-and-straightedge typography from Book III of *Underweysung der Messung*.
-- ``cli.py`` — Command-line interface for ``geometor.durer``.
-- ``sphinx_ext.py`` — Runtime Sphinx & photon-platform/publish integration for GEOMETOR Dürer.
-
-See the `API Reference <https://geometor.github.io/durer/modules/>`_ for full module documentation.
 
 Repository Contents
 -------------------
