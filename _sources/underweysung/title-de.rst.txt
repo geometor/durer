@@ -67,5 +67,5 @@ Wissenschaftlicher Apparat
 
 * :doc:`Konkordanz <concordance>`
 * :doc:`Bibliographie <bibliography>`
-* :doc:`Personenregister <persons>`
+* :doc:`Personenregister <people/index>`
 * :doc:`Glossar <glossary>`

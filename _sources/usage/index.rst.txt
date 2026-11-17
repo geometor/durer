@@ -74,7 +74,7 @@ Explore the four books through interconnected facets:
 
 Scholarly context is available throughout the reading pane:
 
-* **People Tooltips**: Hovering over any linked name (such as :person:`Albrecht Dürer <durer>`, :person:`Joachim Camerarius <camerarius>`, :person:`Euclid <euclid>`, or :person:`Johannes Kepler <kepler>`) displays a biographical summary with a link to the :doc:`/underweysung/persons` registry.
+* **People Tooltips**: Hovering over any linked name (such as :person:`Albrecht Dürer <durer>`, :person:`Joachim Camerarius <camerarius>`, :person:`Euclid <euclid>`, or :person:`Johannes Kepler <kepler>`) displays a biographical summary with a link to the :doc:`/underweysung/people/index` registry.
 * **Citations**: Citations (such as :cite:`durer:1525` or :cite:`durer:1532:camerarius`) display complete bibliographical data on hover and link to the :doc:`/underweysung/bibliography`.
 * **Technical Terms**: Specialized Early New High German workshop terms and Latin equivalents (such as :term:`Schlangenlini <schlangenlini>`, :term:`Eierlini <eierlini>`, or :term:`Aufgezogner Grund <aufgezogner-grund>`) link to definition cards in the :doc:`/underweysung/glossary`.
 * **Theme Switcher**: Toggle between light parchment and dark modes using the theme switcher in the top navigation bar.

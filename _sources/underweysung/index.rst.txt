@@ -55,7 +55,7 @@ Scholarly Apparatus
 
 * :doc:`Concordance <concordance>`
 * :doc:`Bibliography <bibliography>`
-* :doc:`People <persons>`
+* :doc:`People <people/index>`
 * :doc:`Glossary <glossary>`
 
 .. toctree::
@@ -63,7 +63,7 @@ Scholarly Apparatus
 
    concordance
    bibliography
-   persons
+   people/index
    glossary
 
 .. toctree::
