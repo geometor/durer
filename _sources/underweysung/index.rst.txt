@@ -1,23 +1,25 @@
 :navigation: header
 :order: 1
 :type: book
-:nav_title: Underweysung der Messung
-:breadcrumb_title: Underweysung der Messung
+:nav_title: Instruction in Measurement
+:breadcrumb_title: Instruction in Measurement
 :layout: book
-:book_title: Underweysung der Messung
-:book_subtitle: Instruction in Measurement (Nuremberg, 1525 / Paris, 1532) — Albrecht Dürer
+:title: Instruction in Measurement
+:book_title: Instruction in Measurement
+:book_subtitle: Underweysung der Messung (Nuremberg, 1525 / Paris, 1532) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
+:tracks: English: index | German: title-de
 :excerpt: Albrecht Dürer's foundational treatise on compass and straightedge construction, spirals, conics, planar polyhedral nets, and perspective.
 
 .. _underweysung-der-messung:
 .. _durer-index:
 
-========================
-Underweysung der Messung
-========================
+==========================
+Instruction in Measurement
+==========================
 
-.. rubric:: *Instruction in Measurement with Compass and Straightedge* — Albrecht Dürer (Nuremberg, 1525)
+.. rubric:: *Underweysung der Messung, mit dem Zirckel und Richtscheyt* (Nuremberg, 1525)
 
 .. container:: title-page
 
@@ -30,14 +32,12 @@ Underweysung der Messung
 
 .. epigraph::
 
-   *Dem meinen insonders lieben Herren vnd freünd / Herren Wilibalden Pirckheymer entbeüt ich
-   Albrecht Dürer mein willig dienst. ... Dann aus der messung mag man allerley gestalt vnnd
-   ding für sich nemen zu machen.*
+   “To my especially dear Lord and friend, Lord Willibald Pirckheimer, I, Albrecht Dürer, offer my willing service. ... For from measurement one may undertake to make all manner of forms and things.”
 
    — **Albrecht Dürer**, Dedication to :person:`Willibald Pirckheimer <pirckheimer>`, Nuremberg, 1525
 
-The Four Books (*Büchlein I–IV*)
---------------------------------
+The Four Books
+--------------
 
 .. collection::
    :sort: order
@@ -65,3 +65,10 @@ Scholarly Apparatus
    bibliography
    persons
    glossary
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Title Pages
+
+   title-de

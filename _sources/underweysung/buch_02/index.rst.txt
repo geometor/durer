@@ -1,10 +1,10 @@
 :layout: book
 :order: 2
 :type: book
-:canonical_id: Buch II
-:nav_title: Zweites Büchlein
-:breadcrumb_title: Zweites Büchlein
-:book_title: Zweites Büchlein: Regular Polygons & Planar Tilings
+:canonical_id: Book II
+:nav_title: Book II
+:breadcrumb_title: Book II
+:book_title: Book II: Regular Polygons & Planar Tilings
 :book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
@@ -19,9 +19,9 @@
 .. _unit-2-planes-polygons-tilings-summary:
 .. _unit-2-planes-polygons-tilings-notes:
 
-===================================================
-Zweites Büchlein: Regular Polygons & Planar Tilings
-===================================================
+============================================
+Book II: Regular Polygons & Planar Tilings
+============================================
 
 .. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
 

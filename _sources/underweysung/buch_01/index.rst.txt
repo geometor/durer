@@ -1,10 +1,10 @@
 :layout: book
 :order: 1
 :type: book
-:canonical_id: Buch I
-:nav_title: Erstes Büchlein
-:breadcrumb_title: Erstes Büchlein
-:book_title: Erstes Büchlein: Lines, Spirals & Conic Sections
+:canonical_id: Book I
+:nav_title: Book I
+:breadcrumb_title: Book I
+:book_title: Book I: Lines, Spirals & Conic Sections
 :book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
@@ -19,9 +19,9 @@
 .. _unit-1-lines-spirals-conics-summary:
 .. _unit-1-lines-spirals-conics-notes:
 
-================================================
-Erstes Büchlein: Lines, Spirals & Conic Sections
-================================================
+=========================================
+Book I: Lines, Spirals & Conic Sections
+=========================================
 
 .. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
 

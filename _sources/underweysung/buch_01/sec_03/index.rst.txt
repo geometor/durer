@@ -4,7 +4,7 @@
 :order: 3
 :type: section
 :folio: N1525 p. 010–029
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book1_spiral_volute.svg
 
 .. _buch_01-sec_03:

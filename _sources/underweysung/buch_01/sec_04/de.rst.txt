@@ -4,7 +4,7 @@
 :order: 4
 :type: section
 :folio: N1525 p. 034–044
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book1_cone_ellipse_projection.svg
 
 .. _buch_01-sec_04-de:

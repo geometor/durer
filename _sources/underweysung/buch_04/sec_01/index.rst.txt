@@ -4,7 +4,7 @@
 :order: 1
 :type: section
 :folio: N1525 p. 142–157
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book4_platonic_nets.svg
 
 .. _buch_04-sec_01:

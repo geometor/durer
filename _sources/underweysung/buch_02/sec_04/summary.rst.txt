@@ -4,7 +4,7 @@
 :order: 4
 :type: section
 :folio: N1525 p. 071–076
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book2_heptagon_and_quadrature.svg
 
 .. _buch_02-sec_04-summary:

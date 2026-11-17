@@ -4,7 +4,7 @@
 :order: 3
 :type: section
 :folio: N1525 p. 115–141
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book3_roman_letter_a.svg
 
 .. _buch_03-sec_03-notes:

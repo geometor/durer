@@ -4,7 +4,7 @@
 :order: 2
 :type: section
 :folio: N1525 p. 007–009
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 
 .. _buch_01-sec_02:
 .. _buch_01-sec_02-en:
