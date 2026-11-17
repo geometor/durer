@@ -18,7 +18,7 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Instruction in Measurement <https://geometor.github.io/durer/underweysung/>`_** — *Underweysung der Messung* (Nuremberg, 1525 / Paris, 1532) featuring four synchronized bilingual reading tracks, polyhedral net reconstructions, and exact compass-and-straightedge models.
+- `Instruction in Measurement <https://geometor.github.io/durer/underweysung/>`_ — *Underweysung der Messung* (Nuremberg, 1525 / Paris, 1532) featuring four synchronized bilingual reading tracks, polyhedral net reconstructions, and exact compass-and-straightedge models.
 
 Mathematical Demonstrations & Symbolic Modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
