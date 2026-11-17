@@ -4,7 +4,7 @@
 :order: 2
 :type: section
 :folio: N1525 p. 057–061
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book2_durer_vs_euclid_pentagon.svg
 
 .. _buch_02-sec_02-summary:

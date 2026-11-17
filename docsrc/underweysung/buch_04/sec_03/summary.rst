@@ -4,7 +4,7 @@
 :order: 3
 :type: section
 :folio: N1525 p. 166–182
-:tracks: English: index | Frühneuhochdeutsch (1525): de | Summary: summary | Notes: notes
+:tracks: English: index | German: de | Summary: summary | Notes: notes
 :featured_image: /_static/figures/book4_perspective_cube_apparatus.svg
 
 .. _buch_04-sec_03-summary:

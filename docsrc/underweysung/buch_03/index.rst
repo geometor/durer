@@ -1,10 +1,10 @@
 :layout: book
 :order: 3
 :type: book
-:canonical_id: Buch III
-:nav_title: Drittes Büchlein
-:breadcrumb_title: Drittes Büchlein
-:book_title: Drittes Büchlein: Columns, Sundials & Roman/Gothic Typography
+:canonical_id: Book III
+:nav_title: Book III
+:breadcrumb_title: Book III
+:book_title: Book III: Columns, Sundials & Roman/Gothic Typography
 :book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
@@ -19,9 +19,9 @@
 .. _unit-3-architecture-sundials-typography-summary:
 .. _unit-3-architecture-sundials-typography-notes:
 
-=============================================================
-Drittes Büchlein: Columns, Sundials & Roman/Gothic Typography
-=============================================================
+=======================================================
+Book III: Columns, Sundials & Roman/Gothic Typography
+=======================================================
 
 .. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
 

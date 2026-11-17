@@ -1,10 +1,10 @@
 :layout: book
 :order: 4
 :type: book
-:canonical_id: Buch IV
-:nav_title: Viertes Büchlein
-:breadcrumb_title: Viertes Büchlein
-:book_title: Viertes Büchlein: Platonic & Archimedean Polyhedral Nets & Perspective
+:canonical_id: Book IV
+:nav_title: Book IV
+:breadcrumb_title: Book IV
+:book_title: Book IV: Platonic & Archimedean Polyhedral Nets & Perspective
 :book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
@@ -19,9 +19,9 @@
 .. _unit-4-solids-nets-perspective-summary:
 .. _unit-4-solids-nets-perspective-notes:
 
-======================================================================
-Viertes Büchlein: Platonic & Archimedean Polyhedral Nets & Perspective
-======================================================================
+================================================================
+Book IV: Platonic & Archimedean Polyhedral Nets & Perspective
+================================================================
 
 .. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
 

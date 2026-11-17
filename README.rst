@@ -3,6 +3,11 @@ GEOMETOR • durer
 
 **Visit the Online Archive:** https://geometor.github.io/durer/
 
+.. image:: docsrc/_static/figures/book2_durer_vs_euclid_pentagon.svg
+   :alt: GEOMETOR • durer featured geometric construction
+   :target: https://geometor.github.io/durer/
+   :align: center
+
 **Albrecht Dürer • Underweysung der Messung • semantic digital archive**
 
 Mission
@@ -13,7 +18,7 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Underweysung der Messung <https://geometor.github.io/durer/underweysung/>`_** — Instruction in Measurement (Nuremberg, 1525 / Paris, 1532) featuring four synchronized bilingual reading tracks, polyhedral net reconstructions, and exact compass-and-straightedge models.
+- **`Instruction in Measurement <https://geometor.github.io/durer/underweysung/>`_** — *Underweysung der Messung* (Nuremberg, 1525 / Paris, 1532) featuring four synchronized bilingual reading tracks, polyhedral net reconstructions, and exact compass-and-straightedge models.
 
 Mathematical Demonstrations & Symbolic Modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
