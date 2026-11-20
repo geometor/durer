@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "geometor-durer"
 dynamic = ["version"]
 description = "Bilingual Digital Scriptorium codex and exact SymPy/geometor.model symbolic constructions for Albrecht Dürer's Underweysung der Messung (1525 / 1538)."
-readme = "README.rst"
+readme = "README.md"
 license = { text = "MIT" }
 authors = [
   { name = "phi ARCHITECT", email = "phi@geometor.com" }
