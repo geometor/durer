@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • durer Medallion
+   :target: https://geometor.github.io/durer/
+   :width: 150px
+   :align: right
+
 GEOMETOR • durer
 ================
 
 **Visit the Online Archive:** https://geometor.github.io/durer/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • durer Medallion
-   :target: https://geometor.github.io/durer/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/_static/figures/book2_durer_vs_euclid_pentagon.svg
    :alt: GEOMETOR • durer featured geometric construction
