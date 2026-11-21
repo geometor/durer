@@ -14,25 +14,30 @@
 Gothic Tracery, Planar Tilings & Pentagonal Parquetries (Figs. 21–27)
 =====================================================================
 
-Moving from isolated polygons to ornament and architectural pavements (*estrichen vnd stuben
-tillen*), Dürer investigates how congruent circles and regular polygons fill the plane or leave
-structured interstitial stars:
+For ornaments and paved floors (*estrichen vnd stuben tillen*), let us now see how equal circles
+and regular polygons may be set together so as to fill a plane or form regular stars between them:
 
-- **Square vs. Hexagonal Circle Packings & Tracery Stars (Fig. 21)**: Circles arranged in a
-  $3 \times 3$ square grid touch four neighbors leaving concave four-cusped voids, whereas circles
-  centered on a triangular rhombic lattice pack so that **six circles always touch the seventh**
-  (*so rüren alweg .6. den sybetten an*). Intersecting 12-fold circles and 5- and 7-pointed arc
-  rosettes generate Gothic window tracery (*seltzams maswerch*).
-- **Regular, Archimedean & Pentagonal Parquetries (Figs. 22–26)**: After showing how equilateral
-  triangles, squares (both orthogonal and staggered like ashlar masonry), rhombi (forming illusory
-  isometric cubes and 5-, 6-, and 8-pointed stars), and regular hexagons tile the plane gaplessly,
-  Dürer devises **four extraordinary planar assemblies of regular pentagons** (Fig. 24, p. 066)—
-  pairing antiparallel rows of pentagons and **fivefold pentagonal rosettes** (*fünf rosen van den
-  fünf ecken*) separated by narrow and wide $\mathbb{Q}(\phi)$ golden rhombi! He then tests
-  heptagon lattices with 4-pointed star interstices (observing explicitly on p. 068 that closed
-  rings of edge-joined 7-gons or 5-gons overlap or fail to close!) and constructs the semiregular
-  `4.8.8` octagon-and-square pavement (Fig. 26)—the direct fountainhead of :person:`Johannes
-  Kepler's <kepler>` *Harmonices Mundi* Book II (:cite:`kepler:1619`).
+- **Square & Rhombic Circle Packings and Tracery (Fig. 21):** When equal circles are set squarely
+  row by row, each touches four neighbors, leaving concave four-sided spaces between them. When
+  instead you set circular arcs together in rhombic array, hollow three-sided fields always remain
+  between every three circles—and wherever many circles are laid together in this fashion, **six
+  always touch the seventh** (*so rüren alweg .6. den sybetten an*). Intersecting twelvefold
+  circles and five- and seven-pointed arc rosettes likewise furnish varied window tracery
+  (*seltzams maswerch*).
+- **Assemblies of Triangles, Squares, Rhombi, Hexagons & Octagons (Figs. 22–23, 25–26):**
+  Equilateral triangles, squares (whether laid squarely or offset like coursed stonework), rhombi
+  (which may be joined to form isometric cube reliefs as well as five-, six-, and eight-pointed
+  stars), and regular hexagons fill the plane cleanly without gaps, as do regular octagons paired
+  with small squares (Fig. 26).
+- **Assemblies of Pentagons & Heptagons (Fig. 24, pp. 066–068):** For a pattern, set first three
+  pentagons by their sides along a horizontal line so that their corners touch one another; then set
+  three more pentagons beneath them with their sides against the upper ones, likewise touching at
+  their corners, so that narrow rhombi appear between the pentagons. You may also assemble **five
+  rosettes of pentagons** (*fünf rosen van den fünf ecken*) all touching one another, and then link
+  them inverted to one another as often as you please, filling the space alongside with whatever
+  figure you desire. Likewise, if you join heptagons side by side so that two corners project
+  outward and one inward, they run round in a circle yet do not close—and pentagons behave in the
+  very same way.
 
 .. toctree::
    :hidden:
