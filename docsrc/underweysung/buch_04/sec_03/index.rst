@@ -15,45 +15,54 @@
 Cube Sciagraphy & Central Projection Perspective Apparatuses (Figs. 52–63)
 ==========================================================================
 
-Book IV culminates in the **geometric synthesis of light, shadow, and central perspective**
-(*Perspectiva = Durchsehung*):
+Now let us treat light, cast shadow, and the art of perspective (*Perspectiva*, that is, seeing
+through):
 
-1. **Two-View Cube Shadow Sciagraphy (pp. 166–169, Figs. 52–53)**:
-   Placing a cube on square ground ``e.f.g.h.`` in both horizontal ground plan (*Cubus im Grund*,
-   illuminated by plan light ``p``) and upright elevation (*Cubus aufrecht*, illuminated by
-   elevation light ``o``), Dürer intersects elevation shadow-range verticals ``i, k`` with plan
-   shadow rays through corners ``b2, c3, d4`` to determine the exact six-sided shadow polygon
-   ``b2–l–m–n–d4``—reminding the reader that *"both plans and both lights are one single thing, split
-   apart solely for ease of execution."*
+1. **Two-View Cube Shadow Construction (pp. 166–169, Figs. 52–53):** Set a cube upon square ground
+   ``.e.f.g.h.`` both in horizontal :term:`ground plan <nidergedruckter-grund>` (lit by plan light
+   ``p``) and in upright :term:`elevation <aufgezogner-grund>` (lit by elevation light ``o``), and
+   intersect the elevation shadow verticals ``i, k`` with the plan rays through corners ``b2, c3,
+   d4`` to trace the six-sided shadow ``b2–l–m–n–d4``. Note especially that these two lights are one
+   single light, just as line ``.e.h.`` and ``.f.g.`` with the plane ``.e.f.g.h.`` beneath them are
+   one thing, and the laid-down and raised-up cube are one: **in sum, both plans and both lights are
+   one single thing, split apart solely for ease in practice**.
 
-2. **Transparent Picture Plane & Two Perspective Constructions (pp. 169–178, Figs. 54–62)**:
-   Sight proceeds exclusively along rectilinear rays (*Streimlinien*) from the :term:`eye point
-   <augpunct>`; inserting a **transparent planar section** (:term:`ebne durchsichtige Abschneydung
-   <durchsichtige-abschneydung>`, :person:`Alberti's <alberti>` *intersegazione* :cite:`alberti:1435`)
-   across the cone of rays captures the exact perspective image. Dürer demonstrates **two rigorous
-   constructions** of the illuminated cube:
+2. **Transparent Section of Visual Rays & Two Perspective Methods (pp. 169–178, Figs. 54–62):** The
+   :term:`eye <augpunct>` sees things before it solely along straight lines and cannot see along any
+   curved line. Now note that between the distance of the eye and the object seen there is to be
+   taken **a plane** :term:`transparent section <durchsichtige-abschneydung>` **cutting all the
+   sight-rays that pass from the eye to the things it beholds** (:person:`Alberti <alberti>`
+   :cite:`alberti:1435`). This plane transparent field may be set closer to the eye or farther from
+   it and nearer to the object seen; this is the true ground of :term:`transferring measurements
+   <abstelen>` for everything belonging to painting. I show two ways to draw the illuminated cube in
+   perspective:
 
-   - **First Method (pp. 170–175, Figs. 56–58)**: Coordinate transfer (:term:`Abstelen <abstelen>`)
-     with *two compasses* from split elevation and ground-plan eye rays onto orthogonal crosshairs
-     centered at the principal vanishing point.
-   - **Second Shorter Method (pp. 175–178, Figs. 59–62)**: Direct planar construction on the picture
-     sheet using the principal vanishing point (:g:`V_x`), a lateral distance point at equal height,
-     and the $45^\circ$ ground diagonal ``e.g.``—projecting front face :g:`A' <F_BL>`–:g:`B'
-     <F_BR>`–:g:`C' <F_TR>`–:g:`D' <F_TL>`, receding back face :g:`E' <B_BL>`–:g:`F' <B_BR>`–:g:`G'
-     <B_TR>`–:g:`H' <B_TL>`, and foreshortened depth midpoint :g:`M' <M_depth>`.
+   - **First Method (pp. 170–175, Figs. 56–58):** Transfer (:term:`abstelen <abstelen>`) coordinates
+     with two compasses from the split elevation and ground-plan sight-rays onto crossed orthogonal
+     lines centered at the eye point.
+   - **Second Shorter Method (pp. 175–178, Figs. 59–62):** Work directly upon the drawing sheet
+     using the principal eye point (:g:`V_x`), a lateral distance point at the same height, and the
+     $45^\circ$ ground diagonal ``e.g.``, projecting front face :g:`A' <F_BL>`–:g:`B' <F_BR>`–:g:`C'
+     <F_TR>`–:g:`D' <F_TL>`, receding back face :g:`E' <B_BL>`–:g:`F' <B_BR>`–:g:`G' <B_TR>`–:g:`H'
+     <B_TL>`, and foreshortened depth midpoint :g:`M' <M_depth>`.
 
 .. picture:: /_static/figures/book4_perspective_cube_apparatus.svg
    :caption: Exact central projection of Dürer's cube onto the glass picture frame (Book IV, Figs. 56–63): receding depth edges (:g:`A' <F_BL>`–:g:`E' <B_BL>`, :g:`B' <F_BR>`–:g:`F' <B_BR>`, :g:`C' <F_TR>`–:g:`G' <B_TR>`, :g:`D' <F_TL>`–:g:`H' <B_TL>`) converge at principal vanishing point :g:`V_x` $= (3, 5)$, preserving the harmonic cross-ratio $\operatorname{CR}(A', E'; M', V_x) = -1$.
 
-3. **The Glass Picture Frame & Three-Thread Lute Instruments (pp. 178–181, Figs. 62–63)**:
-   To make central projection tangible to every painter, Dürer concludes with two celebrated
-   mechanical instruments: (a) a **hinged glass picture frame** paired with a lead-screw and notched
-   peep-sight rod (*gedreter stab*) holding the artist's eye fixed while tracing a portrait directly
-   onto glass; and (b) the **three-thread sighting apparatus** (*durch drey feden*), in which an
-   assistant stretches a weighted string from a wall needle ("the eye") through an open frame to
-   successive points on a **foreshortened lute**, while the master marks each ray's intersection
-   with wax-affixed cross-threads and swings shut a hinged panel door to prick the exact perspective
-   coordinates!
+3. **The Glass Picture Frame & Three-Thread Lute Instrument (pp. 178–181, Figs. 62–63):** If you
+   wish to trace through what you see before you, first prepare a handy apparatus thus: mount a
+   clean flat pane of glass in a square frame, and atop a turned screw-rod (*gedreter stab*) fasten
+   a small thin board bored with a peephole so that you may sight steadily with one eye through the
+   glass in the frame; whatever you then behold through it, trace onto the glass with a brush dipped
+   in glazier's pigment. **By means of three threads you may also transfer any object within reach
+   into a painting upon a panel:** set a lute or whatever else pleases you as far from the open
+   frame as you wish, keeping it unmoved as long as you need it, and have your assistant stretch the
+   weighted needle and long thread (anchored at the wall as the eye) out to the principal points of
+   the lute; each time he pauses on a point and draws the long thread taut, bring the two cross-threads
+   mounted on the frame straight against the long thread and press them fast at both ends with wax,
+   then swing shut the hinged panel door to prick the exact point.
+
+*Printed at Nuremberg, in the year 1525.*
 
 .. toctree::
    :hidden:
