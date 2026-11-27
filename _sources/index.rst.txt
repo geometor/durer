@@ -59,7 +59,7 @@ Key Features
 
       **Exact Symbolic Audits**
 
-      Executable SymPy models in :doc:`demos/index` measure Dürer's single-aperture "rusty compass" pentagon against Euclid's $\mathbb{Q}(\phi)$ construction ($+21.97'$ discrepancy) and verify conic transfer symmetry.
+      Executable SymPy models in :doc:`demos/index` measure Dürer's single-aperture "rusty compass" pentagon against Euclid's :math:`\mathbb{Q}(\phi)` construction (:math:`+21.97'` discrepancy) and verify conic transfer symmetry.
 
 Reference & Project
 -------------------

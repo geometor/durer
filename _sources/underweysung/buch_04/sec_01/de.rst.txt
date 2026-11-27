@@ -41,7 +41,7 @@ verfast mügen werdenn / die selben nach dem sie zuᵒ vill dingen nutz sind / w
    :caption: Viertes Buch, Fig. 29, 30 & 32: Aufgeschnittene ebene Netze von Tetraeder, Oktaeder (*Diamantpunct*) und Würfel.
 
 .. picture:: /_static/figures/book4_dodecahedron_net.svg
-   :caption: Viertes Buch, Fig. 33 (S. 146): Doppelrosen-Netz des Dodekaeders aus zwölf regulären Fünffecken über $\mathbb{Q}(\phi)$.
+   :caption: Viertes Buch, Fig. 33 (S. 146): Doppelrosen-Netz des Dodekaeders aus zwölf regulären Fünffecken über :math:`\mathbb{Q}(\phi)`.
 
 **Anleitung zum Falten aus Doppelpapier (S. 148) & Archimedische Netze (Fig. 35–41):** Auch sind
 noch vill huᵒbscher corpora zuᵒmachen / die auch in einer holen kugel mit all jren ecken an rüren /

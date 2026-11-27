@@ -9,18 +9,19 @@
 
 .. _buch_02-sec_04-notes:
 
-Notes — Circle Quadrature & $\pi_{\text{Dürer}} = \frac{25}{8}$ (Fig. 34)
-=========================================================================
+Notes — Circle Quadrature & :math:`\pi_{\text{Dürer}} = \frac{25}{8}` (Fig. 34)
+===============================================================================
 
-3. Dürer's Circle Quadrature & $\pi_{\text{Dürer}} = \frac{25}{8}$ (Fig. 34)
-============================================================================
+3. Dürer's Circle Quadrature & :math:`\pi_{\text{Dürer}} = \frac{25}{8}` (Fig. 34)
+==================================================================================
 
-For a square of side $a$ and area $a^2$, the diagonal (*ortstrich*) has length $a\sqrt{2}$. Taking
-$d = \frac{8}{10}\,a\sqrt{2} = \frac{4\sqrt{2}}{5}a$ gives radius $r = \frac{2\sqrt{2}}{5}a =
-\sqrt{\frac{8}{25}}\,a$. Equating $\pi_{\text{Dürer}}\,r^2 = a^2$ yields
+For a square of side :math:`a` and area :math:`a^2`, the diagonal (*ortstrich*) has length :math:`a\sqrt{2}`. Taking
+:math:`d = \frac{8}{10}\,a\sqrt{2} = \frac{4\sqrt{2}}{5}a` gives radius :math:`r = \frac{2\sqrt{2}}{5}a = \sqrt{\frac{8}{25}}\,a`. Equating :math:`\pi_{\text{Dürer}}\,r^2 = a^2` yields
 
-$$\pi_{\text{Dürer}} = \frac{25}{8} = 3.125,$$
+.. math::
 
-the classical Roman-Vitruvian value ($3\frac{1}{8}$, relative error $-0.528\%$), which Dürer
+   \pi_{\text{Dürer}} = \frac{25}{8} = 3.125,
+
+the classical Roman-Vitruvian value (:math:`3\frac{1}{8}`, relative error :math:`-0.528\%`), which Dürer
 rightly refuses to pass off as *demonstrative*—anticipating Lindemann's 1882 proof of the
-transcendence of $\pi$ (:cite:`klein:1895`).
+transcendence of :math:`\pi` (:cite:`klein:1895`).

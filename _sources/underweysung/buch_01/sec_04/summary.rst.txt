@@ -22,5 +22,5 @@ Summary — Two-View Conic Sections & Kinematic Curves (Figs. 34–42)
 5. **Kinematic Linkages & Proportional Scales (pp. 039–052, Figs. 38–50)**:
 
    - Sliding-lance *Muschellini* (conchoid variant, Figs. 38–39), epitrochoidal *Spinnenlini*
-     (limaçon, Fig. 40), four-jointed $\sqrt{2}$-scaled spatial curve-drawing arm (Figs. 41–42),
+     (limaçon, Fig. 40), four-jointed :math:`\sqrt{2}`-scaled spatial curve-drawing arm (Figs. 41–42),
      and arithmetic/geometric/harmonic segment scales (Figs. 43–50).

@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/durer/underweysung/buch_04/sec_03/notes.html" />
-  <meta name="description" content="In construct_durer_perspective_apparatus(), let the artist’s fixed eye point be $E = (-12, 3, 5)$ looking orthogonally toward the vertical glass picture frame $x = 0$ (principal vanishing point…" />
+  <meta name="description" content="In construct_durer_perspective_apparatus(), let the artist’s fixed eye point be E = (-12, 3, 5) looking orthogonally toward the vertical glass picture frame x = 0 (principal vanishing point V_x…" />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="IV.52–63: Notes — Homogeneous Central Projection &amp; Cross-Ratio Invariance — Book IV • GEOMETOR" />
-  <meta property="og:description" content="In construct_durer_perspective_apparatus(), let the artist’s fixed eye point be $E = (-12, 3, 5)$ looking orthogonally toward the vertical glass picture frame $x = 0$ (principal vanishing point…" />
+  <meta property="og:description" content="In construct_durer_perspective_apparatus(), let the artist’s fixed eye point be E = (-12, 3, 5) looking orthogonally toward the vertical glass picture frame x = 0 (principal vanishing point V_x…" />
   <meta property="og:url" content="https://geometor.github.io/durer/underweysung/buch_04/sec_03/notes.html" />
   <meta property="og:image" content="https://geometor.github.io/durer/_static/social/underweysung.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Albrecht Dürer — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="IV.52–63: Notes — Homogeneous Central Projection &amp; Cross-Ratio Invariance — Book IV • GEOMETOR" />
-  <meta name="twitter:description" content="In construct_durer_perspective_apparatus(), let the artist’s fixed eye point be $E = (-12, 3, 5)$ looking orthogonally toward the vertical glass picture frame $x = 0$ (principal vanishing point…" />
+  <meta name="twitter:description" content="In construct_durer_perspective_apparatus(), let the artist’s fixed eye point be E = (-12, 3, 5) looking orthogonally toward the vertical glass picture frame x = 0 (principal vanishing point V_x…" />
   <meta name="twitter:image" content="https://geometor.github.io/durer/_static/social/underweysung.png" />
   <meta name="twitter:image:alt" content="Albrecht Dürer — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -120,28 +120,29 @@
         <section class="level-1" id="homogeneous-central-projection-cross-ratio-invariance">
         <h1>3. Homogeneous Central Projection &amp; Cross-Ratio Invariance<a class="headerlink" href="#homogeneous-central-projection-cross-ratio-invariance" title="Link to this heading">¶</a></h1>
         <p>In <a class="reference internal" href="../../../modules/api/geometor/durer/conics_perspective/index.html#geometor.durer.conics_perspective.construct_durer_perspective_apparatus" title="geometor.durer.conics_perspective.construct_durer_perspective_apparatus"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_durer_perspective_apparatus()</span></code></a>, let the artist’s
-        fixed <a class="term-ref glossary-term" id="occ-term-augpunct-1" href="../../glossary.html#term-augpunct" data-term="augpunct" title="Aug / Gesichtspunct (Eye Point &amp; Principal Vanishing Point) (Station point of the eye and its orthogonal foot on the picture plane): In Book IV (pp. 173–181), Dürer distinguishes the 3D position of the beholder&#x27;s eye (das Aug) from the orthogonal foot of the eye on the picture plane (der nah und hoch punct des gesichts), toward which lines perpendicular to the glass frame converge.">eye point</a> be $E = (-12, 3, 5)$ looking orthogonally toward the vertical
-        glass picture frame $x = 0$ (principal vanishing point $V_x = (3, 5)$ on the glass, focal distance
-        $f = 12$). Every vertex $P = (X, Y, Z) \in \mathbb{Q}^3$ projects along rectilinear sight-ray $EP$
+        fixed <a class="term-ref glossary-term" id="occ-term-augpunct-1" href="../../glossary.html#term-augpunct" data-term="augpunct" title="Aug / Gesichtspunct (Eye Point &amp; Principal Vanishing Point) (Station point of the eye and its orthogonal foot on the picture plane): In Book IV (pp. 173–181), Dürer distinguishes the 3D position of the beholder&#x27;s eye (das Aug) from the orthogonal foot of the eye on the picture plane (der nah und hoch punct des gesichts), toward which lines perpendicular to the glass frame converge.">eye point</a> be <span class="math notranslate nohighlight">\(E = (-12, 3, 5)\)</span> looking orthogonally toward the vertical
+        glass picture frame <span class="math notranslate nohighlight">\(x = 0\)</span> (principal vanishing point <span class="math notranslate nohighlight">\(V_x = (3, 5)\)</span> on the glass, focal distance
+        <span class="math notranslate nohighlight">\(f = 12\)</span>). Every vertex <span class="math notranslate nohighlight">\(P = (X, Y, Z) \in \mathbb{Q}^3\)</span> projects along rectilinear sight-ray <span class="math notranslate nohighlight">\(EP\)</span>
         to exact rational picture-plane coordinates:</p>
-        <p>$$u(P) = 3 + \frac{12\,(Y - 3)}{X + 12}, \qquad v(P) = 5 + \frac{12\,(Z - 5)}{X + 12}.$$</p>
-        <p>For the cube $[4, 8] \times [-2, 2] \times [0, 4]$:</p>
+        <div class="math notranslate nohighlight">
+        \[u(P) = 3 + \frac{12\,(Y - 3)}{X + 12}, \qquad v(P) = 5 + \frac{12\,(Z - 5)}{X + 12}.\]</div>
+        <p>For the cube <span class="math notranslate nohighlight">\([4, 8] \times [-2, 2] \times [0, 4]\)</span>:</p>
         <ol class="arabic">
         <li><p><strong>Exact Convergence at the Principal Vanishing Point</strong>: All four receding depth edges
-        $A'E', B'F', C'G', D'H'$ intersect on the picture plane at the single point $V_x = (3, 5)$—corresponding
-        to the ideal point at infinity $(1 : 0 : 0 : 0) \in \mathbb{P}^3(\mathbb{Q})$.</p></li>
-        <li><p><strong>Foreshortening &amp; Harmonic Cross-Ratio ($\operatorname{CR} = -1$)</strong>: Along the lower-left depth
-        edge from $A = (4, -2, 0)$ to $E_{\text{back}} = (8, -2, 0)$, the true 3D midpoint
-        $M = (6, -2, 0)$ projects to $M' = \left(-\frac{1}{3},\, \frac{5}{3}\right)$, which is strictly
-        closer to the back corner $E' = (0, 2)$ than to the front corner $A’ = left(-frac{3}{4},,
-        frac{5}{4}right)$—yet its <strong>projective cross-ratio</strong> with vanishing point $V_x = (3, 5)$ (the
+        <span class="math notranslate nohighlight">\(A'E', B'F', C'G', D'H'\)</span> intersect on the picture plane at the single point <span class="math notranslate nohighlight">\(V_x = (3, 5)\)</span>—corresponding
+        to the ideal point at infinity <span class="math notranslate nohighlight">\((1 : 0 : 0 : 0) \in \mathbb{P}^3(\mathbb{Q})\)</span>.</p></li>
+        <li><p><strong>Foreshortening &amp; Harmonic Cross-Ratio</strong> (<span class="math notranslate nohighlight">\(\operatorname{CR} = -1\)</span>): Along the lower-left depth
+        edge from <span class="math notranslate nohighlight">\(A = (4, -2, 0)\)</span> to <span class="math notranslate nohighlight">\(E_{\text{back}} = (8, -2, 0)\)</span>, the true 3D midpoint
+        <span class="math notranslate nohighlight">\(M = (6, -2, 0)\)</span> projects to <span class="math notranslate nohighlight">\(M' = \left(-\frac{1}{3},\, \frac{5}{3}\right)\)</span>, which is strictly
+        closer to the back corner <span class="math notranslate nohighlight">\(E' = (0, 2)\)</span> than to the front corner <span class="math notranslate nohighlight">\(A' = \left(-\frac{3}{4},\, \frac{5}{4}\right)\)</span>—yet its <strong>projective cross-ratio</strong> with vanishing point <span class="math notranslate nohighlight">\(V_x = (3, 5)\)</span> (the
         harmonic fourth of the midpoint and ideal point at infinity, cf. <code class="docutils literal notranslate"><span class="pre">geometor/pappus</span></code>
         <a class="citation-ref" id="occ-cite-pappus-synagoge-1" href="../../bibliography.html#cite-pappus-synagoge" data-cite="pappus:synagoge" title="Pappus of Alexandria — Mathematical Collection (Synagoge, Books III, V &amp; VII) (Alexandria, c. 340 AD)">pappus:synagoge</a>) is preserved with 100% symbolic exactness:</p>
-        <p>$$\operatorname{CR}(A', E';\, M', V_x)
-           = \frac{(u_{A'} - u_{M'})\,(u_{E'} - u_{V_x})}{(u_{A'} - u_{V_x})\,(u_{E'} - u_{M'})}
-           = \frac{\left(-\frac{3}{4} + \frac{1}{3}\right)(0 - 3)}{\left(-\frac{3}{4} - 3\right)\left(0 + \frac{1}{3}\right)}
-           = \frac{\left(-\frac{5}{12}\right)(-3)}{\left(-\frac{15}{4}\right)\left(\frac{1}{3}\right)}
-           = -1.$$</p>
+        <div class="math notranslate nohighlight">
+        \[\operatorname{CR}(A', E';\, M', V_x)
+        = \frac{(u_{A'} - u_{M'})\,(u_{E'} - u_{V_x})}{(u_{A'} - u_{V_x})\,(u_{E'} - u_{M'})}
+        = \frac{\left(-\frac{3}{4} + \frac{1}{3}\right)(0 - 3)}{\left(-\frac{3}{4} - 3\right)\left(0 + \frac{1}{3}\right)}
+        = \frac{\left(-\frac{5}{12}\right)(-3)}{\left(-\frac{15}{4}\right)\left(\frac{1}{3}\right)}
+        = -1.\]</div>
         </li>
         </ol>
         </section>
@@ -224,6 +225,8 @@
   <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="../../../_static/js/geometor_interactive.js?v=219c1955"></script>
+  <script>window.MathJax = {"options": {"ignoreHtmlClass": ".*|etc-lazy-math", "processHtmlClass": "math|arithmatex", "enableComplexity": true, "makeCollapsible": true, "menuOptions": {"settings": {"zoom": "Click", "zscale": "200%", "collapsible": true, "enrich": true, "speech": false, "braille": false, "assistiveMml": false}}}, "output": {"displayOverflow": "linebreak", "linebreaks": {"inline": true}}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../../_static/js/search_highlight.js"></script>
 
 </body>

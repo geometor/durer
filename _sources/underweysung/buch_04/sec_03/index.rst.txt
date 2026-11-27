@@ -42,12 +42,12 @@ through):
      lines centered at the eye point.
    - **Second Shorter Method (pp. 175–178, Figs. 59–62):** Work directly upon the drawing sheet
      using the principal eye point (:g:`V_x`), a lateral distance point at the same height, and the
-     $45^\circ$ ground diagonal ``e.g.``, projecting front face :g:`A' <F_BL>`–:g:`B' <F_BR>`–:g:`C'
+     :math:`45^\circ` ground diagonal ``e.g.``, projecting front face :g:`A' <F_BL>`–:g:`B' <F_BR>`–:g:`C'
      <F_TR>`–:g:`D' <F_TL>`, receding back face :g:`E' <B_BL>`–:g:`F' <B_BR>`–:g:`G' <B_TR>`–:g:`H'
      <B_TL>`, and foreshortened depth midpoint :g:`M' <M_depth>`.
 
 .. picture:: /_static/figures/book4_perspective_cube_apparatus.svg
-   :caption: Exact central projection of Dürer's cube onto the glass picture frame (Book IV, Figs. 56–63): receding depth edges (:g:`A' <F_BL>`–:g:`E' <B_BL>`, :g:`B' <F_BR>`–:g:`F' <B_BR>`, :g:`C' <F_TR>`–:g:`G' <B_TR>`, :g:`D' <F_TL>`–:g:`H' <B_TL>`) converge at principal vanishing point :g:`V_x` $= (3, 5)$, preserving the harmonic cross-ratio $\operatorname{CR}(A', E'; M', V_x) = -1$.
+   :caption: Exact central projection of Dürer's cube onto the glass picture frame (Book IV, Figs. 56–63): receding depth edges (:g:`A' <F_BL>`–:g:`E' <B_BL>`, :g:`B' <F_BR>`–:g:`F' <B_BR>`, :g:`C' <F_TR>`–:g:`G' <B_TR>`, :g:`D' <F_TL>`–:g:`H' <B_TL>`) converge at principal vanishing point :g:`V_x` :math:`= (3, 5)`, preserving the harmonic cross-ratio :math:`\operatorname{CR}(A', E'; M', V_x) = -1`.
 
 3. **The Glass Picture Frame & Three-Thread Lute Instrument (pp. 178–181, Figs. 62–63):** If you
    wish to trace through what you see before you, first prepare a handy apparatus thus: mount a

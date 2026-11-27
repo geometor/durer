@@ -39,7 +39,7 @@ weyt fürdretten / das nym zuᵒ bedem teyl mit einem cirkeldrum auß des Diamet
 breyt sey.
 
 .. picture:: /_static/figures/book3_roman_letter_a.svg
-   :caption: Drittes Buch, S. 115: Konstruktion des Lateinischen **A** in der $10 \times 10$-Fierung (:g:`a`, :g:`b`, :g:`d`, :g:`c`) mit Ausschweifungskreisen :g:`S_L`, :g:`S_R` und Dreiecks-Punze :g:`V`.
+   :caption: Drittes Buch, S. 115: Konstruktion des Lateinischen **A** in der :math:`10 \times 10`-Fierung (:g:`a`, :g:`b`, :g:`d`, :g:`c`) mit Ausschweifungskreisen :g:`S_L`, :g:`S_R` und Dreiecks-Punze :g:`V`.
 
 **Versalien O & Q (S. 124–125):** Das ``.o.`` mach in sein fierung also / reyß in seiner fierung
 ein :term:`Diameter <ortstrich>` :g:`c`–:g:`b` vnd teyl den mit einem puncten :g:`i` in der mitt
@@ -67,4 +67,4 @@ wirt das felt schlemer zwischen den zügen dann ein zug des pustaben preyt ist**
 mach von dreyen zügen wie das ``.n.`` von zweyen gemacht worden ist.
 
 .. picture:: /_static/figures/book3_textura_minuscules.svg
-   :caption: Drittes Buch, S. 136: Modulare Konstruktion der *alten Textur*-Minuskeln **i**, **n** und **m** aus Einheitsquadraten und $45^\circ$-*Ort-Fierungen*.
+   :caption: Drittes Buch, S. 136: Modulare Konstruktion der *alten Textur*-Minuskeln **i**, **n** und **m** aus Einheitsquadraten und :math:`45^\circ`-*Ort-Fierungen*.

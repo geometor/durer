@@ -19,7 +19,6 @@ Summary — *Demonstrative* vs. *Mechanice* Polygons & Rusty Compass (Figs. 9–
      ``5``-gon and ``10``-gon via Ptolemy's golden-section arc (Fig. 15); ``15``-gon via Euclid
      IV.16 arc difference (Fig. 17).
    - **Workshop Constructions (mechanice)**: Fixed-aperture ("rusty compass") equilateral pentagon
-     (Fig. 16); half-equilateral heptagon $s_7 = \frac{\sqrt{3}}{2}R$ and ``14``/``28``-gons
-     (Figs. 11–12, 15); three-vesica (*Fischblosen*) nonagon (Fig. 18); hendecagon $s_{11} =
-     \frac{9}{16}R$ and tridecagon $s_{13} = \frac{1}{2}R$ (Fig. 19); iterative chord-based arc
+     (Fig. 16); half-equilateral heptagon :math:`s_7 = \frac{\sqrt{3}}{2}R` and ``14``/``28``-gons
+     (Figs. 11–12, 15); three-vesica (*Fischblosen*) nonagon (Fig. 18); hendecagon :math:`s_{11} = \frac{9}{16}R` and tridecagon :math:`s_{13} = \frac{1}{2}R` (Fig. 19); iterative chord-based arc
      trisection (Fig. 20).

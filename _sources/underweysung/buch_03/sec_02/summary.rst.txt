@@ -11,10 +11,10 @@
 Summary — Nuremberg Sundials & Optical Tower Scaling (Figs. 20–27)
 ==================================================================
 
-2. **Nuremberg Gnomonics ($49^\circ$ Latitude) & Optical Scaling (pp. 108–114, Figs. 20–27)**:
+2. **Nuremberg Gnomonics** (:math:`49^\circ` **Latitude) & Optical Scaling (pp. 108–114, Figs. 20–27**):
 
-   - Divides the quadrant into $90^\circ = 3 \times 3 \times 2 \times 5$ and sets Nuremberg's polar
-     elevation $\varphi = 49^\circ$ (equinoctial complement $41^\circ$) to construct equatorial,
+   - Divides the quadrant into :math:`90^\circ = 3 \times 3 \times 2 \times 5` and sets Nuremberg's polar
+     elevation :math:`\varphi = 49^\circ` (equinoctial complement :math:`41^\circ`) to construct equatorial,
      vertical South-wall, horizontal, and truncated-cube polyhedral sundials.
    - Projects equal visual angles from eye point ``c`` across a circular arc onto high walls so
      monumental inscriptions and statues read uniformly from ground level.

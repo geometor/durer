@@ -38,7 +38,7 @@ throughout the entire alphabet:
   thick stroke.
 
 .. picture:: /_static/figures/book3_roman_letter_a.svg
-   :caption: Dürer's compass-and-straightedge construction of Roman *Antiqua* capital **A** inside the $10 \times 10$ square (:g:`a`, :g:`b`, :g:`d`, :g:`c`, Book III, p. 115), showing $1 : \frac{1}{3}$ stroke contrast, counter apex :g:`V` $= (\frac{14}{3}, \frac{200}{21})$, and tangent serif fillet circles centered at :g:`S_L` and :g:`S_R`.
+   :caption: Dürer's compass-and-straightedge construction of Roman *Antiqua* capital **A** inside the :math:`10 \times 10` square (:g:`a`, :g:`b`, :g:`d`, :g:`c`, Book III, p. 115), showing :math:`1 : \frac{1}{3}` stroke contrast, counter apex :g:`V` :math:`= (\frac{14}{3}, \frac{200}{21})`, and tangent serif fillet circles centered at :g:`S_L` and :g:`S_R`.
 
 - **Capitals O & Q (pp. 124–125):** Construct ``.o.`` in its square thus: draw the diagonal
   :term:`diameter <ortstrich>` :g:`c`–:g:`b` across the square and bisect it at midpoint :g:`i`.
@@ -51,7 +51,7 @@ throughout the entire alphabet:
   :g:`d` to length ``.c.d.`` and curving back upward to the height of ``.c.d.`` at point :g:`h`.
 
 .. picture:: /_static/figures/book3_roman_letters_oq.svg
-   :caption: Dürer's two-circle shifted-diagonal Roman **O** and **Q** (Book III, pp. 124–125): congruent circles around :g:`f` and :g:`g` on $45^\circ$ diagonal :g:`c`–:g:`b` ($|fg| = 1$, radius $5 - \frac{\sqrt{2}}{4}$), meeting at lens points :g:`P_1`, :g:`P_2`, with **Q**'s tail sweeping through :g:`d` to :g:`h`.
+   :caption: Dürer's two-circle shifted-diagonal Roman **O** and **Q** (Book III, pp. 124–125): congruent circles around :g:`f` and :g:`g` on :math:`45^\circ` diagonal :g:`c`–:g:`b` (:math:`|fg| = 1`, radius :math:`5 - \frac{\sqrt{2}}{4}`), meeting at lens points :g:`P_1`, :g:`P_2`, with **Q**'s tail sweeping through :g:`d` to :g:`h`.
 
 - **The Old Textura: i, n, m (pp. 136–141):** Although one begins writing the alphabet with ``.a.``,
   I shall here for good reason first take ``.i.`` to construct, **because nearly all letters may be
@@ -66,7 +66,7 @@ throughout the entire alphabet:
   from two.
 
 .. picture:: /_static/figures/book3_textura_minuscules.svg
-   :caption: Dürer's purely modular *alte Textur* minuscules **i**, **n**, and **m** (Book III, p. 136): stacked unit squares capped by $45^\circ$ *Ort-Fierungen* touching corner-to-corner with exact stem pitch $\sqrt{2}$ and interior counter $\sqrt{2} - 1$.
+   :caption: Dürer's purely modular *alte Textur* minuscules **i**, **n**, and **m** (Book III, p. 136): stacked unit squares capped by :math:`45^\circ` *Ort-Fierungen* touching corner-to-corner with exact stem pitch :math:`\sqrt{2}` and interior counter :math:`\sqrt{2} - 1`.
 
 .. toctree::
    :hidden:

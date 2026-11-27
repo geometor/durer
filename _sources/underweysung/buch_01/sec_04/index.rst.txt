@@ -41,7 +41,7 @@ oblique cutting segment :g:`f`–:g:`g` divided by eleven points into **twelve e
   sides of each station, and trace the curve point by point.
 
 .. picture:: /_static/figures/book1_cone_ellipse_projection.svg
-   :caption: Dürer's two-view orthographic descriptive geometry of the conic section (Book I, Fig. 34): elevation cone (:g:`a`, :g:`b`, :g:`c`) sliced along :g:`f`–:g:`g`, circular ground plan (:g:`O_plan`) below, and true-shape section proving exact bilateral symmetry $w_k = w_{12-k} = \frac{\sqrt{2k(12-k)}}{3}$.
+   :caption: Dürer's two-view orthographic descriptive geometry of the conic section (Book I, Fig. 34): elevation cone (:g:`a`, :g:`b`, :g:`c`) sliced along :g:`f`–:g:`g`, circular ground plan (:g:`O_plan`) below, and true-shape section proving exact bilateral symmetry :math:`w_k = w_{12-k} = \frac{\sqrt{2k(12-k)}}{3}`.
 
 Immediately after these three conic sections and the equal angles of incidence and reflection of the
 paraboloidal burning mirror (Fig. 36), I construct three further curves by measured motion and

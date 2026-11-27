@@ -30,7 +30,7 @@ beginning at center :g:`O` (Dürer's ``.a.``) and expanding uniformly outward (F
    the numbered stations continuously from point to point.
 
 .. picture:: /_static/figures/book1_spiral_volute.svg
-   :caption: Dürer's 12-sector Archimedean *Schneckenlini* (Book I, Figs. 7 & 17) constructed with exact symbolic coordinates in $\mathbb{Q}(\sqrt{3})$ across two complete revolutions (:g:`O` through :g:`P_6`, :g:`P_12`, :g:`P_18`, :g:`P_24`).
+   :caption: Dürer's 12-sector Archimedean *Schneckenlini* (Book I, Figs. 7 & 17) constructed with exact symbolic coordinates in :math:`\mathbb{Q}(\sqrt{3})` across two complete revolutions (:g:`O` through :g:`P_6`, :g:`P_12`, :g:`P_18`, :g:`P_24`).
 
 By replacing the uniform radial scale on the straightedge with a **projectively foreshortened
 scale** cut by rays from an external eye point across a circular arc (Figs. 8–9), the spiral

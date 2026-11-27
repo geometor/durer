@@ -133,27 +133,31 @@
         upper end near the cone’s apex?</p>
         <p>Let us evaluate <strong>Dürer’s own 12-station algorithm</strong> symbolically in <code class="docutils literal notranslate"><span class="pre">geometor.durer</span></code>
         (<a class="reference internal" href="../../../modules/api/geometor/durer/conics_perspective/index.html#geometor.durer.conics_perspective.construct_durer_conic_sections" title="geometor.durer.conics_perspective.construct_durer_conic_sections"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_durer_conic_sections()</span></code></a>). Take a right circular
-        cone of base radius $R = 6$ and height $H = 12$, so at height $z \in [0, 12]$ the horizontal
+        cone of base radius <span class="math notranslate nohighlight">\(R = 6\)</span> and height <span class="math notranslate nohighlight">\(H = 12\)</span>, so at height <span class="math notranslate nohighlight">\(z \in [0, 12]\)</span> the horizontal
         circular cross-section has radius</p>
-        <p>$$r(z) = \frac{12 - z}{2}.$$</p>
-        <p>Slice the cone obliquely along segment $fg$ from $F = (-4, 4)$ on the left generator to
-        $G = (2, 8)$ on the right generator, divided into 12 equal parts $k = 0, 1, \dots, 12$:</p>
-        <p>$$x_k = -4 + \frac{k}{2}, \qquad z_k = 4 + \frac{k}{3}, \qquad r_k = 4 - \frac{k}{6}.$$</p>
-        <p>In the circular ground plan (<em>Grundriss</em>), the vertical projector at $x_k$ cuts the horizontal
-        section circle $x^2 + y^2 = r_k^2$ in a chord of exact half-width $w_k$:</p>
-        <p>$$w_k^2 = r_k^2 - x_k^2 = \left(4 - \frac{k}{6}\right)^2 - \left(-4 + \frac{k}{2}\right)^2
+        <div class="math notranslate nohighlight">
+        \[r(z) = \frac{12 - z}{2}.\]</div>
+        <p>Slice the cone obliquely along segment <span class="math notranslate nohighlight">\(fg\)</span> from <span class="math notranslate nohighlight">\(F = (-4, 4)\)</span> on the left generator to
+        <span class="math notranslate nohighlight">\(G = (2, 8)\)</span> on the right generator, divided into 12 equal parts <span class="math notranslate nohighlight">\(k = 0, 1, \dots, 12\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[x_k = -4 + \frac{k}{2}, \qquad z_k = 4 + \frac{k}{3}, \qquad r_k = 4 - \frac{k}{6}.\]</div>
+        <p>In the circular ground plan (<em>Grundriss</em>), the vertical projector at <span class="math notranslate nohighlight">\(x_k\)</span> cuts the horizontal
+        section circle <span class="math notranslate nohighlight">\(x^2 + y^2 = r_k^2\)</span> in a chord of exact half-width <span class="math notranslate nohighlight">\(w_k\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[w_k^2 = r_k^2 - x_k^2 = \left(4 - \frac{k}{6}\right)^2 - \left(-4 + \frac{k}{2}\right)^2
         = \left(16 - \frac{4}{3}k + \frac{k^2}{36}\right) - \left(16 - 4k + \frac{k^2}{4}\right)
-        = \frac{2}{9}\,k\,(12 - k).$$</p>
-        <p>Hence for every station $k \in \{0, 1, \dots, 12\}$:</p>
-        <p>$$w_k = \frac{\sqrt{2\,k\,(12 - k)}}{3} = w_{12 - k}!$$</p>
-        <p><strong>Dürer’s geometric construction rule is 100% exact and strictly symmetric</strong> under $k \mapsto 12 - k$!
-        Because $|FG| = \sqrt{6^2 + 4^2} = 2\sqrt{13}$, the curve is a true Apollonian ellipse with
-        semi-major axis $a = \sqrt{13}$, semi-minor axis $b = w_6 = 2\sqrt{2}$, focal distance
-        $c = \sqrt{a^2 - b^2} = \sqrt{5}$, and eccentricity $e = \frac{\sqrt{65}}{13}$.</p>
+        = \frac{2}{9}\,k\,(12 - k).\]</div>
+        <p>Hence for every station <span class="math notranslate nohighlight">\(k \in \{0, 1, \dots, 12\}\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[w_k = \frac{\sqrt{2\,k\,(12 - k)}}{3} = w_{12 - k}!\]</div>
+        <p><strong>Dürer’s geometric construction rule is 100% exact and strictly symmetric</strong> under <span class="math notranslate nohighlight">\(k \mapsto 12 - k\)</span>!
+        Because <span class="math notranslate nohighlight">\(|FG| = \sqrt{6^2 + 4^2} = 2\sqrt{13}\)</span>, the curve is a true Apollonian ellipse with
+        semi-major axis <span class="math notranslate nohighlight">\(a = \sqrt{13}\)</span>, semi-minor axis <span class="math notranslate nohighlight">\(b = w_6 = 2\sqrt{2}\)</span>, focal distance
+        <span class="math notranslate nohighlight">\(c = \sqrt{a^2 - b^2} = \sqrt{5}\)</span>, and eccentricity <span class="math notranslate nohighlight">\(e = \frac{\sqrt{65}}{13}\)</span>.</p>
         <p>Why then did Dürer suspect asymmetry? In the <strong>ground plan</strong> (<em>der grund zum kegell</em>), the
-        upper half of the cutting plane ($k = 7, \dots, 12$) crosses directly over the cone’s apex
-        projection $O_{\text{plan}} = (0, 0)$ at $k = 8$ ($x_8 = 0$), crowding the upper concentric
-        circles tightly around the center, whereas near $k = 1, 2, 3$ the arcs sweep broadly near the rim!
+        upper half of the cutting plane (<span class="math notranslate nohighlight">\(k = 7, \dots, 12\)</span>) crosses directly over the cone’s apex
+        projection <span class="math notranslate nohighlight">\(O_{\text{plan}} = (0, 0)\)</span> at <span class="math notranslate nohighlight">\(k = 8\)</span> (<span class="math notranslate nohighlight">\(x_8 = 0\)</span>), crowding the upper concentric
+        circles tightly around the center, whereas near <span class="math notranslate nohighlight">\(k = 1, 2, 3\)</span> the arcs sweep broadly near the rim!
         A slight compass transfer error on the crowded upper circles immediately pinches the top of the
         plotted curve into an egg shape—an optical and draftsmanship trap definitively resolved by
         <a class="person-ref" id="occ-person-kepler-1" href="../../people/kepler.html#person-kepler" data-person="kepler" title="Johannes Kepler (1571–1630) — Imperial Mathematician &amp; Astronomer">Johannes Kepler</a> in Chapter IV of <em>Ad Vitellionem Paralipomena</em>
@@ -238,6 +242,8 @@
   <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="../../../_static/js/geometor_interactive.js?v=219c1955"></script>
+  <script>window.MathJax = {"options": {"ignoreHtmlClass": ".*|etc-lazy-math", "processHtmlClass": "math|arithmatex", "enableComplexity": true, "makeCollapsible": true, "menuOptions": {"settings": {"zoom": "Click", "zscale": "200%", "collapsible": true, "enrich": true, "speech": false, "braille": false, "assistiveMml": false}}}, "output": {"displayOverflow": "linebreak", "linebreaks": {"inline": true}}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../../_static/js/search_highlight.js"></script>
 
 </body>

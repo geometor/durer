@@ -19,18 +19,18 @@ asked counsel of the idol Apollo how they might be delivered from the pestilence
 them that if they doubled his altar they would be freed. Thereupon they sought the counsel of the
 learned, and especially of the philosopher :person:`Plato <plato>`, who taught them how to find
 between two unequal given lines two other lines standing in continual proportion to them
-($g : c = c : d = d : e \implies c^3 = g^2 e$), for thereby one may double, triple, and continually
+(:math:`g : c = c : d = d : e \implies c^3 = g^2 e`), for thereby one may double, triple, and continually
 enlarge a cube—that is, a square solid body like a die—and every other solid body. Because this is a
 most useful art serving all craftsmen, **and is kept in great secrecy and concealment by scholars, I
 wish to bring it into the light of day and teach how to perform it; for from this art one can cast
-cannonballs (*püxsen kugeln*) and bells of $1, 2, 3, \dots, 100$ pounds that enlarge and double as
+cannonballs** (*püxsen kugeln*) **and bells of** :math:`1, 2, 3, \dots, 100` **pounds that enlarge and double as
 one pleases while keeping their true proportion and weight**—especially since, as I believe, it has
 never until this day been described in the German tongue:
 
 1. **Movable-Scale Neusis (pp. 157–163, Figs. 44–49):** Pivoting a symmetrically graduated
    straightedge at ``d`` until segments ``g.h.`` and ``h.i.`` across vertical axis ``a.b.c.`` become
-   equal yields the sides for doubling, tripling, and quadrupling the cube ($\sqrt[3]{2}$,
-   $\sqrt[3]{3}$, $\sqrt[3]{4}$), together with linear scaling gauges for doubling and halving any
+   equal yields the sides for doubling, tripling, and quadrupling the cube (:math:`\sqrt[3]{2}`,
+   :math:`\sqrt[3]{3}`, :math:`\sqrt[3]{4}`), together with linear scaling gauges for doubling and halving any
    given cube.
 2. **Plato's Mechanical Carpenter's Square (pp. 163–164, Fig. 50):** Now :person:`Euclid <euclid>`
    proves in the eighth proposition of his sixth book that ``.c.b.`` is a mean proportional between
