@@ -54,7 +54,7 @@ lengths meet above at :g:`k`, completing the pentagon (compared below against th
 :g:`H_phi`, :g:`I_phi`, :g:`K_phi` constructed from :g:`phi`).
 
 .. picture:: /_static/figures/book2_durer_vs_euclid_pentagon.svg
-   :caption: Exact symbolic overlay of Dürer's fixed-aperture ("rusty compass") pentagon (:g:`a`, :g:`b`, :g:`h`, :g:`k`, :g:`i`, solid gold, base angle $108.3661^\circ$) against Euclid and Ptolemy's $\mathbb{Q}(\phi)$ regular pentagon (:g:`a`, :g:`b`, :g:`H_phi`, :g:`K_phi`, :g:`I_phi`, dashed blue, $108^\circ$, constructed from golden section point :g:`phi`).
+   :caption: Exact symbolic overlay of Dürer's fixed-aperture ("rusty compass") pentagon (:g:`a`, :g:`b`, :g:`h`, :g:`k`, :g:`i`, solid gold, base angle :math:`108.3661^\circ`) against Euclid and Ptolemy's :math:`\mathbb{Q}(\phi)` regular pentagon (:g:`a`, :g:`b`, :g:`H_phi`, :g:`K_phi`, :g:`I_phi`, dashed blue, :math:`108^\circ`, constructed from golden section point :g:`phi`).
 
 **15-gon, Nonagon by Three Fish-Bladders, 11-gon, 13-gon & Arc Trisection (pp. 060–061, Figs. 17–20):**
 

@@ -53,7 +53,7 @@ gerad züsamen / so werden drey seyten des fünfecks / vnd von dann laß zwuᵒ 
 ``.i.h.`` oben (:g:`k`) zuᵒsam reichen / so wirdet ein fünfeck.
 
 .. picture:: /_static/figures/book2_durer_vs_euclid_pentagon.svg
-   :caption: Zweytes Buch, Fig. 16 (S. 059): Dürers Fünffeck *auß unverrucktem Zirckel* (:g:`a`, :g:`b`, :g:`h`, :g:`k`, :g:`i`) im Vergleich zum Euklidischen $\mathbb{Q}(\phi)$-Fünffeck (:g:`H_phi`, :g:`K_phi`, :g:`I_phi` über :g:`phi`).
+   :caption: Zweytes Buch, Fig. 16 (S. 059): Dürers Fünffeck *auß unverrucktem Zirckel* (:g:`a`, :g:`b`, :g:`h`, :g:`k`, :g:`i`) im Vergleich zum Euklidischen :math:`\mathbb{Q}(\phi)`-Fünffeck (:g:`H_phi`, :g:`K_phi`, :g:`I_phi` über :g:`phi`).
 
 **Neuneck durch drey Fischblosen, Eylffeck & Dreytzeheneck (S. 060–061, Fig. 18–19):** Ein neün
 eck ist durch ein dryangel zuᵒ finden / also / Reiß auß einem Centrum ``.a.`` ein grosse

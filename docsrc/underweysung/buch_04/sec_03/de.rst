@@ -31,7 +31,7 @@ abschneiden nahent zuᵒ dem aug oder ferr darfon / vnd nahent zuᵒ dem ding da
 werden ... diß ist der recht grund des :term:`abstelens <abstelen>` was zuᵒ der malerey gehört.
 
 .. picture:: /_static/figures/book4_perspective_cube_apparatus.svg
-   :caption: Viertes Buch, Fig. 56–63: Zentralprojektion des Würfels (:g:`A' <F_BL>`–:g:`B' <F_BR>`–:g:`C' <F_TR>`–:g:`D' <F_TL>` vorne, :g:`E' <B_BL>`–:g:`F' <B_BR>`–:g:`G' <B_TR>`–:g:`H' <B_TL>` hinten, Tiefenmitte :g:`M' <M_depth>`) auf die Bildebene mit Hauptfluchtpunkt :g:`V_x` $= (3, 5)$.
+   :caption: Viertes Buch, Fig. 56–63: Zentralprojektion des Würfels (:g:`A' <F_BL>`–:g:`B' <F_BR>`–:g:`C' <F_TR>`–:g:`D' <F_TL>` vorne, :g:`E' <B_BL>`–:g:`F' <B_BR>`–:g:`G' <B_TR>`–:g:`H' <B_TL>` hinten, Tiefenmitte :g:`M' <M_depth>`) auf die Bildebene mit Hauptfluchtpunkt :g:`V_x` :math:`= (3, 5)`.
 
 **Glasrahmen & Lauten-Fadeninstrument (S. 178–181, Fig. 62–63):** Wilt du durch zeychnen was du for
 dir sihest / so rüst for einen geschickten zeug darzuᵒ / nemlich also. Faß ein reyn flach glas in

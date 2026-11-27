@@ -14,10 +14,10 @@ Notes — Projective Collineation in Gnomonics & Tower Scaling
 3. Projective Collineation in the Tower Inscription & Analemma
 ==============================================================
 
-Both Dürer's Nuremberg gnomonic projection (Figs. 21–23, mapping uniform $15^\circ$ equatorial hour
-angles onto tangent lines via $\tan(k \cdot 15^\circ)$ scaled by $\sin 49^\circ$ on the horizontal
-plane and $\cos 49^\circ$ on a prime-vertical South wall) and his tower-inscription ray pencil
-(p. 114, mapping uniform visual angles $\theta_k$ onto heights $h_k = D\tan\theta_k$) prepare the
+Both Dürer's Nuremberg gnomonic projection (Figs. 21–23, mapping uniform :math:`15^\circ` equatorial hour
+angles onto tangent lines via :math:`\tan(k \cdot 15^\circ)` scaled by :math:`\sin 49^\circ` on the horizontal
+plane and :math:`\cos 49^\circ` on a prime-vertical South wall) and his tower-inscription ray pencil
+(p. 114, mapping uniform visual angles :math:`\theta_k` onto heights :math:`h_k = D\tan\theta_k`) prepare the
 reader directly for the central-projection perspective theory of Book IV, and inspired
 :person:`D'Arcy Wentworth Thompson's <thompson>` coordinate transformation grids
 (:cite:`thompson:1942`).

@@ -12,11 +12,11 @@
 Notes — Planar Spirals, Volutes & Spatial Helices (Figs. 6–27)
 ===============================================================
 
-3. Exact Polar Stations of the 12-Sector Spiral over $\mathbb{Q}(\sqrt{3})$
-===========================================================================
+3. Exact Polar Stations of the 12-Sector Spiral over :math:`\mathbb{Q}(\sqrt{3})`
+=================================================================================
 
-Because $\cos(k \cdot 30^\circ), \sin(k \cdot 30^\circ) \in \left\{0, \pm\frac{1}{2}, \pm\frac{\sqrt{3}}{2}, \pm 1\right\}$
-for every integer $k$, all 25 stations of Dürer's two-turn 12-sector Archimedean spiral
-$P_k = \left(\frac{k}{2}\cos\frac{k\pi}{6},\, \frac{k}{2}\sin\frac{k\pi}{6}\right)$ belong
-entirely to the quadratic field $\mathbb{Q}(\sqrt{3})$, requiring zero floating-point evaluation
+Because :math:`\cos(k \cdot 30^\circ), \sin(k \cdot 30^\circ) \in \left\{0, \pm\frac{1}{2}, \pm\frac{\sqrt{3}}{2}, \pm 1\right\}`
+for every integer :math:`k`, all 25 stations of Dürer's two-turn 12-sector Archimedean spiral
+:math:`P_k = \left(\frac{k}{2}\cos\frac{k\pi}{6},\, \frac{k}{2}\sin\frac{k\pi}{6}\right)` belong
+entirely to the quadratic field :math:`\mathbb{Q}(\sqrt{3})`, requiring zero floating-point evaluation
 in ``geometor.model``.

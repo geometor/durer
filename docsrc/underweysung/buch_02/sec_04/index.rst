@@ -44,7 +44,7 @@ contains as much area as the triangle:
    those parts, as the diagonal of the square has ten.
 
 .. picture:: /_static/figures/book2_heptagon_and_quadrature.svg
-   :caption: Left: Dürer's *mechanice* workshop heptagon (Book II, Figs. 11 & 15) stepping half-equilateral chord $s_7 = \frac{\sqrt{3}}{2}R$ from :g:`W_0` through :g:`W_1`, :g:`W_2`, ..., :g:`W_6` around center :g:`a` (with diameter :g:`b`–:g:`c`, midpoint :g:`e`, pole :g:`d`). Right: Dürer's $\frac{8}{10}$-diagonal circle quadrature around :g:`O_q` (Book II, Fig. 34), implying $\pi_{\text{Dürer}} = \frac{25}{8} = 3.125$.
+   :caption: Left: Dürer's *mechanice* workshop heptagon (Book II, Figs. 11 & 15) stepping half-equilateral chord :math:`s_7 = \frac{\sqrt{3}}{2}R` from :g:`W_0` through :g:`W_1`, :g:`W_2`, ..., :g:`W_6` around center :g:`a` (with diameter :g:`b`–:g:`c`, midpoint :g:`e`, pole :g:`d`). Right: Dürer's :math:`\frac{8}{10}`-diagonal circle quadrature around :g:`O_q` (Book II, Fig. 34), implying :math:`\pi_{\text{Dürer}} = \frac{25}{8} = 3.125`.
 
 .. toctree::
    :hidden:

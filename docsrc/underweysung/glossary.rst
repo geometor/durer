@@ -33,7 +33,7 @@ on the transparent picture plane toward which lines perpendicular to the frame c
 Ausschweiffung (*Circular Serif Fillet*)
 ========================================
 Compass-drawn serif bracket tangent to both a Roman capital's stem and the framing square's edge
-(Book III, pp. 115–130; e.g., radius $\frac{1}{7}$ of the square side on the outer feet of ``A``).
+(Book III, pp. 115–130; e.g., radius :math:`\frac{1}{7}` of the square side on the outer feet of ``A``).
 
 .. _term-barlini:
 
@@ -75,21 +75,21 @@ Eierlini (*Ellipsis / Egg-Line*)
 ================================
 Dürer's German coinage (Book I, Fig. 34) for the conic ellipse. While Dürer's woodcut narrows
 slightly toward the cone apex like a hen's egg, his own 12-station orthographic transfer formula
-$w_k = \frac{\sqrt{2k(12-k)}}{3}$ proves exact bilateral symmetry ($w_{12-k} = w_k$).
+:math:`w_k = \frac{\sqrt{2k(12-k)}}{3}` proves exact bilateral symmetry (:math:`w_{12-k} = w_k`).
 
 .. _term-fierung:
 
 Rechte Fierung & Ort-Fierung (*Square & 45° Diamond Module*)
 ============================================================
-The upright square framing Roman *Antiqua* capitals ($10 \times 10$ or $9 \times 9$) and the
-stacked unit squares + $45^\circ$ diamond caps generating Gothic *Textura* minuscules (Book III).
+The upright square framing Roman *Antiqua* capitals (:math:`10 \times 10` or :math:`9 \times 9`) and the
+stacked unit squares + :math:`45^\circ` diamond caps generating Gothic *Textura* minuscules (Book III).
 
 .. _term-fischblosen:
 
 Fischblosen (*Vesica Piscis / Fish-Bladder Lens*)
 =================================================
 Symmetric lens of two intersecting congruent circles used in Book II, Fig. 18 to construct the
-workshop nonagon ($9$-gon).
+workshop nonagon (:math:`9`-gon).
 
 .. _term-gabellini:
 
@@ -101,7 +101,7 @@ Dürer's German coinage (Book I, Fig. 37) for the conic hyperbola cut parallel t
 
 Muschellini (*Linea conchois / Conchoid of Nicomedes*)
 ======================================================
-The "mussel-shell line" $r = b + a\sec\theta$ constructed pointwise and mechanically in Book I,
+The "mussel-shell line" :math:`r = b + a\sec\theta` constructed pointwise and mechanically in Book I,
 Figs. 31–33.
 
 .. _term-nidergedruckter-grund:

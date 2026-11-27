@@ -14,7 +14,7 @@ Summary — Euclidean Area Transformations & Circle Quadrature (Figs. 28–36)
 
 4. **Area Transformations & Circle Quadrature (pp. 071–076, Figs. 28–36)**:
 
-   - Exact Euclidean squaring of triangles, rectangles, and regular $n$-gons via semicircle mean
-     proportionals (Euclid II.14, VI.13), diagonal homothetic scaling, $2\times$, $3\times$, and
-     $7\times$ area multiplication, generalized Pythagorean theorem (Euclid VI.31), and the
-     $\frac{8}{10}$ diagonal circle quadrature ($\pi_{\text{Dürer}} = \frac{25}{8} = 3.125$, Fig. 34).
+   - Exact Euclidean squaring of triangles, rectangles, and regular :math:`n`-gons via semicircle mean
+     proportionals (Euclid II.14, VI.13), diagonal homothetic scaling, :math:`2\times`, :math:`3\times`, and
+     :math:`7\times` area multiplication, generalized Pythagorean theorem (Euclid VI.31), and the
+     :math:`\frac{8}{10}` diagonal circle quadrature (:math:`\pi_{\text{Dürer}} = \frac{25}{8} = 3.125`, Fig. 34).

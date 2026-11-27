@@ -11,14 +11,14 @@
 
 .. folio:: N1525 p. 108–114
 
-Nuremberg Sundials ($49^\circ$ Pole) & Optical Tower Scaling (Figs. 20–27)
-==========================================================================
+Nuremberg Sundials (:math:`49^\circ` Pole) & Optical Tower Scaling (Figs. 20–27)
+================================================================================
 
 1. **The Nuremberg Analemma & Polyhedral Cube Sundial (pp. 108–113, Figs. 20–27):**
    Wherever you happen to be in any city and wish to construct a *horologium* (sundial), first find
    by an instrument, or in tables made for that purpose, how high the pole is elevated above the
    earth—**thus at Nuremberg its elevation is forty-nine degrees** (*neun vnd vierzig grad*).
-   Having divided quadrant ``b.a.c.`` into $90^\circ$ ($90 = 3 \times 3 \times 2 \times 5$, Fig. 21),
+   Having divided quadrant ``b.a.c.`` into :math:`90^\circ` (:math:`90 = 3 \times 3 \times 2 \times 5`, Fig. 21),
    count upward from ``.b.`` to the end of the forty-ninth degree, set ``.d.`` there, and draw the
    straight line ``.a.d.``; this line ``.a.d.`` is called in Latin *axis mundi*, that is, the axis
    upon which the whole world turns. Next draw another upright line, as you were taught before, from
@@ -31,8 +31,8 @@ Nuremberg Sundials ($49^\circ$ Pole) & Optical Tower Scaling (Figs. 20–27)
    a 24-hour equinoctial wheel (Fig. 22) onto tangent lines ``p.q.`` and ``r.s.`` and transferring
    radii ``d.e.`` and ``a.e.`` constructs both the **vertical South wall dial** (*an die aufrecht
    mauer*) and the **horizontal dial** (*auf den orizon*, Fig. 23), as well as a chamfered
-   **polyhedral cube sundial** (Figs. 24–25) facing East, West, South, North, the $49^\circ$ poles,
-   and the $41^\circ$ equinoctial plane.
+   **polyhedral cube sundial** (Figs. 24–25) facing East, West, South, North, the :math:`49^\circ` poles,
+   and the :math:`41^\circ` equinoctial plane.
 
 2. **Lettering on High Towers (p. 114):**
    It often happens that inscriptions are placed upon columns, towers, or high walls. Therefore,
