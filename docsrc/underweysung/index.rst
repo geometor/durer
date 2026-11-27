@@ -42,14 +42,6 @@ The Four Books
 .. collection::
    :sort: order
 
-.. toctree::
-   :hidden:
-
-   buch_01/index
-   buch_02/index
-   buch_03/index
-   buch_04/index
-
 Scholarly Apparatus
 -------------------
 
