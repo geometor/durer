@@ -4,7 +4,6 @@
 :canonical_id: Book I
 :nav_title: Book I
 :breadcrumb_title: Book I
-:book_title: Book I: Lines, Spirals & Conic Sections
 :book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
@@ -25,7 +24,6 @@ Book I: Lines, Spirals & Conic Sections
 
 .. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
 
-
 .. picture:: /_static/figures/book1_spiral_volute.svg
 
 Sections
@@ -33,11 +31,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-
-   sec_01/index
-   sec_02/index
-   sec_03/index
-   sec_04/index

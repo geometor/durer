@@ -4,7 +4,6 @@
 :canonical_id: Book III
 :nav_title: Book III
 :breadcrumb_title: Book III
-:book_title: Book III: Columns, Sundials & Roman/Gothic Typography
 :book_subtitle: Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer
 :author: Albrecht Dürer
 :year: 1525
@@ -25,7 +24,6 @@ Book III: Columns, Sundials & Roman/Gothic Typography
 
 .. rubric:: *Instruction in Measurement (Nuremberg, 1525) — Albrecht Dürer*
 
-
 .. picture:: /_static/figures/book3_roman_letter_a.svg
 
 Sections
@@ -33,10 +31,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-
-   sec_01/index
-   sec_02/index
-   sec_03/index
